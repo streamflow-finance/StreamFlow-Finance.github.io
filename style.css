@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 
 
 body {
@@ -28,11 +28,11 @@ h2 {
 h3 {
     margin-top: 100px;
     margin-bottom: 100px;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 h5 {
-    margin: 0.5rem auto;
+    margin: 1rem auto;
 }
 
 a {
