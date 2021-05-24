@@ -1,0 +1,1 @@
+document.getElementById("mail").setAttribute("href", "mai" + "lto:he" + "llo@strea" + "mflow.fin" + "ance");
