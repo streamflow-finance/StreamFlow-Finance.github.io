@@ -1,0 +1,31 @@
+# local validator
+test-ledger/*
+/app/.gitOLD
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# APP DIRECTORY
+# dependencies
+app/node_modules
+app/.pnp
+app.pnp.js
+
+# testing
+app/coverage
+
+# production
+/build
+
+# misc
+app/.DS_Store
+app/.env.local
+app/.env.development.local
+app/.env.test.local
+app/.env.production.local
+app/.env.production
+app/.env
+
+app/npm-debug.log*
+app/yarn-debug.log*
+app/yarn-error.log*
+
+.idea
