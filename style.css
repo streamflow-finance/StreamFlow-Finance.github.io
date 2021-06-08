@@ -1,68 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-html {
-    position: relative;
+
+:root {
+    --primary: #18a2d9;
+    --secondary: #00ffa3;
+}
+.bg-primary {
+    background-color: var(--primary) ;
+}
+.bg-secondary {
+    background-color: var(--secondary);
 }
 
-body {
-    margin: 0;
-    padding-top: 30px;
-    color: linen;
-    background-color: rgba(15,15,15);
-    font-family: 'Poppins', sans-serif;
+.text-primary {
+    color: var(--primary);
+}
+.text-secondary {
+    color: var(--secondary)
 }
 
-#container {
-    max-width: 600px;
-    margin: auto;
-    text-align: center; 
-    text-shadow: 0px 0px 7px rgba(0,0,0,0.8);
-}
-
-h1 {
-    font-size: 80px;
-    font-weight: 700;
-}
-
-h2 {
-    margin: 60px auto;
-    color: lightyellow;
-    font-size: 3em;
-}
-
-h3 {
-    font-size: 3rem;
-}
-
-h5 {
-    margin: 1rem auto;
-}
-
-a {
-    text-decoration: none;
-    font-size: inherit;
-    color: #18a2d9;
-}
-
-footer {
-    opacity: 0.9;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-#cover {
-    background: url('./public/img/Illustration.png') 10% no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-    opacity: 0.3;
+.btn-primary, .bg-gradient {
+    background: linear-gradient(to bottom right, var(--primary), var(--primary), var(--secondary));
 }
