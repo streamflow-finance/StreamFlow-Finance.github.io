@@ -5,6 +5,6 @@ StreamFlow Finance brings fully decentralized streaming payments protocol on Sol
 https://streamflow.finance
 
 ## Repositories
-- Landing page (this repo)
 - [StreamFlow App](https://github.com/streamflow-finance/streamflow-program)
 - [StreamFlow Program](https://github.com/streamflow-finance/streamflow-program)
+- Landing page (this repo)
