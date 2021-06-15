@@ -2,8 +2,6 @@
 ## Landing page
 StreamFlow Finance brings fully decentralized streaming payments protocol on Solana.
 
-https://streamflow.finance
-
 - [Short demo](https://www.youtube.com/watch?v=7HWzcxu-De0) [[Extended demo](https://www.youtube.com/watch?v=7hrv7HDK3oE)]
 - [Slides](https://streamflow.finance/public/streamflow_slides.pdf)
 - [Website](https://streamflow.finance)
