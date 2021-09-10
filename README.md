@@ -1,9 +1,19 @@
 # StreamFlow Finance
-## Landing page
-StreamFlow Finance brings fully decentralized streaming payments protocol on Solana.
+### By buidlers, for buidlers.
 
-- [Short demo](https://www.youtube.com/watch?v=7HWzcxu-De0) [[Extended demo](https://www.youtube.com/watch?v=7hrv7HDK3oE)]
-- [Slides](https://streamflow.finance/public/streamflow_slides.pdf)
+StreamFlow Finance is a suite of payment-related products on Solana.
+
+We're bringing:
+- Token vesting
+- Stream payments
+- Batch (one-to-many) payments
+- Multisig payments
+- ...and more
+
+To the Solana & Serum ecosystems.
+
+- [Solana Season Hackathon Demo (Stream Payments)](https://www.youtube.com/watch?v=7HWzcxu-De0)
+- [Slides (Stream Payments)](https://streamflow.finance/public/streamflow_slides.pdf)
 - [Website](https://streamflow.finance)
 - [App](https://app.streamflow.finance)
 - [GitHub](https://github.com/streamflow-finance)
