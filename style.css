@@ -24,3 +24,23 @@
 .btn-primary, .bg-gradient {
     background: linear-gradient(to bottom right, var(--primary), var(--primary), var(--secondary));
 }
+
+@media only screen and (max-width: 800px) {
+    .investors {
+        display: flex;
+        flex-direction: column;
+      }
+
+    .investors svg {
+        margin-top: 30px;
+      }
+
+      .investors img {
+        margin-top: 30px;
+      }
+
+      .no-margin {
+          margin: 0 !important;
+      }
+
+  }
