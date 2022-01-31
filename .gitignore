@@ -5,3 +5,4 @@ app/coverage
 # IDE
 .idea
 node_modules
+.DS_Store

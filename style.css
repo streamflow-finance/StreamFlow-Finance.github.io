@@ -2,45 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-    --primary: #18a2d9;
-    --secondary: #00ffa3;
+  --primary: #18a2d9;
+  --secondary: #00ffa3;
 }
 .bg-primary {
-    background-color: var(--primary) ;
+  background-color: var(--primary);
 }
 .bg-secondary {
-    background-color: var(--secondary);
+  background-color: var(--secondary);
 }
 
 .text-primary {
-    color: var(--primary);
+  color: var(--primary);
 }
 .text-secondary {
-    color: var(--secondary)
+  color: var(--secondary);
 }
 
-.btn-primary, .bg-gradient {
-    background: linear-gradient(to bottom right, var(--primary), var(--primary), var(--secondary));
+.btn-primary,
+.bg-gradient {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--primary),
+    var(--secondary)
+  );
 }
 
 @media only screen and (max-width: 800px) {
-    .investors {
-        display: flex;
-        flex-direction: column;
-      }
-
-    .investors svg {
-        margin-top: 30px;
-      }
-
-      .investors img {
-        margin-top: 30px;
-      }
-
-      .no-margin {
-          margin: 0 !important;
-      }
-
+  .investors {
+    display: flex;
+    flex-direction: column;
   }
+
+  .investors svg {
+    margin-top: 30px;
+  }
+
+  .investors img {
+    margin-top: 30px;
+  }
+
+  .no-margin {
+    margin: 0 !important;
+  }
+}
