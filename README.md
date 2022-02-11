@@ -1,7 +1,7 @@
-# StreamFlow Finance
+# Streamflow
 ### By buidlers, for buidlers.
 
-StreamFlow Finance is a suite of payment-related products on Solana.
+Streamflow is a suite of payment-related products on Solana.
 
 We're bringing:
 - Token vesting
@@ -21,6 +21,6 @@ To the Solana & Serum ecosystems.
 - [Twitter](https://twitter.com/streamflow_fi)
 
 ## Repositories
-- [StreamFlow App](https://github.com/streamflow-finance/streamflow-app)
-- [StreamFlow Program](https://github.com/streamflow-finance/streamflow-program)
+- [Streamflow App](https://github.com/streamflow-finance/streamflow-app)
+- [Streamflow Program](https://github.com/streamflow-finance/streamflow-program)
 - Landing page (this repo)
