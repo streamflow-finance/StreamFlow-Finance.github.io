@@ -1,656 +1,1215 @@
-<!doctype html>
-<html lang="en" class="bg-gray-900">
+<!DOCTYPE html>
+<html class="scroll-smooth">
 
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PCP4MNJ');</script>
-    <!-- End Google Tag Manager -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Streamflow brings streamed token vesting and batch payments to Solana. Making token streams the ultimate way to distribute value.">
-    <meta name="keywords"
-        content="streamflow, defi, finance, solana, timelock, real-time, decentralized, blockchain, payments, crypto">
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PCP4MNJ');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Streamflow brings streamed token vesting and batch payments to Solana. Making token streams the ultimate way to distribute value.">
+  <meta name="keywords"
+    content="streamflow, defi, finance, solana, timelock, real-time, decentralized, blockchain, payments, crypto">
 
-    <!-- Open Graph for social networks -->
-    <meta property="og:title" content="Streamflow">
-    <meta property="og:description"
-        content="Streamflow brings streamed token vesting and batch payments to Solana. Making token streams the ultimate way to distribute value.">
-    <meta property="og:image" content="/public/img/streamflow-finance.jpeg">
-    <meta property="og:url" content="https://streamflow.finance">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@streamflow_fi">
-    <meta name="twitter:title" content="Streamflow">
-    <meta name="twitter:description"
-        content="Streamflow brings streamed token vesting and batch payments to Solana. Making token streams the ultimate way to distribute value.">
-    <meta name="twitter:image" content="/public/img/streamflow-finance.jpeg">
+  <!-- Open Graph for social networks -->
+  <meta property="og:title" content="Streamflow">
+  <meta property="og:description"
+    content="Streamflow brings streamed token vesting and batch payments to Solana. Making token streams the ultimate way to distribute value.">
+  <meta property="og:image" content="/public/img/streamflow-finance.jpeg">
+  <meta property="og:url" content="https://streamflow.finance">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@streamflow_fi">
+  <meta name="twitter:title" content="Streamflow">
+  <meta name="twitter:description"
+    content="Streamflow brings streamed token vesting and batch payments to Solana. Making token streams the ultimate way to distribute value.">
+  <meta name="twitter:image" content="/public/img/streamflow-finance.jpeg">
 
-    <title>Streamflow | Token Distribution Platform</title>
-    <link rel="stylesheet" href="style.css">
-    <!--Icons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="public/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/icon/favicon-16x16.png">
-    <link rel="manifest" href="public/icon/site.webmanifest">
-
-    <!-- <link href="https://unpkg.com/tailwindcss@2.1.4/dist/tailwind.min.css" rel="stylesheet"> -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script src="https://kit.fontawesome.com/54292cdecb.js" crossorigin="anonymous"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                screens: {
-                    xs: "375px",
-                    sm: '640px',
-                    md: '768px',
-                    lg: '1024px',
-                    xl: '1280px',
-                    '2xl': '1536px',
-                },
-            },
-        }
-    </script>
-    <style>
-        @font-face {
-            font-family: TanseekModernLight;
-            src: url('JUNEBUG.TTF');
-        }
-    </style>
+  <title>Streamflow | Token Distribution Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+  <script src="script.js"></script>
+  <script src="menu.js"></script>
 </head>
 
-<body class="bg-gray-900">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCP4MNJ" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+<body class="bg-fieldblack font-inter">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCP4MNJ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <div class="flex justify-center items-center mt-6 lg:hidden">
+    <img src="imgs/img-logo-1.png" alt="StreamFlow Finance logo"
+      class="lg:hidden inline-block cursor-pointer ml-4 hover:opacity-70" />
+    <button class="lg:hidden inline-block ml-auto mr-auto bg-primary rounded-lg hover:opacity-70 ">
+      <a href="https://app.streamflow.finance/" target=_blank>
+        <p class="font-semibold pt-2 pb-2 pl-3 pr-3 text-base items-center text-white">
+          Get Started
+        </p>
+      </a>
+    </button>
+    <div class="inline-block float-right mr-4 hover:opacity-70" onclick="mobileMenu();">
+      <button id="three-lines">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="8" fill="#2A3441" />
+          <path
+            d="M12.5714 15.5714H27.4286C27.7143 15.5714 28 15.3214 28 15V13.5714C28 13.2857 27.7143 13 27.4286 13H12.5714C12.25 13 12 13.2857 12 13.5714V15C12 15.3214 12.25 15.5714 12.5714 15.5714ZM12.5714 21.2857H27.4286C27.7143 21.2857 28 21.0357 28 20.7143V19.2857C28 19 27.7143 18.7143 27.4286 18.7143H12.5714C12.25 18.7143 12 19 12 19.2857V20.7143C12 21.0357 12.25 21.2857 12.5714 21.2857ZM12.5714 27H27.4286C27.7143 27 28 26.75 28 26.4286V25C28 24.7143 27.7143 24.4286 27.4286 24.4286H12.5714C12.25 24.4286 12 24.7143 12 25V26.4286C12 26.75 12.25 27 12.5714 27Z"
+            fill="#718298" />
+        </svg>
+      </button>
+
+      <button id="x-button" class="hidden">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="8" fill="#2A3441" />
+          <path
+            d="M22.2638 19.983L25.6681 16.5787C26.1106 16.1702 26.1106 15.4894 25.6681 15.0809L24.9191 14.3319C24.5106 13.8894 23.8298 13.8894 23.4213 14.3319L20.017 17.7362L16.5787 14.3319C16.1702 13.8894 15.4894 13.8894 15.0809 14.3319L14.3319 15.0809C13.8894 15.4894 13.8894 16.1702 14.3319 16.5787L17.7362 19.983L14.3319 23.4213C13.8894 23.8298 13.8894 24.5106 14.3319 24.9191L15.0809 25.6681C15.4894 26.1106 16.1702 26.1106 16.5787 25.6681L20.017 22.2638L23.4213 25.6681C23.8298 26.1106 24.5106 26.1106 24.9191 25.6681L25.6681 24.9191C26.1106 24.5106 26.1106 23.8298 25.6681 23.4213L22.2638 19.983Z"
+            fill="#718298" />
+        </svg>
+      </button>
+
     </div>
-    <div class="relative">
-        <header class="bg-gray-900 sticky top-0 opacity-90 z-10 py-2.5 sm:py-3">
-            <nav class="flex max-w-7xl mx-auto items-center justify-between px-4 sm:px-6" aria-label="Global">
-                <div class="flex items-center flex-1">
-                    <div class="flex items-center w-auto mr-1.5 xs:mr-2.5">
-                        <a href="#">
-                            <img class="h-11 w-auto sm:h-16" src="public/img/icon.png" alt="">
-                        </a>
-                    </div>
-                    <div class="space-x-1 xs:space-x-2.5 sm:space-x-4 lg:space-x-10 sm:flex md:ml-4">
-                        <!--                        <a href="#stream" class="text-base font-medium text-white hover:text-gray-300">Streams</a>-->
-                        <!--                        <a href="#team" class="text-base font-medium text-white hover:text-gray-300">Team</a>-->
-                        <a href="https://twitter.com/streamflow_fi" target="_blank"
-                            class="text-xs xs:text-sm sm:text-base font-medium text-white hover:text-gray-300">Twitter</a>
-                        <a href="https://discord.com/invite/9yyr8UBZjr" target="_blank"
-                            class="text-xs xs:text-sm sm:text-base font-medium text-white hover:text-gray-300">Discord</a>
-                        <a href="https://docs.streamflow.finance/" target="_blank"
-                            class="text-xs xs:text-sm sm:text-base font-medium text-white hover:text-gray-300">Docs</a>
-                        <a href="https://streamflow.medium.com/" target="_blank"
-                            class="text-xs xs:text-sm sm:text-base font-medium text-white hover:text-gray-300">Blog</a>
-                    </div>
-                </div>
-                <a href="https://app.streamflow.finance" target="_blank"
-                    class="md:block text-xs xs:text-sm sm:text-base font-medium text-white hover:text-gray-300 border border-white rounded-full py-2 px-3 sm:py-2.5 sm:px-6">Launch
-                    App</a>
-            </nav>
-        </header>
-        <main>
-            <div class="pt-10 bg-gray-900 sm:pt-16 lg:pt-6 lg:overflow-hidden">
-                <div class="mx-auto max-w-7xl lg:px-8">
-                    <div class="lg:grid lg:grid-cols-2 lg:gap-8">
-                        <div
-                            class="mx-auto lg:mx-0 max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
-                            <div class="lg:py-24">
-                                <h1
-                                    class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-                                    <span class="block">Secure, powerful</span>
-                                    <span class="pb-3 block bg-clip-text text-secondary sm:pb-2">token streams</span>
-                                </h1>
-                                <p class="text-base text-gray-100 sm:text-xl lg:text-2xl">
-                                    <span class="block my-4">Streamflow brings streamed token vesting and batch payments
-                                        to Solana. Making token streams the ultimate way to distribute value.</span>
-                                </p>
-                                <small class="text-gray-200 block mt-12">Powered by
-                                    <img src="public/img/solana.png" class="w-32 inline" alt="Solana logo" /></small>
-                            </div>
-                        </div>
-                        <div class="mt-12 lg:m-0 lg:relative">
-                            <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
-                                <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
-                                <img class="w-full h-80 lg:absolute lg:inset-y-0 lg:left-10 lg:h-full lg:w-auto lg:max-w-none"
-                                    src="public/img/illustration.svg"
-                                    alt="Illustration of a central node with the Solana logo, connecting with other nodes">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Feature section with grid -->
-            <hr class="mt-16 border border-gray-800">
-            <div class="relative py-8 md:py-16 bg-gray-900" id="products">
-                <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-                    <!--                    <h2 class="text-base font-semibold tracking-wider text-primary uppercase">Deploy faster</h2>-->
-                    <p class="text-4xl md:text-5xl font-bold text-secondary tracking-tight">
-                        Product Suite
-                    </p>
-                    <div class="mt-12">
-                        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-
-                            <div class="pt-6">
-                                <div class="flow-root bg-gray-700 rounded-lg px-6 pb-8">
-                                    <div class="-mt-6">
-                                        <div>
-                                            <span
-                                                class="inline-flex items-center justify-center p-3 bg-primary rounded-md shadow-lg">
-                                                <!-- Heroicon name: outline/lock-closed -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white"
-                                                    aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet"
-                                                    viewBox="0 0 24 24">
-                                                    <g fill="none">
-                                                        <path
-                                                            d="M12 15v2m-6 4h12a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2zm10-10V7a4 4 0 0 0-8 0v4h8z"
-                                                            stroke="currentColor" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                    </g>
-                                                </svg>
-
-                                            </span>
-                                        </div>
-                                        <h3 class="mt-8 text-lg font-medium text-secondary tracking-tight">
-                                            Token Vesting
-                                        </h3>
-                                        <p class="mt-5 text-base text-white">
-                                            Open-source, verifiable, programmable token vesting with a cliff date and
-                                            configurable release rate.
-                                        </p>
-                                        <!-- <p class="mt-2 text-white font-bold">Transferable, too.</p> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pt-6">
-                                <div class="flow-root bg-gray-700 rounded-lg px-6 pb-8">
-                                    <div class="-mt-6">
-                                        <div>
-                                            <span
-                                                class="inline-flex items-center justify-center p-3 bg-primary rounded-md shadow-lg">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white"
-                                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        <h3 class="mt-8 text-lg font-medium text-secondary tracking-tight">Stream
-                                            Payments</h3>
-                                        <p class="mt-5 text-base text-white">
-                                            A financial primitive that represents a progressively released payment in
-                                            the form of time-lock escrow account.
-                                        </p>
-                                        <!-- <p class="mt-3 text-gray-400 hover:text-gray-300"><a href="#stream">Scroll for more
-                                        info ↓</a></p> -->
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pt-6">
-                                <div class="flow-root bg-gray-700 rounded-lg px-6 lg:px-4 pb-8">
-                                    <div class="-mt-6">
-                                        <div>
-                                            <span
-                                                class="inline-flex items-center justify-center p-3 bg-primary rounded-md shadow-lg">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white"
-                                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        <h3 class="mt-8 text-lg font-medium text-secondary tracking-tight">Batch
-                                            Payments</h3>
-                                        <p class="mt-5 text-base text-white">
-                                            Payroll for a team or reward distribution for crypto natives, that includes
-                                            easy one-to-many payments.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pt-6">
-                                <div class="flow-root bg-gray-700 rounded-lg px-6 pb-8">
-                                    <div class="-mt-6">
-                                        <div>
-                                            <span
-                                                class="inline-flex items-center justify-center p-3 bg-primary rounded-md shadow-lg">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white"
-                                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        <h3 class="mt-8 text-lg font-medium text-secondary tracking-tight">Multisig
-                                            Vaults</h3>
-                                        <p class="mt-5 text-base text-white">
-                                            Manage treasuries and vaults that require M/N signatures. A secure and open
-                                            source implementation.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="relative py-8 md:py-16 bg-gray-800" id="stream">
-                <div
-                    class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:items-center">
-                    <!--                                    <h2 class="text-base font-semibold tracking-wider text-primary uppercase"></h2>-->
-                    <div class="col-span-full">
-                        <p class="text-4xl md:text-5xl font-bold text-secondary tracking-tight">
-                            About Streams
-                        </p>
-                        <p class="my-5 max-w-prose mx-auto text-xl text-gray-300">
-                            A powerful primitive that serves as a building block for various payment-related solutions.
-                        </p>
-                        <!--  https://www.youtube.com/watch?v=7hrv7HDK3oE -->
-                    </div>
-                    <dl class="space-y-10 text-left md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-                        <div class="relative">
-                            <dt>
-                                <div
-                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-gradient text-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
-                                    </svg>
-                                </div>
-                                <p class="ml-16 text-lg leading-6 font-medium text-secondary">Payroll v2</p>
-                            </dt>
-                            <dd class="mt-2 ml-16 text-base text-gray-300">
-                                Continuous streams viewable by employee and employer, provide a modern alternative to
-                                the traditional monthly payroll system.
-                            </dd>
-                        </div>
-                        <div class="relative">
-                            <dt>
-                                <div
-                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-gradient text-white">
-                                    <!-- Heroicon name: outline/scale -->
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-                                    </svg>
-                                </div>
-                                <p class="ml-16 text-lg leading-6 font-medium text-secondary">Low-risk trial period</p>
-                            </dt>
-                            <dd class="mt-2 ml-16 text-base text-gray-300">
-                                Escrow service when trust isn't established between parties. Stream is initialized and
-                                can be stopped by the initiator (employer) at any moment.
-                            </dd>
-                        </div>
-                        <div class="relative">
-                            <dt>
-                                <div
-                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-gradient text-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                                <p class="ml-16 text-lg leading-6 font-medium text-secondary">Services billed per time
-                                    unit</p>
-                            </dt>
-                            <dd class="mt-2 ml-16 text-base text-gray-300">
-                                Pay per usage. Consulting, live events and concerts, bike renting or even parking.
-                                Deposit the funds and stop the stream once the service ends.
-                            </dd>
-                        </div>
-
-                        <div class="relative">
-                            <dt>
-                                <div
-                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-gradient text-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                                <p class="ml-16 text-lg leading-6 font-medium text-secondary">Fundraising & donations
-                                </p>
-                            </dt>
-                            <dd class="mt-2 ml-16 text-base text-gray-300">
-                                Control to the donors and supporters! Supporters have the option to donate progressively
-                                and track progress over time.
-                            </dd>
-                        </div>
-                    </dl>
-                </div>
-            </div>
-            <div class="relative py-8 md:pt-16 bg-[#111827]">
-                <div
-                    class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:items-center">
-                    <!--                                    <h2 class="text-base font-semibold tracking-wider text-primary uppercase"></h2>-->
-                    <div class="col-span-full">
-                        <p class="mb-10 text-3xl md:text-5xl font-bold text-secondary tracking-tight">
-                            Backed by the best
-                        </p>
-                        <div class="my-2 md:my-12 flex justify-center items-center space-x-4 space-y-2">
-                            <!--   JumpCapital         -->
-                            <img src="jumpcrypto.png" class="w-48 h-20 filter grayscale">
-                            <!--  Solana Ventures                  -->
-                            <p>
-                                <svg class="filter grayscale h-9 md:h-12 w-36 md:w-52"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    viewBox="0 0 464 90">
-                                    <defs>
-                                        <linearGradient id="a" x1="-5.241" y1="107.096" x2="112.361" y2="-22.023"
-                                            gradientUnits="userSpaceOnUse">
-                                            <stop offset="0.085" stop-color="#003ae6" />
-                                            <stop offset="0.353" stop-color="#007bff" />
-                                            <stop offset="0.414" stop-color="#0b9bf2" />
-                                            <stop offset="0.494" stop-color="#18bfe4" />
-                                            <stop offset="0.574" stop-color="#21dbd9" />
-                                            <stop offset="0.655" stop-color="#28efd1" />
-                                            <stop offset="0.735" stop-color="#2dfbcd" />
-                                            <stop offset="0.816" stop-color="#2effcb" />
-                                        </linearGradient>
-                                    </defs>
-                                    <path
-                                        d="M101.111,70.958,84.5,88.773A3.855,3.855,0,0,1,81.677,90H2.932a1.928,1.928,0,0,1-1.41-3.244L18.135,68.941a3.858,3.858,0,0,1,2.821-1.227H99.7A1.929,1.929,0,0,1,101.111,70.958ZM84.5,35.084a3.855,3.855,0,0,0-2.821-1.227H2.932A1.928,1.928,0,0,0,1.522,37.1L18.135,54.916a3.854,3.854,0,0,0,2.821,1.227H99.7a1.929,1.929,0,0,0,1.411-3.244ZM2.932,22.286H81.677A3.859,3.859,0,0,0,84.5,21.059L101.111,3.244A1.929,1.929,0,0,0,99.7,0H20.956a3.854,3.854,0,0,0-2.821,1.227L1.522,19.042A1.928,1.928,0,0,0,2.932,22.286Z"
-                                        fill="url(#a)" />
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="M145.571,22.178h20.386v6.753H138v7.213h27.624a7.554,7.554,0,0,0,7.545-7.546V22.511a7.553,7.553,0,0,0-7.545-7.545H145.239V8.213h27.93V1h-27.6a7.554,7.554,0,0,0-7.545,7.545v6.088A7.554,7.554,0,0,0,145.571,22.178Z"
-                                                fill="#fff" />
-                                            <path
-                                                d="M208.591,1H187.105a7.554,7.554,0,0,0-7.545,7.545V28.6a7.554,7.554,0,0,0,7.545,7.546h21.486a7.554,7.554,0,0,0,7.545-7.546V8.545A7.554,7.554,0,0,0,208.591,1Zm.332,7.213V28.931h-22.15V8.213Z"
-                                                fill="#fff" />
-                                            <path
-                                                d="M227.31,36.144h29.747V28.931H229.842V1h-7.213V31.463A4.686,4.686,0,0,0,227.31,36.144Z"
-                                                fill="#fff" />
-                                            <path
-                                                d="M293.91,1H269.56a6.12,6.12,0,0,0-6.113,6.113V36.144h7.213V24.685h22.15V36.144h7.213V7.113A6.12,6.12,0,0,0,293.91,1Zm-1.1,7.213v9.259H270.66V8.213Z"
-                                                fill="#fff" />
-                                            <path
-                                                d="M335.777,28.931h-1.341L320.9,3.484A4.67,4.67,0,0,0,316.77,1H311.1a4.686,4.686,0,0,0-4.681,4.681V36.144h7.213V8.213h1.627L328.781,33.66a4.671,4.671,0,0,0,4.133,2.484h5.4a4.686,4.686,0,0,0,4.681-4.681V1h-7.213Z"
-                                                fill="#fff" />
-                                            <path
-                                                d="M380.435,1h-24.35a6.119,6.119,0,0,0-6.112,6.113V36.144h7.212V24.685h22.151V36.144h7.213V7.113A6.12,6.12,0,0,0,380.435,1Zm-1.1,7.213v9.259H357.185V8.213Z"
-                                                fill="#fff" />
-                                        </g>
-                                        <g>
-                                            <path
-                                                d="M434.848,74.968h20.265V81.68H427.322v7.171h27.46a7.51,7.51,0,0,0,7.5-7.5V75.3a7.509,7.509,0,0,0-7.5-7.5H434.518V61.086h27.765V53.915H434.848a7.509,7.509,0,0,0-7.5,7.5v6.051A7.509,7.509,0,0,0,434.848,74.968Z"
-                                                fill="#fff" />
-                                            <path
-                                                d="M157.285,81.68h-2.147l-9.554-27.765H138l10.946,31.8a4.654,4.654,0,0,0,4.4,3.139h5.738a4.655,4.655,0,0,0,4.4-3.139l10.945-31.8h-7.584Z"
-                                                fill="#fff" />
-                                            <polygon
-                                                points="180.203 88.851 214.427 88.851 214.427 81.68 187.373 81.68 187.373 74.968 214.427 74.968 214.427 67.798 187.373 67.798 187.373 61.086 214.427 61.086 214.427 53.915 180.203 53.915 180.203 88.851"
-                                                fill="#fff" />
-                                            <path
-                                                d="M249.562,81.83h-1.334l-13.452-25.3a4.642,4.642,0,0,0-4.108-2.469h-5.642a4.658,4.658,0,0,0-4.653,4.653V89h7.17V61.235h1.617l13.447,25.3A4.643,4.643,0,0,0,246.715,89h5.364a4.658,4.658,0,0,0,4.653-4.653V54.065h-7.17Z"
-                                                fill="#fff" />
-                                            <polygon
-                                                points="263.085 61.235 276.967 61.235 276.967 89 284.137 89 284.137 61.235 298.02 61.235 298.02 54.065 263.085 54.065 263.085 61.235"
-                                                fill="#fff" />
-                                            <path
-                                                d="M333.46,75.8a6.033,6.033,0,0,1-6.026,6.026h-9.967a6.033,6.033,0,0,1-6.026-6.026V54.065h-7.17V77.228A11.785,11.785,0,0,0,316.043,89h12.815A11.785,11.785,0,0,0,340.63,77.228V54.065h-7.17Z"
-                                                fill="#fff" />
-                                            <path
-                                                d="M381.206,64.976a11.078,11.078,0,0,0-11.06-11.061H346.983V88.851h7.17V76.036h12.368l6.813,12.815h8.126l-7.228-13.6A11.082,11.082,0,0,0,381.206,64.976Zm-27.053-3.89h15.992a3.89,3.89,0,1,1,0,7.78H354.153Z"
-                                                fill="#fff" />
-                                            <polygon
-                                                points="387.153 88.851 421.376 88.851 421.376 81.68 394.322 81.68 394.322 74.968 421.376 74.968 421.376 67.798 394.322 67.798 394.322 61.086 421.376 61.086 421.376 53.915 387.153 53.915 387.153 88.851"
-                                                fill="#fff" />
-                                        </g>
-                                    </g>
-                                </svg>
-                            </p>
-                        </div>
-                        <div class="my-2 md:my-5 flex justify-center items-center space-x-4 flex-wrap  space-y-2">
-                            <!-- GBV                       -->
-                            <p class="pt-2">
-                                <svg class="filter grayscale h-11 md:h-16 w-20 md:w-28" width="100" version="1.1"
-                                    id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 1190.55 746.39" style="enable-background:new 0 0 1190.55 746.39;"
-                                    xml:space="preserve">
-                                    <style type="text/css">
-                                        .st0 {
-                                            fill: #F1D050;
-                                        }
-                                    </style>
-                                    <g>
-                                        <path class="st0" d="M785.11,313.74c-1.76-1.73-3.85-3.13-6.2-4.17c-2.38-1.04-4.93-1.57-7.58-1.57h-69.45
-                                    c-2.65,0-5.21,0.53-7.58,1.57c-2.36,1.04-4.44,2.44-6.2,4.17c-1.77,1.74-3.18,3.82-4.19,6.19c-1.01,2.37-1.52,4.92-1.52,7.57v91.41
-                                    c0,2.65,0.51,5.2,1.52,7.57c1.01,2.36,2.42,4.46,4.18,6.22c1.77,1.77,3.86,3.18,6.22,4.18c2.37,1.01,4.92,1.52,7.57,1.52h69.45
-                                    c2.65,0,5.2-0.51,7.57-1.52c2.36-1.01,4.46-2.42,6.22-4.18c1.77-1.77,3.17-3.86,4.18-6.22c1.01-2.38,1.52-4.92,1.52-7.57v-50.56
-                                    H735.4v20.7h34.72v28.66h-67.04v-89.01h67.04v16.51h20.7v-17.71c0-2.64-0.51-5.19-1.53-7.57
-                                    C788.29,317.56,786.88,315.48,785.11,313.74z" />
-                                        <path class="st0" d="M919.8,379.29c-1.62-2.53-3.62-4.64-5.94-6.27c-1.56-1.09-3.25-2.03-5.05-2.78c3.83-2.28,6.78-5.43,8.78-9.4
-                                    c2.36-4.7,3.56-10.82,3.56-18.17v-2.32c0-21.47-10.86-32.35-32.26-32.35h-67.61V438.4h71.28c21.41,0,32.27-10.86,32.27-32.26v-6.43
-                                    c0-4.3-0.43-8.19-1.29-11.54C922.67,384.78,921.41,381.79,919.8,379.29z M841.62,362.35v-34.02h46.74c4.45,0,7.67,1.02,9.57,3.02
-                                    c1.92,2.02,2.89,5.35,2.89,9.89v8.39c0,4.32-0.88,7.53-2.61,9.52c-1.7,1.96-4.61,3.04-8.6,3.2H841.62z M904.47,395.33v9.91
-                                    c0,4.48-0.97,7.78-2.88,9.8c-1.9,2-5.12,3.02-9.57,3.02h-50.39v-35.45h50.39c4.46,0,7.69,0.99,9.58,2.94
-                                    C903.5,387.51,904.47,390.8,904.47,395.33z" />
-                                        <polygon class="st0" points="1038.56,307.99 999.49,411.13 960.5,307.99 938.29,307.99 988.58,438.4 1010.4,438.4 1060.69,307.99
-                                    " />
-                                        <path class="st0" d="M576.25,405.6v-0.68c0-1.92-1.02-3.69-2.68-4.66l-106.22-61.88l0-26.33v-95.79c0-0.02-0.01-0.04-0.01-0.06
-                                    l0-0.71c0-1.92-1.02-3.7-2.68-4.66l-108.83-63.34c-1.67-0.97-3.73-0.98-5.4-0.02l-108.96,62.59c-1.67,0.96-2.71,2.75-2.71,4.68
-                                    l0,0.75c0,0.01,0,0.01,0,0.02v122.11L132.57,398.7c-1.67,0.96-2.71,2.75-2.7,4.68l0,0.72c0,0.02,0,0.03,0,0.05v125.99
-                                    c0,1.92,1.02,3.69,2.68,4.66l108.9,63.38c0.1,0.06,0.2,0.11,0.3,0.16l0,0c0.14,0.07,0.28,0.13,0.43,0.18
-                                    c0.03,0.01,0.05,0.02,0.08,0.03c0.28,0.11,0.56,0.18,0.85,0.24c0.01,0,0.02,0.01,0.03,0.01c0.01,0,0.03,0,0.04,0
-                                    c0.33,0.06,0.66,0.1,0.99,0.1c0.03,0,0.06-0.01,0.08-0.01c0.01,0,0.02,0,0.03,0c0.03,0,0.05-0.01,0.08-0.01
-                                    c0.22-0.01,0.43-0.02,0.65-0.06c0.05-0.01,0.09-0.02,0.14-0.03c0.19-0.04,0.39-0.08,0.58-0.13c0.05-0.02,0.1-0.04,0.15-0.05
-                                    c0.18-0.06,0.36-0.12,0.53-0.2c0.03-0.01,0.06-0.03,0.09-0.05c0.17-0.08,0.35-0.17,0.51-0.27c0.02-0.01,0.04-0.03,0.06-0.04
-                                    l106.01-60.96l106.18,61.79c0.15,0.09,0.3,0.16,0.46,0.23c0.04,0.02,0.08,0.05,0.13,0.07c0.05,0.02,0.1,0.04,0.15,0.06
-                                    c0.06,0.02,0.12,0.03,0.18,0.05c0.11,0.04,0.21,0.08,0.31,0.11c0.08,0.02,0.16,0.03,0.24,0.05c0.14,0.03,0.29,0.07,0.43,0.09
-                                    c0.13,0.02,0.25,0.03,0.38,0.04c0.15,0.01,0.3,0.04,0.46,0.04c0.93,0,1.86-0.24,2.69-0.72l108.87-62.61
-                                    c1.67-0.96,2.71-2.78,2.71-4.71v-125.9c0-0.01,0-0.01,0-0.02c0-0.01,0-0.02,0-0.03C576.25,405.63,576.25,405.61,576.25,405.6z
-                                     M456.56,315.15v23.99l-98.05,56.39V281.97l98.05-56.38L456.56,315.15z M347.67,395.47l-98.09-57.08l-0.02-113.5l98.11,57.1V395.47
-                                    z M342.29,404.87l-98.08,56.4l-98.15-57.12l98.08-56.41L342.29,404.87z M363.93,404.94l98.05-56.41l98.11,57.09l-98.08,56.4
-                                    L363.93,404.94z M353.1,272.63l-98.14-57.11l98.09-56.41l98.14,57.11L353.1,272.63z M140.66,413.53l98.1,57.09l0,112.75
-                                    l-97.99-57.03L140.66,413.53z M249.56,583.42V470.74l98.11-56.45v112.7L249.56,583.42z M358.51,527.04V414.3l98.06,57.06v112.72
-                                    L358.51,527.04z M565.46,527.71l-98.1,56.44v-112.7l98.1-56.42V527.71z" />
-                                    </g>
-                                </svg>
-                            </p>
-
-                            <!-- Hypersphere                        -->
-                            <p class="text-white tracking-widest text-sm md:text-base">HYPERSPHERE</p>
-                            <!-- <p>
-                            <svg class="filter grayscale" version="1.1" width="160" height="40" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 1000 800" style="enable-background:new 0 0 1000 800;">
-                            <style type="text/css">
-                                .st1{enable-background:new    ;}
-                                .st2{fill:#FFFFFF;}
-                            </style>
-
-                                <g class="st1">
-                                <path class="st2" d="M105,676.2h16.7v56.3h60v-56.3h16.7V805h-16.7v-57.6h-60V805H105V676.2z"/>
-                                    <path class="st2" d="M260.5,750l-44.3-73.8h19.3l20.4,36.8c1.1,2.2,8.3,15.3,12.9,23.9c5-9.6,9-16.9,12.9-23.9l20.4-36.8h19.5
-                                    L277.2,750v55h-16.7V750z"/>
-                                    <path class="st2" d="M342,676.2h41.2c22.4,0,49.3,4,49.3,39c0,33.9-26.9,37.5-49.5,37.5h-24.5V805H342V676.2z M383,738.6
-                                    c15.3,0,33.3-1.1,33.3-23.4c0-24.3-18-24.7-33.1-24.7h-24.7v48H383z"/>
-                                    <path class="st2" d="M457.3,676.2h82.1v14.9h-65.5v41.4H533v14.9h-59.1v42.7h65.5V805h-82.1V676.2z"/>
-                                    <path class="st2" d="M660.7,804.4l-0.2,0.6h-18.2c-4.2-6.4-5.5-12.5-5.5-30.4c0-17.1-6.6-23-28.9-23h-26.5V805h-16.6V676.2h41.4
-                                    c22.6,0,50.2,2.9,50.2,37.9c0,15.8-8.6,27.6-19.9,31.5c12.1,4.6,16.7,14,16.7,27.2C653.3,787.7,654.4,796.5,660.7,804.4z
-                                     M640.1,714.8c0-24.3-18.4-24.3-33.9-24.3h-24.8v46.9H606C621.7,737.5,640.1,736.2,640.1,714.8z"/>
-                                    <path class="st2" d="M675.4,764l17.7-1.8c0.6,20.1,14.7,31.1,33.9,31.1c17.5,0,32.9-6.3,32.9-24.5c0-17.8-21.7-17.7-40.3-22.3
-                                    c-19.3-4.6-40.5-12-40.5-36.2c0-26.1,23.9-36.2,44.5-36.2c25.4,0,46.6,10.3,49.5,40.1l-17.3,3.1c-0.7-18.6-12.7-29.4-32-29.4
-                                    c-13.6,0-27.6,7.2-27.6,21.7c0,14.7,18.6,19,35.3,21.9c24.7,4.2,45.6,9,45.6,36.1c0,31.3-26.1,39.7-49.7,39.7
-                                    C699.8,807.2,675.9,793.4,675.4,764z"/>
-                                    <path class="st2" d="M800.7,676.2h41.2c22.4,0,49.3,4,49.3,39c0,33.9-26.9,37.5-49.5,37.5h-24.5V805h-16.6V676.2z M841.7,738.6
-                                    c15.3,0,33.3-1.1,33.3-23.4c0-24.3-18-24.7-33.1-24.7h-24.7v48H841.7z"/>
-                                    <path class="st2" d="M912.2,676.2h16.7v56.3h60v-56.3h16.7V805h-16.7v-57.6h-60V805h-16.7V676.2z"/>
-                                    <path class="st2" d="M1037.5,676.2h82.1v14.9H1054v41.4h59.1v14.9H1054v42.7h65.5V805h-82.1V676.2z"/>
-                                    <path class="st2" d="M1240.8,804.4l-0.2,0.6h-18.2c-4.2-6.4-5.5-12.5-5.5-30.4c0-17.1-6.6-23-28.9-23h-26.5V805h-16.6V676.2h41.4
-                                    c22.6,0,50.2,2.9,50.2,37.9c0,15.8-8.6,27.6-19.9,31.5c12.1,4.6,16.7,14,16.7,27.2C1233.4,787.7,1234.5,796.5,1240.8,804.4z
-                                     M1220.2,714.8c0-24.3-18.4-24.3-33.9-24.3h-24.8v46.9h24.7C1201.8,737.5,1220.2,736.2,1220.2,714.8z"/>
-                                    <path class="st2" d="M1266,676.2h82.1v14.9h-65.5v41.4h59.1v14.9h-59.1v42.7h65.5V805H1266V676.2z"/>
-                            </g>
-                            </svg>
-                        </p> -->
-                            <p class="pt-2">
-                                <svg class="filter grayscale w-16 md:w-24 h-4 md:h-8" version="1.0"
-                                    xmlns="http://www.w3.org/2000/svg" width="100" height="30" viewBox="0 0 400 160"
-                                    preserveAspectRatio="xMidYMid meet">
-                                    <metadata>
-                                        Created by potrace 1.16, written by Peter Selinger 2001-2019
-                                    </metadata>
-                                    <g transform="translate(0.000000,160.000000) scale(0.100000,-0.100000)" fill="white"
-                                        stroke="none">
-                                        <path d="M3185 1583 c-302 -26 -593 -143 -728 -293 -188 -209 -151 -486 86
-                                        -654 135 -95 260 -140 493 -176 261 -41 479 -37 704 12 117 25 123 28 155 82
-                                        20 35 105 230 105 243 0 1 -6 3 -14 3 -8 0 -35 -26 -59 -58 -68 -88 -168 -176
-                                        -240 -212 -184 -90 -484 -73 -717 41 -89 44 -117 64 -185 133 -125 126 -168
-                                        238 -145 376 16 94 57 174 126 250 137 148 308 211 569 211 171 0 293 -22 364
-                                        -64 82 -49 160 -146 185 -229 3 -10 15 -18 26 -18 20 0 20 4 18 138 l-3 137
-                                        -125 31 c-176 45 -424 64 -615 47z" />
-                                        <path d="M50 1557 c0 -9 30 -16 98 -24 141 -16 182 -42 203 -130 5 -21 9 -204
-                                        9 -408 -1 -333 -2 -373 -18 -405 -23 -46 -105 -87 -187 -95 -83 -8 -105 -14
-                                        -105 -25 0 -6 154 -10 425 -10 247 0 425 4 425 9 0 5 -24 12 -52 16 -157 19
-                                        -209 43 -243 110 -19 38 -20 58 -18 427 1 381 2 388 24 427 34 61 73 75 204
-                                        76 102 0 113 -2 157 -28 26 -15 70 -53 98 -85 28 -31 188 -268 355 -527 167
-                                        -259 310 -471 319 -473 14 -3 73 83 518 758 182 277 266 353 403 367 37 4 55
-                                        10 55 19 0 12 -62 14 -355 14 -309 0 -355 -2 -355 -15 0 -8 3 -15 8 -15 60 -2
-                                        200 -24 222 -35 42 -22 64 -58 55 -92 -3 -16 -34 -75 -67 -133 -69 -119 -390
-                                        -610 -399 -610 -14 0 -408 610 -463 717 -44 86 10 138 159 151 39 4 69 11 68
-                                        17 -2 7 -270 11 -773 13 -628 2 -770 0 -770 -11z" />
-                                    </g>
-                                </svg>
-                            </p>
-
-                            <img src="public/img/GenBlock/genblock_dark_background.png"
-                                class="w-28 md:w-32 inline-block filter grayscale" alt="GenBlock logo">
-                            <img src="public/img/AngelDao/AngelDAO_logo.png"
-                                class="w-24 md:w-32 inline-block filter grayscale" alt="AngelDao logo">
-
-                            </p>
-                            <!--  https://www.youtube.com/watch?v=7hrv7HDK3oE -->
-                            <img src="public/img/PrimeBlock/primeblock.webp"
-                                class="w-12 md:w-16 inline-block filter grayscale" alt="Prime Block logo">
-                        </div>
-                        <div class="md:my-5 flex justify-center items-center space-x-4 flex-wrap">
-                            <img src="public/img/T3E/T3E_Logo_white.png"
-                                class="w-16 md:w-28 inline-block filter grayscale" alt="T3E logo">
-                            <img src="public/img/AmberGroup/Amber_vector_white.png"
-                                class="w-16 md:w-28 inline-block filter grayscale" alt="Amber group logo">
-                            <img src="public/img/Solidity/12.png" class="w-20 md:w-28 inline-block filter grayscale"
-                                alt="Solidity logo">
-                            <!-- Ratio finance               -->
-                            <svg class="filter grayscale w-24 h-4 md:w-40 md:h-6" viewBox="0 0 351 82" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M128.9 9.14C145.43 9.14 153.69 18.68 153.69 30.19C153.69 38.55 149.06 47 138.05 49.95L154.47 77.78H138.54L123.4 51H116.91V77.74H103.14V9.14H128.9ZM128.41 20.55H116.91V40.71H128.41C136.08 40.71 139.53 36.71 139.53 30.48C139.53 24.25 136.08 20.55 128.41 20.55V20.55Z"
-                                    fill="white" />
-                                <path
-                                    d="M187.51 22.42C196.27 22.42 202.26 26.55 205.51 31.07V23.3H219.38V77.78H205.51V69.78C202.26 74.5 196.07 78.63 187.41 78.63C173.65 78.63 162.63 67.32 162.63 50.31C162.63 33.3 173.65 22.42 187.51 22.42ZM191.05 34.51C183.68 34.51 176.7 40.02 176.7 50.35C176.7 60.68 183.7 66.57 191.05 66.57C198.63 66.57 205.51 60.87 205.51 50.57C205.51 40.27 198.63 34.51 191.05 34.51Z"
-                                    fill="white" />
-                                <path
-                                    d="M235 34.61H228.51V23.3H235V9.83H248.86V23.3H261.06V34.61H248.86V61C248.86 64.64 250.34 66.21 254.67 66.21H261.06V77.81H252.4C241.98 77.81 235 73.39 235 60.9V34.61Z"
-                                    fill="white" />
-                                <path d="M284.77 23.3H271V77.78H284.77V23.3Z" fill="white" />
-                                <path
-                                    d="M322.53 78.67C306.79 78.67 294.89 67.67 294.89 50.54C294.89 33.41 307.19 22.42 322.89 22.42C338.59 22.42 350.89 33.33 350.89 50.54C350.89 67.75 338.36 78.67 322.53 78.67ZM322.53 66.67C329.81 66.67 336.79 61.36 336.79 50.54C336.79 39.72 330 34.42 322.72 34.42C315.44 34.42 308.86 39.63 308.86 50.54C308.86 61.45 315.15 66.67 322.53 66.67Z"
-                                    fill="white" />
-                                <path
-                                    d="M82.54 32.76C82.4635 41.2576 79.0341 49.3811 72.9981 55.3628C66.9621 61.3445 58.8079 64.7003 50.31 64.7H31.72C29.5266 64.7 27.4231 63.8287 25.8722 62.2778C24.3213 60.7268 23.45 58.6233 23.45 56.43C23.45 54.2367 24.3213 52.1332 25.8722 50.5822C27.4231 49.0313 29.5266 48.16 31.72 48.16H50.31C52.7026 48.1657 55.0641 47.6181 57.21 46.56C59.9086 45.2371 62.1712 43.1678 63.7292 40.5977C65.2872 38.0276 66.0753 35.0645 66 32.06C65.8391 27.9341 64.0794 24.0326 61.0934 21.1809C58.1073 18.3291 54.1289 16.7509 50 16.78H20.36V0.240005H49.8C67.69 0.240005 82.7 14.87 82.54 32.76Z"
-                                    fill="url(#paint0_linear)" />
-                                <path
-                                    d="M66 32.45C65.9974 35.3852 65.1726 38.261 63.619 40.7514C62.0654 43.2418 59.8452 45.2471 57.21 46.54C55.0641 47.5981 52.7026 48.1457 50.31 48.14H31.72C29.5267 48.14 27.4232 49.0113 25.8722 50.5622C24.3213 52.1132 23.45 54.2167 23.45 56.41C23.45 57.496 23.6639 58.5714 24.0795 59.5748C24.4951 60.5782 25.1043 61.4898 25.8722 62.2578C26.6402 63.0257 27.5519 63.6349 28.5552 64.0505C29.5586 64.4661 30.634 64.68 31.72 64.68H50.31C58.851 64.68 67.0428 61.2898 73.0859 55.2542C79.1291 49.2185 82.5294 41.031 82.54 32.49L66 32.45Z"
-                                    fill="url(#paint1_linear)" />
-                                <path
-                                    d="M79.89 81.18H60.12L49.32 64.71L38.49 48.16L20.36 20.51V0.240005H26.87L37.7 16.78L57.21 46.55L66.31 60.44L79.89 81.18Z"
-                                    fill="url(#paint2_linear)" />
-                                <path
-                                    d="M277.88 17.2C282.547 17.2 286.33 13.4168 286.33 8.75C286.33 4.08319 282.547 0.300003 277.88 0.300003C273.213 0.300003 269.43 4.08319 269.43 8.75C269.43 13.4168 273.213 17.2 277.88 17.2Z"
-                                    fill="url(#paint3_linear)" />
-                                <path
-                                    d="M9.42999 65.54C14.4613 65.54 18.54 61.4613 18.54 56.43C18.54 51.3987 14.4613 47.32 9.42999 47.32C4.39868 47.32 0.320007 51.3987 0.320007 56.43C0.320007 61.4613 4.39868 65.54 9.42999 65.54Z"
-                                    fill="url(#paint4_linear)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear" x1="72.04" y1="63.35" x2="29.01" y2="11.24"
-                                        gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#AE67F3" />
-                                        <stop offset="0.51" stop-color="#F175CE" />
-                                        <stop offset="0.57" stop-color="#F077C6" />
-                                        <stop offset="1" stop-color="#E79062" />
-                                    </linearGradient>
-                                    <linearGradient id="paint1_linear" x1="31.45" y1="62.52" x2="75.04" y2="41.03"
-                                        gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="white" stop-opacity="0" />
-                                        <stop offset="0.54" stop-color="#231F20" stop-opacity="0.4" />
-                                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                                    </linearGradient>
-                                    <linearGradient id="paint2_linear" x1="12407.4" y1="17066.4" x2="8958.79"
-                                        y2="13995.3" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#AE67F3" />
-                                        <stop offset="0.51" stop-color="#F175CE" />
-                                        <stop offset="0.57" stop-color="#F077C6" />
-                                        <stop offset="1" stop-color="#E79062" />
-                                    </linearGradient>
-                                    <linearGradient id="paint3_linear" x1="7276.51" y1="2756.69" x2="7460.55"
-                                        y2="2452.49" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#AE67F3" />
-                                        <stop offset="0.51" stop-color="#F175CE" />
-                                        <stop offset="0.57" stop-color="#F077C6" />
-                                        <stop offset="1" stop-color="#E79062" />
-                                    </linearGradient>
-                                    <linearGradient id="paint4_linear" x1="3412.56" y1="4047.88" x2="2329.38"
-                                        y2="3453.18" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#AE67F3" />
-                                        <stop offset="0.51" stop-color="#F175CE" />
-                                        <stop offset="0.57" stop-color="#F077C6" />
-                                        <stop offset="1" stop-color="#E79062" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                            <img src="public/img/Huobi/hb-01.png" class="w-28 md:w-40 inline-block filter grayscale"
-                                alt="Huobi logo">
-                            <img src="public/img/MEXC/MEXC_Global_logo.png"
-                                class="w-14 md:w-28 inline-block filter grayscale" alt="Mexc logo">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="bg-primary text-white" aria-labelledby="footerHeading" id="contact">
-            <div class="flex justify-center flex-col items-center py-24" id="start-vesting">
-                <h2 class="text-3xl md:text-5xl font-semibold text-center px-4">Start vesting tokens on Streamflow
-                    today.</h2>
-                <a class="border-2 md:border-4 border-white rounded-full py-3 md:py-4 px-8 mt-10 text-2xl"
-                    href="https://app.streamflow.finance/vesting" target="_blank">Start Now</a>
-            </div>
-            <div class="text-center max-w-md mx-auto px-4 sm:max-w-7xl sm:px-6 pt-2 lg:px-8">
-                <div class="border-gray-200 py-7">
-                    <small class="text-base xl:text-center">
-                        Copyright <span class="inline-block" style="transform: rotate(180deg)">&copy;</span> 2022, <a
-                            href="https://streamflow.finance">Streamflow Finance</a><br />
-                        <small>Code available under <a class="text-gray-200"
-                                href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3</a></small>
-                    </small>
-                </div>
-            </div>
-        </footer>
+  </div>
+  <img src="imgs/separator.png" class="lg:hidden w-full mt-6">
+  <div class="hidden mt-6 ml-6" id="mobile-menu">
+    <div class="mb-8">
+      <h1 class="text-base text-graylight font-bold font-bold hover:text-primary ">
+        <a href="https://docs.streamflow.finance/" target=_blank>
+          Documentation
+        </a>
+        <svg class="inline-block align-super" width="8" height="8" viewBox="0 0 8 8" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.4379 1.28891C0.4379 1.6194 0.702293 1.85075 1.01626 1.86727L4.91605 1.76813L0.173508 6.51067C-0.0578359 6.74201 -0.0578359 7.0725 0.173508 7.30385L0.702293 7.83263C0.917112 8.04745 1.26413 8.06398 1.49547 7.83263L6.23801 3.09009L6.13887 6.95683C6.13887 7.28732 6.38673 7.53519 6.7007 7.55171H7.42778C7.74175 7.53519 7.98962 7.28732 7.98962 6.98988V0.54531C7.98962 0.247868 7.74175 0 7.44431 0L0.999735 0C0.702293 0 0.454425 0.247868 0.4379 0.561834V1.28891Z"
+            fill="#18A2D9" />
+        </svg>
+      </h1>
     </div>
-    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""
-            referrerpolicy="no-referrer-when-downgrade" /></noscript>
-    <script async defer src="scripts.js"></script>
+    <div class="mb-8">
+      <h1 class="text-base text-graylight font-bold font-bold hover:text-primary ">
+        <a href="#about">
+          About
+        </a>
+      </h1>
+    </div>
+    <div class="mb-8">
+      <h1 class="text-base text-graylight font-bold hover:text-primary ">
+        <a href="https://discord.gg/ZC7URcQyM7" target=_blank>
+          Careers
+        </a>
+        <p class="inline-block align-top font-bold text-xs mb-2 text-primary">
+          Hiring
+        </p>
+      </h1>
+    </div>
+    <div class="mb-8">
+      <h1 class="text-base text-graylight font-bold hover:text-primary ">
+        <a href="mailto:hello@streamflow.finance" target=_blank id="mail">
+          Contact
+        </a>
+      </h1>
+    </div>
+    <div class="mb-8">
+      <h1 class="text-base text-graylight font-bold hover:text-primary ">
+        <a href="https://discord.gg/ZC7URcQyM7" target=_blank>
+          Discord
+        </a>
+      </h1>
+    </div>
+    <div>
+      <h1 class="text-base text-graylight font-bold hover:text-primary ">
+        <a href="https://twitter.com/streamflow_fi" target=_blank>
+          Twitter
+        </a>
+      </h1>
+    </div>
+  </div>
+  <div id="content">
+    <div class="hidden lg:flex items-center p-6">
+      <img src="imgs/img-logo-1.png" alt="StreamFlow Finance logo" class="lg:hidden cursor-pointer hover:opacity-70" />
+      <img src="imgs/streamflow-logo-desktop.PNG" alt="StreamFlow Finance logo"
+        class="sm:hidden lg:block cursor-pointer hover:opacity-70" />
+      <div>
+        <a href="https://docs.streamflow.finance/" target=_blank>
+          <h1 class="lg:text-sm xl:text-base text-graylight font-bold font-bold lg:ml-0 xl:ml-8 hover:text-primary">
+            Documentation
+            <svg class="inline-block align-super" width="8" height="8" viewBox="0 0 8 8" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.4379 1.28891C0.4379 1.6194 0.702293 1.85075 1.01626 1.86727L4.91605 1.76813L0.173508 6.51067C-0.0578359 6.74201 -0.0578359 7.0725 0.173508 7.30385L0.702293 7.83263C0.917112 8.04745 1.26413 8.06398 1.49547 7.83263L6.23801 3.09009L6.13887 6.95683C6.13887 7.28732 6.38673 7.53519 6.7007 7.55171H7.42778C7.74175 7.53519 7.98962 7.28732 7.98962 6.98988V0.54531C7.98962 0.247868 7.74175 0 7.44431 0L0.999735 0C0.702293 0 0.454425 0.247868 0.4379 0.561834V1.28891Z"
+                fill="#18A2D9" />
+            </svg>
+          </h1>
+        </a>
+      </div>
+      <div>
+        <a href="#about">
+          <h1 class="lg:text-sm xl:text-base text-graylight font-bold font-bold lg:ml-8 hover:text-primary">
+            About
+          </h1>
+        </a>
+      </div>
+      <div>
+        <a href="https://discord.gg/ZC7URcQyM7" target=_blank>
+          <h1 class="lg:text-sm xl:text-base text-graylight font-bold font-bold lg:ml-8 hover:text-primary">
+            Careers
+            <p class="inline-block lg:align-super xl:align-top font-bold text-xs mb-2 text-primary">
+              Hiring
+            </p>
+          </h1>
+        </a>
+      </div>
+      <div>
+        <a href="mailto:hello@streamflow.finance" target=_blank id="mail">
+          <h1 class="lg:text-sm xl:text-base text-graylight font-bold font-bold lg:ml-8 hover:text-primary">
+            Contact
+          </h1>
+        </a>
+      </div>
+      <div class="ml-auto order-2">
+        <!--discord-->
+        <a href="https://discord.gg/ZC7URcQyM7" target=_blank>
+          <div class="text-graylight hover:text-primary  inline-block">
+            <svg class="inline-block" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.2812 11.625C14.2812 11.125 13.9062 10.7188 13.4688 10.7188C13 10.7188 12.625 11.125 12.625 11.625C12.625 12.0938 13 12.5 13.4688 12.5C13.9062 12.5 14.2812 12.0938 14.2812 11.625ZM10.5312 10.7188C10.0938 10.7188 9.71875 11.125 9.71875 11.625C9.71875 12.0938 10.0938 12.5 10.5312 12.5C11 12.5 11.3438 12.0938 11.3438 11.625C11.375 11.125 11 10.7188 10.5312 10.7188ZM19 5.65625C19 4.75 18.25 4 17.3438 4H6.625C5.71875 4 5 4.75 5 5.65625V16.4688C5 17.4062 5.71875 18.125 6.625 18.125H15.6875L15.2812 16.6562C17.625 18.8125 16.9688 18.25 19 20V5.65625ZM16.7188 13.25C16.7188 13.25 16.0312 14.4062 14.25 14.4688C14.25 14.4688 13.9688 14.125 13.7188 13.8125C14.7812 13.5312 15.1875 12.875 15.1875 12.875C14.8438 13.0938 14.5312 13.2188 14.25 13.3438C12.5312 14.0625 10.625 13.8125 9.25 13.0625C9.25 13.0312 9.0625 12.9375 8.9375 12.8438C8.9375 12.8438 9.3125 13.5 10.3438 13.8125C10.0938 14.0938 9.8125 14.4688 9.8125 14.4688C8.03125 14.4062 7.375 13.25 7.375 13.25C7.375 10.6562 8.5 8.59375 8.5 8.59375C9.65625 7.71875 10.75 7.75 10.75 7.75L10.8438 7.84375C9.40625 8.25 8.75 8.875 8.75 8.875C8.75 8.875 8.90625 8.78125 9.21875 8.65625C11.0625 7.84375 13.2812 7.84375 15.1875 8.875C15.1875 8.875 14.5625 8.28125 13.1875 7.875L13.3125 7.75C13.3125 7.75 14.4062 7.71875 15.5625 8.59375C15.5625 8.59375 16.7188 10.6562 16.7188 13.25Z"
+                fill="currentColor" />
+            </svg>
+          </div>
+        </a>
+        <!--twitter-->
+        <a href="https://twitter.com/streamflow_fi" target=_blank>
+          <div class="text-graylight hover:text-primary  inline-block">
+            <svg class="inline-block ml-[33px] mr-[28px]" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.3718 8.22651C18.998 7.75663 19.5616 7.19277 20 6.53494C19.4364 6.78554 18.7789 6.97349 18.1213 7.03614C18.8102 6.62892 19.3112 6.00241 19.5616 5.21928C18.9354 5.59518 18.2153 5.87711 17.4951 6.03373C16.8689 5.3759 16.0235 5 15.0841 5C13.2681 5 11.7965 6.47229 11.7965 8.28916C11.7965 8.53976 11.8278 8.79036 11.8904 9.04096C9.16634 8.88434 6.72407 7.56867 5.09589 5.59518C4.81409 6.06506 4.65753 6.62892 4.65753 7.25542C4.65753 8.38313 5.22114 9.38554 6.12916 9.98072C5.59687 9.9494 5.06458 9.8241 4.62622 9.57349V9.60482C4.62622 11.2024 5.75342 12.5181 7.25636 12.8313C7.00587 12.894 6.69276 12.9566 6.41096 12.9566C6.19178 12.9566 6.00391 12.9253 5.78474 12.894C6.19178 14.2096 7.41292 15.1494 8.85323 15.1807C7.72603 16.0578 6.31703 16.5904 4.78278 16.5904C4.50098 16.5904 4.25049 16.559 4 16.5277C5.44031 17.4675 7.16243 18 9.0411 18C15.0841 18 18.3718 13.0193 18.3718 8.66506C18.3718 8.50843 18.3718 8.38313 18.3718 8.22651Z"
+                fill="currentColor" />
+            </svg>
+          </div>
+        </a>
+        <a href="https://app.streamflow.finance/" target=_blank>
+          <button class="bg-primary rounded-lg hover:opacity-70 ">
+            <p class="pt-2 pb-2 pl-3 pr-3 font-semibold text-baseitems-center text-white">
+              Get Started
+            </p>
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="inline-block">
+      <h2
+        class="text-primary font-bold lg:text-xl text-2xl md:text-2xl xl:text-2xl flex items-center xl:ml-36 ml-4 mt-10 lg:mt-32">
+        #Streamors
+      </h2>
+      <h1 class="text-white font-bold text-5xl xl:text-6xl xl:ml-36 ml-4 mt-6">
+        The value <br>
+        streaming <br>
+        protocol
+      </h1>
+      <h3
+        class="text-graylight text-normal text-lg text-2xl lg:text-xl xl:text-2xl w-[300px] xl:w-[400px] xl:ml-36 ml-4 mt-8">
+        The streaming primitive unlocks efficient and
+        transparent payroll and token vesting for teams
+        on Solana
+      </h3>
+      <a href="https://app.streamflow.finance/" target=_blank>
+        <button class="xl:ml-36 ml-4 flex flex-row static bg-primary rounded-lg mt-10 hover:opacity-70 ">
+          <p class="static font-semibold text-base flex pl-4 pr-4 pt-3 pb-3 items-center text-white">
+            Get Started Now
+          </p>
+        </button>
+      </a>
+      <div class="mt-16"><span class="text-graylight xl:ml-36 ml-4 mr-3">Powered by</span> <a href="https://solana.com/"
+          target=_blank><img class="inline-block mr-4" src="imgs/solana-logo2.png"></a> <span
+          class="text-graylight mr-4">/</span><span class="text-graylight mr-3">Audited
+          by</span> <a href="https://github.com/streamflow-finance/rust-sdk/blob/main/protocol_audit.pdf"
+          target=_blank><img class="inline-block" src="imgs/opcodes.png"></a></p>
+      </div>
+    </div>
+    <div class="hidden xl:inline-block mt-16 float-right">
+      <img src="imgs/img-hero.png" />
+    </div>
+    <div class="hidden md:block mt-16 float-right lg:hidden">
+      <img src="imgs/img-hero.png" width="425" height="425">
+    </div>
+    <div class="hidden lg:block xl:hidden mt-16 float-right">
+      <img src="imgs/img-hero.png">
+    </div>
+    <div class="bg-darkblack mt-20 lg:mt-56 text-center">
+      <div>
+        <div class="lg:inline-block sm:block">
+          <h3 class="text-gray text-lg font-bold pt-8 mt-10 lg:mt-0">TVL</h3>
+          <h1 class="text-white text-3xl xl:text-4xl font-bold text-center pt-2">100 Million</h1>
+          <img src="imgs/linew.png" class="w-full lg:hidden mt-6">
+        </div>
+        <img class="hidden lg:inline-block w-0.5 h-24 mb-10 ml-40" src="imgs/rectangle60.png" />
+        <div class="lg:inline-block sm:block">
+          <h3 class="text-gray text-lg font-bold lg:ml-40 mt-10">Streams</h3>
+          <h1 class="text-white text-3xl xl:text-4xl font-bold lg:ml-40 text-center pt-2">2,500+</h1>
+          <img src="imgs/linew.png" class="w-full lg:hidden mt-6">
+        </div>
+        <img class="hidden lg:inline-block w-0.5 h-24 mb-10 ml-40" src="imgs/rectangle60.png" />
+        <div class="lg:inline-block sm:block">
+          <h3 class="text-gray text-lg font-bold lg:ml-40 mt-10">Number of Tokens</h3>
+          <h1 class="text-white text-3xl xl:text-4xl font-bold lg:ml-40 text-center pt-2">90+ Tokens</h1>
+          <img src="imgs/linew.png" class="w-full lg:hidden mt-6">
+        </div>
+      </div>
+
+      <div class="text-center">
+        <h2 class="text-primary text-2xl font-bold pt-[120px]">Our Investors</h2>
+        <h1 class="text-white font-bold text-4xl xl:text-5xl pt-6">Backed By The Best</h1>
+      </div>
+      <div class="mt-28">
+        <img src="imgs/img-jump-crypto-1.png" class="inline-block ">
+      </div>
+      <div class="mt-20">
+        <img src="imgs/img-Solana-Ventures-1.png" class="hidden lg:inline-block mr-16">
+        <img src="imgs/img-gbv-1.png" class="hidden lg:inline-block">
+        <div class="block lg:hidden">
+          <img src="imgs/img-Solana-Ventures-2.png" class="md:pr-20 pr-5 inline-block lg:hidden">
+          <img src="imgs/img-gbv-2.png" class="inline-block lg:hidden">
+        </div>
+        <div class="block lg:hidden mt-10">
+          <img src="imgs/img-paribus-ventures-1-mobile.png" class="md:pr-20 pr-5 inline-block lg:hidden">
+          <img src="imgs/img-MEXC-Labs-1-mobile.png" class="inline-block lg:hidden">
+        </div>
+        <img src="imgs/img-MEXC-Labs-1.png" class="hidden lg:inline-block ml-16 ">
+        <img src="imgs/img-paribus-ventures-1.png" class="hidden lg:inline-block ml-16">
+      </div>
+      <div class="mt-10 lg:mt-20">
+        <div class="block lg:hidden">
+          <img src="imgs/img-hupersphere-1-mobile.png" class="md:pr-20 pr-5 inline-block lg:hidden">
+          <img src="imgs/img-ivc-1-mobile.png" class="inline-block lg:hidden">
+        </div>
+        <div class="block lg:hidden mt-10">
+          <img src="imgs/img-genblock-1-mobile.png" class="md:pr-10 md:pr-20 pr-5 inline-block lg:hidden">
+          <img src="imgs/img-AngelDAO-1-mobile.png" class="inline-block lg:hidden">
+        </div>
+        <img src="imgs/img-hupersphere-1.png" class="hidden lg:inline-block mr-0 lg:mr-16">
+        <img src="imgs/img-ivc-1.png" class="hidden lg:inline-block">
+        <img src="imgs/img-genblock-1.png" class="hidden lg:inline-block ml-0 lg:ml-16">
+        <img src="imgs/img-AngelDAO-1.png" class="hidden lg:inline-block ml-0 lg:ml-16">
+      </div>
+      <div class="mt-20 pb-24">
+        <div class="block lg:hidden mt-10">
+          <img src="imgs/img-Amber-1-mobile.png" class="md:pr-20 pr-5 inline-block lg:hidden">
+          <img src="imgs/img-solidity-ventures-1-mobile.png" class="inline-block lg:hidden">
+        </div>
+        <div class="block lg:hidden mt-10">
+          <img src="imgs/img-ratio-1-mobile.png" class="md:pr-20 pr-5 inline-block lg:hidden">
+          <img src="imgs/img-huobi-ventures-1-mobile.png" class="inline-block lg:hidden">
+        </div>
+        <div class="block lg:hidden mt-10">
+          <img src="imgs/img-T3E-1-mobile.png" class="ml-auto mr-auto block lg:hidden">
+        </div>
+        <img src="imgs/img-T3E-1.png" class="hidden lg:inline-block mr-0 lg:mr-16">
+        <img src="imgs/img-Amber-1.png" class="hidden lg:inline-block">
+        <img src="imgs/img-solidity-ventures-1.png" class="hidden lg:inline-block ml-0 lg:ml-16">
+        <img src="imgs/img-ratio-1.png" class="hidden lg:inline-block ml-0 lg:ml-16">
+        <img src="imgs/img-huobi-ventures-1.png" class="hidden lg:inline-block ml-0 lg:ml-16">
+      </div>
+    </div>
+    <div class="bg-fieldblack">
+      <h2 class="text-primary text-2xl font-bold text-center pt-[120px]">Overview</h2>
+      <h1 class="text-white font-bold text-4xl xl:text-5xl pt-6 text-center">What can you do with Streamflow?</h1>
+      <h3
+        class="text-graylight text-base pt-6 text-center md:w-[600px] lg:w-[900px] xl:w-[1140px] ml-4 mr-4 md:ml-auto md:mr-auto">
+        Streamflow provides a product
+        suite
+        every organization can use to manage and stream value on Solana. This suite includes token vesting, payroll
+        and<br>
+        batch payments all on top of a secure multisig wallet. The Streamflow real-time streaming vision is
+        ultra-flexible
+        and efficient.</h3>
+      <div>
+        <div class="block lg:flex justify-center items-center">
+          <div class="flex justify-center lg:inline-block">
+            <img src="imgs/img-feature-1.png" class="hidden md:block lg:inline-block">
+            <img src="imgs/img-feature-1-mobile.png" class="md:hidden">
+          </div>
+          <div>
+            <h2 class="md:ml-40 text-primary text-lg font-bold pb-4 ml-4 lg:ml-0">Vesting</h2>
+            <h1 class="md:ml-40 text-white font-bold lg:text-4xl pb-4 text-2xl ml-4 lg:ml-0">Token Vesting</h1>
+            <div class="md:flex md:justify-center">
+              <h3 class="text-graylight text-base pb-4 ml-4 mr-4 lg:ml-0 lg:mr-14">Token vesting
+                with Streamflow
+                offers
+                powerful features like:<br> cliff dates, optionally transfer and cancel active streams,<br> automatic
+                withdrawals to
+                recipient wallet and much more.<br>
+                <a href="https://streamflow.medium.com/how-to-set-up-token-vesting-on-solana-with-a-cliff-time-using-streamflow-6368e3107214"
+                  target=_blank><span class="text-primary font-bold hover:opacity-70 cursor-pointer">Learn
+                    More</span></a>
+              </h3>
+            </div>
+            <!--<h3 class="text-graylight text-base italic text-left ml-4 mr-4 lg:ml-0 lg:mr-0">“Lorem ipsum dolor sit amet,
+              consectetur
+              adipiscing
+              elit,
+              sed
+              do<br> eiusmod tempor.”
+            </h3>
+            <div class="inline-block pt-4 ml-4 lg:ml-0">
+              <img src="imgs/Ellipse 6.png" class="inline-block">
+            </div>
+            <div class="inline-block align-middle ml-2">
+              <h3 class="text-white font-bold text-xs">Name Surname</h3>
+              <h4 class="text-gray text-xs">Position at company</h4>
+            </div>-->
+          </div>
+        </div>
+        <div class="block lg:flex justify-center items-center">
+          <div class="flex justify-center lg:hidden">
+            <img src="imgs/img-feature-2-mobile.png" class="block md:hidden">
+            <img src="imgs/img-feature-2.png" class="hidden md:block lg:hidden">
+          </div>
+          <div class="ml-0 lg:ml-24">
+            <h2 class="md:ml-40 text-primary text-lg font-bold pb-4 ml-4 lg:ml-0">Payroll</h2>
+            <h1 class="md:ml-40 text-white font-bold lg:text-4xl pb-4 text-2xl ml-4 lg:ml-0">Stream Payments</h1>
+            <div class="md:flex md:justify-center">
+              <h3 class=" lg:block text-graylight text-base pb-4 ml-4 mr-4 lg:ml-0 lg:mr-0">
+                Streaming payments using Streamflow
+                offer
+                a great<br>
+                opportunity for payroll. The recipient can withdraw their <br> salary as they
+                earn it, or wait and have
+                it automatically sent<br>
+                to their wallet at the end of the payment period.
+                <a href="https://streamflow.medium.com/how-to-create-payroll-streams-using-streamflow-944e45ed5a07"
+                  target=_blank><span class="text-primary font-bold hover:opacity-70 cursor-pointer">Learn
+                    More</span></a>
+              </h3>
+            </div>
+            <!--<h3 class="text-graylight text-base italic text-left ml-4 mr-4 lg:ml-0 lg:mr-0">“Lorem ipsum dolor sit amet,
+              consectetur
+              adipiscing
+              elit,
+              sed
+              do<br> eiusmod tempor.”
+            </h3>
+            <div class="inline-block pt-4 ml-4 lg:ml-0">
+              <img src="imgs/Ellipse 7.png" class="inline-block">
+            </div>
+            <div class="inline-block align-middle ml-2">
+              <h3 class="text-white font-bold text-xs">Name Surname</h3>
+              <h4 class="text-gray text-xs">Position at company</h4>
+            </div>-->
+          </div>
+          <div class="hidden lg:inline-block">
+            <img src="imgs/img-feature-2.png" class="inline-block">
+          </div>
+        </div>
+        <div class="block lg:flex justify-center  items-center">
+          <div class="flex justify-center lg:inline-block">
+            <img src="imgs/img-feature-3.png" class="hidden md:block lg:inline-block md:pr-20 lg:pr-14">
+            <img src="imgs/img-feature-3-mobile.png" class="block md:hidden">
+          </div>
+          <div>
+            <div class="md:ml-36 lg:ml-0 lg:block">
+              <h2 class="text-primary text-lg font-bold pb-4 inline-block ml-4 lg:ml-0">Multi-Signature Wallet</h2>
+              <div class="bg-orangeop ml-3 inline-block rounded-lg w-[109px] h-[24px] text-center align-middle">
+                <p class="text-orange text-[11px] p-1 font-semibold tracking-widest">COMING SOON</p>
+              </div>
+            </div>
+            <h1 class="md:ml-40 lg:block text-white font-bold lg:text-4xl pb-4 text-2xl ml-4 lg:ml-0">
+              Multisig
+            </h1>
+            <h3 class="md:flex md:justify-center lg:block text-graylight text-base pb-4 ml-4 mr-4 lg:ml-0 lg:mr-24">
+              Streamflow
+              offers a powerful and
+              secure
+              multisig wallet for<br>
+              teams to manage their payments and vesting with<br>
+              confidence including a clear summary of
+              their open streams,<br>
+              signers and more.
+            </h3>
+            <!--<h3 class="text-graylight text-base italic text-left ml-4 mr-4 lg:ml-0 lg:mr-0">“Lorem ipsum dolor sit amet,
+              consectetur
+              adipiscing
+              elit,
+              sed
+              do<br> eiusmod tempor.”
+            </h3>
+            <div class="inline-block pt-4 ml-4 lg:ml-0">
+              <img src="imgs/Ellipse 7.png" class="inline-block">
+            </div>
+            <div class="inline-block align-middle ml-2">
+              <h3 class="text-white font-bold text-xs">Name Surname</h3>
+              <h4 class="text-gray text-xs">Position at company</h4>
+            </div>-->
+          </div>
+        </div>
+        <div class="block lg:flex justify-center items-center">
+          <div class="ml-0 lg:ml-24">
+            <div class="flex justify-center lg:hidden">
+              <img src="imgs/img-feature-4-mobile.png" class="md:hidden">
+              <img src="imgs/img-feature-4.png" class="hidden md:block lg:hidden">
+            </div>
+            <h2 class="md:ml-40 lg:block text-yellow text-lg font-bold pb-4 ml-4 lg:ml-0">Sandbox</h2>
+            <h1 class="md:ml-40 lg:block text-white font-bold lg:text-4xl pb-4 text-2xl ml-4 lg:ml-0">
+              Test In
+              Devnet Mode</h1>
+            <h3 class="md:flex md:justify-center text-graylight text-base pb-4 ml-4 mr-4 lg:ml-0 lg:mr-0">It's
+              important
+              to
+              feel comfortable when
+              creating large value<br>
+              contracts. For this reason we offer a Sandbox mode to<br>
+              create test contracts and ensure
+              everything is perfect before<br>
+              creating on Mainnet.
+            </h3>
+            <!--<h3 class="text-graylight text-base italic text-left ml-4 mr-4 lg:ml-0 lg:mr-0">“Lorem ipsum dolor sit amet,
+              consectetur
+              adipiscing
+              elit,
+              sed
+              do<br> eiusmod tempor.”
+            </h3>
+            <div class="inline-block pt-4 ml-4 lg:ml-0">
+              <img src="imgs/Ellipse 7.png" class="inline-block">
+            </div>
+            <div class="inline-block align-middle ml-2">
+              <h3 class="text-white font-bold text-xs">Name Surname</h3>
+              <h4 class="text-gray text-xs">Position at company</h4>
+            </div>-->
+          </div>
+          <div class="inline-block">
+            <img src="imgs/img-feature-4.png" class="hidden lg:inline-block">
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="mt-20 lg:mt-0 text-white font-bold text-2xl text-center ml-4 mr-4 lg:ml-0 lg:mr-0">
+          Ready to start streaming tokens like it's 2030?
+        </h2>
+        <div class="text-center mb-20">
+          <a href="https://app.streamflow.finance/" target=_blank>
+            <button class="bg-primary rounded-lg mt-6 hover:opacity-70 ">
+              <p class="font-semibold text-base flex pl-4 pr-4 pt-3 pb-3 items-center text-white">
+                Get Started Now
+              </p>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div style="background: linear-gradient(180deg, #131722 50%, #1c2530 50%);">
+      <h2 class="text-green text-2xl font-bold text-center pt-[120px]">Developer</h2>
+      <h1 class="text-white font-bold text-4xl xl:text-5xl pt-6 text-center">Build on Streamflow</h1>
+      <h3
+        class="text-graylight text-base pt-6 text-center md:w-[600px] lg:w-[900px] xl:w-[1140px] ml-4 mr-4 md:ml-auto md:mr-auto">
+        We believe the streaming primitive
+        has so many more
+        use cases
+        to unlock. We offer an SDK and encourage any developers to build with us.</h3>
+      <div class="block lg:flex justify-center items-center mt-8 text-center ">
+        <div class="block lg:inline-block">
+          <svg class="inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8 0C3.58065 0 0 3.58065 0 8C0 12.4194 3.58065 16 8 16C12.4194 16 16 12.4194 16 8C16 3.58065 12.4194 0 8 0ZM10.9677 10.0968L10.3226 10.9032C10.2258 11.0323 10.0968 11.129 9.90323 11.129C9.80645 11.129 9.67742 11.0645 9.6129 11L7.45161 9.3871C7.12903 9.16129 6.96774 8.80645 6.96774 8.3871V3.35484C6.96774 3.09677 7.19355 2.83871 7.48387 2.83871H8.51613C8.77419 2.83871 9.03226 3.09677 9.03226 3.35484V8L10.9032 9.3871C11 9.48387 11.0968 9.6129 11.0968 9.77419C11.0968 9.90323 11.0323 10.0323 10.9677 10.0968Z"
+              fill="#18A2D9" />
+          </svg>
+
+          <span class="text-xs ml-2 text-graylight">Pay per time (gym, parking meter)</span>
+        </div>
+        <div class="block lg:inline-block ml-0 lg:ml-12 xl:ml-24">
+          <svg class="inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8 3C4.4375 3 1.5 5.90625 1.5 9.5C1.5 13.0625 4.4375 16 8 16C11.5938 16 14.5 13.0625 14.5 9.5C14.5 5.90625 11.5938 3 8 3ZM8.71875 12.9375V13.4688C8.71875 13.75 8.46875 14 8.1875 14H7.84375C7.5625 14 7.3125 13.75 7.3125 13.4688V12.9375C6.84375 12.9062 6.375 12.75 5.96875 12.4687C5.8125 12.3125 5.78125 12.0625 5.9375 11.9062L6.4375 11.4375C6.5625 11.3125 6.75 11.3125 6.875 11.4062C7.0625 11.5 7.25 11.5625 7.4375 11.5625H8.65625C8.9375 11.5625 9.15625 11.3125 9.15625 11C9.15625 10.75 9 10.5 8.78125 10.4375L6.84375 9.84375C6.03125 9.625 5.46875 8.84375 5.46875 7.96875C5.46875 6.90625 6.3125 6.0625 7.3125 6.03125V5.5C7.3125 5.21875 7.5625 5 7.84375 5H8.1875C8.46875 5 8.71875 5.21875 8.71875 5.5V6.03125C9.1875 6.0625 9.65625 6.21875 10.0625 6.53125C10.2188 6.65625 10.25 6.90625 10.0938 7.0625L9.59375 7.53125C9.46875 7.65625 9.28125 7.65625 9.15625 7.5625C8.96875 7.46875 8.78125 7.40625 8.59375 7.40625H7.375C7.09375 7.40625 6.875 7.65625 6.875 7.96875C6.875 8.25 7.03125 8.46875 7.25 8.53125L9.1875 9.125C10 9.34375 10.5625 10.125 10.5625 11C10.5625 12.0625 9.71875 12.9062 8.71875 12.9375ZM1 5H2.03125C2.65625 4.1875 3.4375 3.5 4.3125 3H2.3125C2.15625 3 2.03125 2.875 2.03125 2.75V2.25C2.03125 2.09375 2.15625 2 2.3125 2L13.7188 2C13.875 2 14 2.09375 14 2.25V2.75C14 2.875 13.875 3 13.7188 3H11.7188C12.5938 3.5 13.375 4.1875 14 5H15C15.5625 5 16 4.53125 16 4L16 1C16 0.4375 15.5625 0 15 0L1 0C0.46875 0 0 0.4375 0 1V4C0 4.53125 0.46875 5 1 5Z"
+              fill="#18A2D9" />
+          </svg>
+
+          <span class="text-xs ml-2 text-graylight">Milestone based donation</span>
+        </div>
+        <div class="block lg:inline-block ml-0 lg:ml-12 xl:ml-24">
+          <svg class="inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.397855 8.65203L7.66845 11.9317C7.88688 12.0254 8.10531 12.0254 8.32374 11.9317L15.5943 8.65203C16.1248 8.40215 16.1248 7.62128 15.5943 7.40264L8.32374 4.09175C8.23013 4.06052 8.10531 4.02928 8.0117 4.02928C7.88688 4.02928 7.76207 4.06052 7.66845 4.09175L0.397855 7.40264C-0.132618 7.62128 -0.132618 8.40215 0.397855 8.65203ZM9.50951 1.99902H15.5007C15.7504 1.99902 16 1.78038 16 1.49927V0.499756C16 0.249878 15.7504 0 15.5007 0H9.50951C9.22867 0 9.01024 0.249878 9.01024 0.499756V1.49927C9.01024 1.78038 9.22867 1.99902 9.50951 1.99902ZM15.5943 11.4007L13.7845 10.5573L8.7294 12.8687C8.51097 12.9624 8.26134 13.0249 8.0117 13.0249C7.73086 13.0249 7.48123 12.9624 7.2628 12.8687L2.2077 10.5573L0.397855 11.4007C-0.132618 11.6193 -0.132618 12.4002 0.397855 12.6501L7.66845 15.9297C7.88688 16.0234 8.10531 16.0234 8.32374 15.9297L15.5943 12.6501C16.1248 12.4002 16.1248 11.6193 15.5943 11.4007Z"
+              fill="#18A2D9" />
+          </svg>
+
+          <span class="text-xs ml-2 text-graylight">Work trails with cancellation</span>
+        </div>
+        <div class="block lg:inline-block ml-0 lg:ml-12 xl:ml-24">
+          <svg class="inline-block" width="12" height="16" viewBox="0 0 12 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.25 0L0.75 0C0.3125 0 0 0.34375 0 0.75L0 15.25C0 15.6875 0.3125 16 0.75 16H11.25C11.6562 16 12 15.6875 12 15.25V0.75C12 0.34375 11.6562 0 11.25 0ZM4 12.5C4 12.7812 3.75 13 3.5 13H2.5C2.21875 13 2 12.7812 2 12.5V11.5C2 11.25 2.21875 11 2.5 11H3.5C3.75 11 4 11.25 4 11.5V12.5ZM4 8.5C4 8.78125 3.75 9 3.5 9H2.5C2.21875 9 2 8.78125 2 8.5V7.5C2 7.25 2.21875 7 2.5 7H3.5C3.75 7 4 7.25 4 7.5V8.5ZM4 4.5C4 4.78125 3.75 5 3.5 5H2.5C2.21875 5 2 4.78125 2 4.5V3.5C2 3.25 2.21875 3 2.5 3H3.5C3.75 3 4 3.25 4 3.5V4.5ZM10 12.25C10 12.4062 9.875 12.5 9.75 12.5H5.25C5.09375 12.5 5 12.4062 5 12.25V11.75C5 11.625 5.09375 11.5 5.25 11.5H9.75C9.875 11.5 10 11.625 10 11.75V12.25ZM10 8.25C10 8.40625 9.875 8.5 9.75 8.5H5.25C5.09375 8.5 5 8.40625 5 8.25V7.75C5 7.625 5.09375 7.5 5.25 7.5H9.75C9.875 7.5 10 7.625 10 7.75V8.25ZM10 4.25C10 4.40625 9.875 4.5 9.75 4.5H5.25C5.09375 4.5 5 4.40625 5 4.25V3.75C5 3.625 5.09375 3.5 5.25 3.5H9.75C9.875 3.5 10 3.625 10 3.75V4.25Z"
+              fill="#18A2D9" />
+          </svg>
+          <span class="text-xs ml-2 text-graylight">Vesting contract auctions</span>
+        </div>
+      </div>
+      <div class="pt-[160px] md:pt-0">
+        <img src="imgs/img-integrations-1.png" class="hidden md:block ml-auto mr-auto">
+      </div>
+
+      <div class="bg-fieldblack">
+        <h2 class="text-primary text-2xl font-bold text-center">Verified and Acknowledged</h2>
+        <h1 class="text-white font-bold text-4xl xl:text-5xl pt-6 text-center">Find Us On Solana Docs</h1>
+        <h3
+          class="text-graylight text-base pt-6 text-center md:w-[600px] lg:w-[900px] xl:w-[1140px] ml-4 mr-4 md:ml-auto md:mr-auto">
+          You can find Streamflow listed
+          in
+          the official Solana documentation under token vesting. We have worked hard to drive the streaming primitive
+          forward<br>
+          on Solana and are honored to be acknowledged.
+        </h3>
+        <a href="https://spl.solana.com/token#2-streamflow-timelock" target=_blank
+          class="w-fit ml-auto mr-auto group hidden mt-10 md:block">
+          <div>
+            <h2 class="bg-graydark rounded-lg text-white text-base p-4 cursor-pointer">
+              <img src="imgs/solana.png" class="inline-block mr-3">
+              <span class="group-hover:text-primary"><span
+                  class="text-gray group-hover:text-primary">https://</span>spl.solana.com/token#2-streamflow-timelock</span>
+              <svg class="inline-block ml-4 group-hover:text-primary" width="12" height="12" viewBox="0 0 12 12"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.65685 1.93337C0.65685 2.42911 1.05344 2.77612 1.52439 2.80091L7.37408 2.65219L0.260262 9.766C-0.0867538 10.113 -0.0867538 10.6088 0.260262 10.9558L1.05344 11.7489C1.37567 12.0712 1.89619 12.096 2.24321 11.7489L9.35702 4.63513L9.2083 10.4352C9.2083 10.931 9.5801 11.3028 10.0511 11.3276H11.1417C11.6126 11.3028 11.9844 10.931 11.9844 10.4848V0.817965C11.9844 0.371802 11.6126 0 11.1665 0H1.4996C1.05344 0 0.681637 0.371802 0.65685 0.842752V1.93337Z"
+                  fill="currentColor" />
+              </svg>
+            </h2>
+          </div>
+        </a>
+        <a href="https://spl.solana.com/token#2-streamflow-timelock" target=_blank
+          class="w-fit ml-auto mr-auto mt-10 group block md:hidden">
+          <div>
+            <h2 class="bg-graydark rounded-lg text-white text-base p-4 cursor-pointer">
+              <img src="imgs/solana.png" class="inline-block mr-3">
+              <span class="text-graylight group-hover:text-primary">https://</span>spl.solana.com/toke...
+              <svg class="inline-block ml-4 group-hover:text-primary" width="12" height="12" viewBox="0 0 12 12"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.65685 1.93337C0.65685 2.42911 1.05344 2.77612 1.52439 2.80091L7.37408 2.65219L0.260262 9.766C-0.0867538 10.113 -0.0867538 10.6088 0.260262 10.9558L1.05344 11.7489C1.37567 12.0712 1.89619 12.096 2.24321 11.7489L9.35702 4.63513L9.2083 10.4352C9.2083 10.931 9.5801 11.3028 10.0511 11.3276H11.1417C11.6126 11.3028 11.9844 10.931 11.9844 10.4848V0.817965C11.9844 0.371802 11.6126 0 11.1665 0H1.4996C1.05344 0 0.681637 0.371802 0.65685 0.842752V1.93337Z"
+                  fill="currentColor" />
+              </svg>
+            </h2>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-graydark mt-[120px] pb-[160px]" id="about">
+      <h2 class="text-primary text-2xl font-bold text-center pt-[120px]">Meet The Stream Team</h2>
+      <h1 class="text-white font-bold text-4xl xl:text-5xl pt-6 text-center">About</h1>
+      <h3
+        class="text-graylight text-base pt-6 text-center md:w-[600px] lg:w-[900px] xl:w-[1140px] ml-4 mr-4 md:ml-auto md:mr-auto">
+        The Streamflow team is a
+        passionate,
+        dedicated team of glass eaters with a strong belief in the larger vision of the streaming primitive and driven
+        to<br>
+        unlock this value for the world. </h3>
+      <div class="flex justify-evenly lg:hidden mt-20">
+        <div class="inline-block w-36 h-40 md:w-56 md:h-40 bg-fieldblack rounded-lg mr-4">
+          <img src="imgs/watson.png" class="ml-auto mr-auto pt-4 pb-4">
+          <div class="text-center">
+            <h3 class="text-white font-bold text-sm pb-1">@watson</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">Software <br> Development</h3>
+          </div>
+        </div>
+        <div class="inline-block w-36 h-40 md:w-56 md:h-40 bg-fieldblack rounded-lg">
+          <img src="imgs/dule.png" class="ml-auto mr-auto pt-4 pb-4">
+          <div class="text-center">
+            <h3 class="text-white font-bold text-sm pb-1">@duleu</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">QA, Automation,<br>Support</h3>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-evenly lg:hidden mt-4">
+        <div class="inline-block w-36 h-40 md:w-56 md:h-40 bg-fieldblack rounded-lg mr-4">
+          <img src="imgs/img-angelo-2.png" class="ml-auto mr-auto pt-4 pb-4">
+          <div class="text-center">
+            <h3 class="text-white font-bold text-sm pb-1">@angelo</h3>
+            <h3 class="text-graylight text-xs mt-1 ">Marketing</h3>
+          </div>
+        </div>
+        <div class="inline-block w-36 h-40 md:w-56 md:h-40 bg-fieldblack rounded-lg">
+          <img src="imgs/img-lui-2.png" class="ml-auto mr-auto pt-4 pb-4">
+          <div class="text-center">
+            <h3 class="text-white font-bold text-sm pb-1">@lui</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">Product</h3>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-evenly lg:hidden mt-4">
+        <div class="inline-block w-36 h-40 md:w-56 md:h-40 bg-fieldblack rounded-lg mr-4">
+          <img src="imgs/markiz.png" class="ml-auto mr-auto pt-4 pb-4">
+          <div class="text-center">
+            <h3 class="text-white font-bold text-sm pb-1">@markiz</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">Design</h3>
+          </div>
+        </div>
+        <div class="block w-36 h-40 md:w-56 md:h-40 bg-fieldblack rounded-lg">
+          <img src="imgs/img-goldenninja-1.png" class="ml-auto mr-auto pt-4 pb-4">
+          <div class="text-center">
+            <h3 class="text-white font-bold text-sm pb-1">@goldenninja</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">Intern</h3>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-evenly lg:hidden mt-4">
+        <div class="inline-block w-36 h-40 md:w-56 md:h-40 bg-fieldblack rounded-lg mr-4">
+          <img src="imgs/img-mrsohail94.png" class="ml-auto mr-auto pt-4 pb-4">
+          <div class="text-center">
+            <h3 class="text-white font-bold text-sm pb-1">@MrSohail94</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">Community</h3>
+          </div>
+        </div>
+        <div class="block w-36 h-40 md:w-56 md:h-40 bg-fieldblack rounded-lg">
+          <img src="imgs/imprfekt.png" class="ml-auto mr-auto pt-4 pb-4">
+          <div class="text-center">
+            <h3 class="text-white font-bold text-sm pb-1">@imprfekt</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">The Glue aka CEO</h3>
+          </div>
+        </div>
+      </div>
+      <div class="hidden lg:flex justify-center mt-20">
+        <div class="inline-block w-28 lg:w-60 xl:w-64 bg-fieldblack rounded-lg lg:mr-2 xl:mr-5">
+          <img src="imgs/watson.png" class="inline-block lg:mr-2 lg:ml-2 xl:mr-4 xl:ml-4 mt-4 mb-4">
+          <div class="inline-block align-middle">
+            <h3 class="text-white font-bold text-sm">@watson</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">Software Development</h3>
+          </div>
+        </div>
+        <div class="inline-block w-28 lg:w-60 xl:w-64 bg-fieldblack rounded-lg lg:mr-2 xl:mr-5">
+          <img src="imgs/dule.png" class="inline-block lg:mr-2 lg:ml-2 xl:mr-4 xl:ml-4 mt-4 mb-4">
+          <div class="inline-block align-middle">
+            <h3 class="text-white font-bold text-sm">@duleu</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">QA, Automation, Support</h3>
+          </div>
+        </div>
+        <div class="inline-block w-28 lg:w-60 xl:w-64 bg-fieldblack rounded-lg lg:mr-2 xl:mr-5">
+          <img src="imgs/img-angelo-1.png" class="inline-block lg:mr-2 lg:ml-2 xl:mr-4 xl:ml-4 mt-4 mb-4">
+          <div class="inline-block align-middle">
+            <h3 class="text-white font-bold text-sm">@angelo</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">Marketing</h3>
+          </div>
+        </div>
+        <div class="inline-block w-28 lg:w-60 xl:w-64 bg-fieldblack rounded-lg">
+          <img src="imgs/img-lui-1.png" class="inline-block lg:mr-2 lg:ml-2 xl:mr-4 xl:ml-4 mt-4 mb-4">
+          <div class="inline-block align-middle">
+            <h3 class="text-white font-bold text-sm">@lui</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">Product</h3>
+          </div>
+        </div>
+      </div>
+      <div class="hidden lg:flex justify-center mt-5">
+        <div class="inline-block w-28 lg:w-60 xl:w-64 bg-fieldblack rounded-lg lg:mr-2 xl:mr-5">
+          <img src="imgs/markiz.png" class="inline-block lg:mr-2 lg:ml-2 xl:mr-4 xl:ml-4 mt-4 mb-4">
+          <div class="inline-block align-middle">
+            <h3 class="text-white font-bold text-sm">@markiz</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">Design</h3>
+          </div>
+        </div>
+        <div class="inline-block w-28 lg:w-60 xl:w-64 bg-fieldblack rounded-lg lg:mr-2 xl:mr-5">
+          <img src="imgs/img-goldenninja-1.png" class="inline-block lg:mr-2 lg:ml-2 xl:mr-4 xl:ml-4 mt-4 mb-4">
+          <div class="inline-block align-middle">
+            <h3 class="text-white font-bold text-sm">@goldenninja</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">Intern</h3>
+          </div>
+        </div>
+        <div class="inline-block w-28 lg:w-60 xl:w-64 bg-fieldblack rounded-lg lg:mr-2 xl:mr-5">
+          <img src="imgs/img-mrsohail94.png" class="inline-block lg:mr-2 lg:ml-2 xl:mr-4 xl:ml-4 mt-4 mb-4">
+          <div class="inline-block align-middle">
+            <h3 class="text-white font-bold text-sm">@MrSohail94</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">Community</h3>
+          </div>
+        </div>
+        <div class="inline-block w-28 lg:w-60 xl:w-64 bg-fieldblack rounded-lg">
+          <img src="imgs/imprfekt.png" class="inline-block lg:mr-2 lg:ml-2 xl:mr-4 xl:ml-4 mt-4 mb-4">
+          <div class="inline-block align-middle">
+            <h3 class="text-white font-bold text-sm">@imprfekt</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">The Glue aka CEO</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-fieldblack">
+      <h2 class="text-primary text-2xl font-bold text-center pt-[120px]">What Others Say</h2>
+      <h1 class="text-white font-bold text-4xl xl:text-5xl pt-6 text-center">Testimonials</h1>
+      <h3
+        class="text-graylight text-base pt-6 text-center md:w-[600px] md:w-[600px] lg:w-[900px] xl:w-[1140px] ml-4 mr-4 md:ml-auto md:mr-auto">
+        While on a mission to
+        deliver
+        best-in-class token vesting and streaming payments, we've been lucky to have some fantastic customers.<br>
+        They've said some nice things about us along the way.
+      </h3>
+      <div class="hidden lg:grid xl:w-[1140px] lg:w-[900px] grid-cols-3 gap-5 mt-20 ml-auto mr-auto">
+        <div class="relative col-span-1 row-span-2 bg-graydark p-4 rounded-lg">
+          <img src="imgs/Fatassmonkey.png" class="inline-block">
+          <div class="inline-block align-middle ml-4">
+            <a href="https://twitter.com/Fatassmonkey2" target=_blank>
+              <h3 class="text-white font-bold hover:text-primary">Fatassmonkey</h3>
+            </a>
+            <a href="https://twitter.com/Fatassmonkey2" target=_blank>
+              <h4 class="text-graylight text-sm hover:text-primary">@Fatassmonkey2</h4>
+            </a>
+          </div>
+          <h4 class="text-white pt-4 leading-6 text-sm">Keep your eye out on <span class="text-primary font-bold"><a
+                href="https://twitter.com/streamflow_fi" target=_blank>@streamflow_fi</a></span>,
+            we’re stoked for the things the team
+            has planned, which will be
+            announced in due time. <span class="text-primary font-bold"><a href="https://twitter.com/t3eventures"
+                target=_blank>@t3eventures</a></span>
+            will continue to work closely and support the team in bringing more innovative ways to streaming
+            on
+            <span class="text-primary font-bold"><a href="https://twitter.com/solana" target=_blank>@solana</a></span>.
+            Stay tuned!
+          </h4>
+          <div class="absolute bottom-0 mb-4">
+            <a href="https://twitter.com/Fatassmonkey2/status/1501443694058115073" target=_blank>
+              <h5 class="text-graylight text-xs hover:text-primary">7:24 AM · Mar 9, 2022</h5>
+            </a>
+          </div>
+        </div>
+        <div class="relative col-span-1 bg-graydark p-4 rounded-lg">
+          <img src="imgs/huobiventures.png" class="inline-block">
+          <div class="inline-block align-middle ml-4">
+            <a href="https://twitter.com/HuobiVentures" target=_blank>
+              <h3 class="text-white font-bold hover:text-primary">Huobi Ventures</h3>
+            </a>
+            <a href="https://twitter.com/HuobiVentures" target=_blank>
+              <h4 class="text-graylight text-sm hover:text-primary">@HuobiVentures</h4>
+            </a>
+          </div>
+          <h4 class="text-white pt-4 leading-6 text-sm">Congrats! ! <span class="text-primary font-bold"><a
+                href="https://twitter.com/streamflow_fi" target=_blank>@streamflow_fi</a></span>
+            Happy to see our new partner had raised 3.1M.
+          </h4>
+          <div class="absolute bottom-0 mb-4">
+            <a href="https://twitter.com/HuobiVentures/status/1500057587282509829" target=_blank>
+              <h5 class="text-graylight text-xs hover:text-primary">11:36 AM · Mar 5, 2022</h5>
+            </a>
+          </div>
+        </div>
+        <div class="relative bg-graydark p-4 rounded-lg">
+          <img src="imgs/mmdhrumil.png" class="inline-block">
+          <div class="inline-block align-middle ml-4">
+            <a href="https://twitter.com/mmdhrumil" target=_blank>
+              <h3 class="text-white font-bold hover:text-primary">mmdhrumil.eth/.sol</h3>
+            </a>
+            <a href="https://twitter.com/mmdhrumil" target=_blank>
+              <h4 class="text-graylight text-sm hover:text-primary">@mmdhrumil</h4>
+            </a>
+          </div>
+          <h4 class="text-white pt-4 pb-8 leading-6 text-sm">These guys are super awesome! Congrats on the fundraise
+            <span class="text-primary font-bold"><a href="https://twitter.com/streamflow_fi"
+                target=_blank>@streamflow_fi</a></span>
+          </h4>
+          <div class="absolute bottom-0 mb-4">
+            <a href="https://twitter.com/mmdhrumil/status/1499858096214052865" target=_blank>
+              <h5 class="text-graylight text-xs hover:text-primary">10:23 PM · Mar 5, 2022</h5>
+            </a>
+          </div>
+        </div>
+        <div class="bg-graydark relative p-4 row-span-2 rounded-lg">
+          <img src="imgs/barrett.png" class="inline-block">
+          <div class="inline-block align-middle ml-4">
+            <a href="https://twitter.com/barrett_io" target=_blank>
+              <h3 class="text-white font-bold hover:text-primary">barrett.sol</h3>
+            </a>
+            <a href="https://twitter.com/barrett_io" target=_blank>
+              <h4 class="text-graylight text-sm hover:text-primary">@barrett_io</h4>
+            </a>
+          </div>
+          <h4 class="text-white pt-4 pb-4 leading-6 text-sm">congrats, very bullish on this team/protocol<br><span
+              class="text-primary font-bold"><a href="https://twitter.com/streamflow_fi"
+                target=_blank>@streamflow_fi</a></span>
+          </h4>
+          <div class="absolute bottom-0 mb-4">
+            <a href="https://twitter.com/barrett_io/status/1499776457458864129" target=_blank>
+              <h5 class="text-graylight text-xs hover:text-primary">4:59 PM · Mar 4, 2022</h5>
+            </a>
+          </div>
+        </div>
+        <div class="relative row-span-3 bg-graydark rounded-lg">
+          <div class="p-4">
+            <img src="imgs/AngelDao.png" class="inline-block">
+            <div class="inline-block align-middle ml-4">
+              <a href="https://twitter.com/AngelDAOorg" target=_blank>
+                <h3 class="text-white font-bold hover:text-primary">AngelDAO</h3>
+              </a>
+              <a href="https://twitter.com/AngelDAOorg" target=_blank>
+                <h4 class="text-graylight text-sm">@AngelDAOorg</h4>
+              </a>
+            </div>
+            <h4 class="text-white pt-4 pb-8 leading-6 text-sm">Proud to be part of <span
+                class="text-primary font-bold"><a href="https://twitter.com/streamflow_fi"
+                  target=_blank>@streamflow_fi</a></span>
+              $3.1M raise and back a top team who are
+              bringing streamed token vesting, payroll and batch payments to <span class="text-primary font-bold"><a
+                  href="https://twitter.com/hashtag/solana?src=hashtag_click" target=_blank>#solana</a></span>
+
+
+              <p class="pt-12">Take control with <span class="text-primary font-bold">
+                  <a href="https://twitter.com/hashtag/Streamflow?src=hashtag_click"
+                    target=_blank>#Streamflow</a></span>
+              </p>
+            </h4>
+            <div class="absolute bottom-0 mb-4">
+              <a href="https://twitter.com/AngelDAOorg/status/1499770078656700416" target=_blank>
+                <h5 class="text-graylight text-xs hover:text-primary">4:33 PM · Mar 4 , 2022</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="relative row-span-2 bg-graydark rounded-lg">
+          <div class="p-4">
+            <img src="imgs/leslieis.png" class="inline-block">
+            <div class="inline-block align-middle ml-4">
+              <a href="https://twitter.com/LeslieisHODLing" target=_blank>
+                <h3 class="text-white font-bold hover:text-primary">LeslieisHODLing</h3>
+              </a>
+              <a href="https://twitter.com/LeslieisHODLing" target=_blank>
+                <h4 class="text-graylight text-sm hover:text-primary">@LeslieisHODLing</h4>
+              </a>
+            </div>
+            <h4 class="text-white pt-4 pb-4 leading-6 text-sm">Looking forward to using this product ourselves as
+              well
+              as with our
+              portfolio
+              projects!<br>
+              <span class="text-primary font-bold"><a href="https://twitter.com/streamflow_fi"
+                  target=_blank>@streamflow_fi</a></span>
+            </h4>
+            <div class="absolute bottom-0 mb-4">
+              <a href="https://twitter.com/LeslieisHODLing/status/1499790030726115329" target=_blank>
+                <h5 class="text-graylight text-xs hover:text-primary">5:53 PM · Mar 4 , 2022</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="relative row-span-2 bg-graydark p-4 rounded">
+          <img src="imgs/daniel.png" class="inline-block">
+          <div class="inline-block align-middle ml-4">
+            <a href="https://twitter.com/Danuuuule" target=_blank>
+              <h3 class="text-white font-bold hover:text-primary">Daniel</h3>
+            </a>
+            <a href="https://twitter.com/Danuuuule" target=_blank>
+              <h4 class="text-graylight text-sm hover:text-primary">@Danuuuule</h4>
+            </a>
+          </div>
+          <h4 class="text-white pt-4 pb-4 leading-6 text-sm">Major glass eaters, happy to be involved 🤝<span
+              class="text-primary font-bold"><a href="https://twitter.com/streamflow_fi"
+                target=_blank>@streamflow_fi</a></span>
+          </h4>
+          <div class="absolute bottom-0 mb-4">
+            <a href="https://twitter.com/Danuuuule/status/1499760779234578437" target=_blank>
+              <h5 class="text-graylight text-xs hover:text-primary">3:56 PM · Mar 4 , 2022</h5>
+            </a>
+          </div>
+        </div>
+        <div class="relative col-span-1 row-span-4 bg-graydark p-4 rounded">
+          <img src="imgs/shanav.png" class="inline-block">
+          <div class="inline-block align-middle ml-4">
+            <a href="https://twitter.com/shanav_m" target=_blank>
+              <h3 class="text-white font-bold hover:text-primary">Shanav K Mehta</h3>
+            </a>
+            <a href="https://twitter.com/shanav_m" target=_blank>
+              <h4 class="text-graylight text-sm hover:text-primary">@shanav_m</h4>
+            </a>
+          </div>
+          <h4 class="text-white pt-4 pb-8 leading-6 text-sm">Stoked to back the <span class="text-primary font-bold"><a
+                href="https://twitter.com/streamflow_fi" target=_blank>@streamflow_fi</a></span> team as they
+            continue
+            to build a critical
+            primitive on Solana. <span class="text-primary font-bold"><a href="https://twitter.com/imprfekt"
+                target=_blank>@imprfekt</a></span> is a true builder with the kind of persistence and
+            determination you’d
+            back every day of the week
+          </h4>
+          <div class="absolute bottom-0 mb-4">
+            <a href="https://twitter.com/shanav_m/status/1499764850448207872" target=_blank>
+              <h5 class="text-graylight text-xs hover:text-primary">4:12 PM · Mar 4 , 2022</h5>
+            </a>
+          </div>
+        </div>
+        <div class="relative row-span-3 bg-graydark p-4 rounded">
+          <img src="imgs/squads.png" class="inline-block">
+          <div class="inline-block align-middle ml-4">
+            <a href="https://twitter.com/SquadsProtocol" target=_blank>
+              <h3 class="text-white font-bold hover:text-primary">Squads</h3>
+            </a>
+            <a href="https://twitter.com/SquadsProtocol" target=_blank>
+              <h4 class="text-graylight text-sm hover:text-primary">@SquadsProtocol</h4>
+            </a>
+          </div>
+          <h4 class="text-white pt-4 pb-8 leading-6 text-sm">Congratulations to our streaming friends! <span
+              class="text-primary font-bold"><a href="https://twitter.com/streamflow_fi"
+                target=_blank>@streamflow_fi</a></span>
+          </h4>
+          <div class="absolute bottom-0 mb-4">
+            <a href="https://twitter.com/SquadsProtocol/status/1499760343530233857" target=_blank>
+              <h5 class="text-graylight text-xs hover:text-primary">3:55 PM · Mar 4 , 2022</h5>
+            </a>
+          </div>
+        </div>
+        <div class="relative row-span-5 bg-graydark p-4 rounded">
+          <img src="imgs/davidholt.png" class="inline-block">
+          <div class="inline-block align-middle ml-4">
+            <a href="https://twitter.com/IDrawCharts" target=_blank>
+              <h3 class="text-white font-bold hover:text-primary">David Holt</h3>
+            </a>
+            <a href="https://twitter.com/IDrawCharts" target=_blank>
+              <h4 class="text-graylight text-sm hover:text-primary">@IDrawCharts</h4>
+            </a>
+          </div>
+          <h4 class="text-white pt-4 pb-8 leading-6 text-sm ">shoutout to the <span class="text-primary font-bold"><a
+                href="https://twitter.com/streamflow_fi" target=_blank>@streamflow_fi</a></span> team<br><br>
+            we were having an issue pointing a stream contract at our multisig addy and they pushed out a fix within a
+            week
+          </h4>
+          <div class="absolute bottom-0 mb-4">
+            <a href="https://twitter.com/IDrawCharts/status/1504591778468577284" target=_blank>
+              <h5 class="text-graylight text-xs hover:text-primary">11:53 PM · Mar 17 , 2022</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="block lg:hidden md:w-[600px] ml-auto mr-auto">
+        <div class="relative mt-10 ml-4 mr-4 block bg-graydark p-4 rounded-lg">
+          <img src="imgs/Fatassmonkey.png" class="inline-block">
+          <div class="inline-block align-middle ml-4">
+            <a href="https://twitter.com/Fatassmonkey2" target=_blank>
+              <h3 class="text-white font-bold hover:text-primary">Fatassmonkey</h3>
+            </a>
+            <a href="https://twitter.com/Fatassmonkey2" target=_blank>
+              <h4 class="text-graylight text-sm hover:text-primary">@Fatassmonkey2</h4>
+            </a>
+          </div>
+          <h4 class="text-white pt-4 leading-6 text-sm pb-10">Keep your eye out on <span
+              class="text-primary font-bold"><a href="https://twitter.com/streamflow_fi"
+                target=_blank>@streamflow_fi</a></span>,
+            we’re stoked for the things the team
+            has planned, which will be
+            announced in due time. <span class="text-primary font-bold"><a href="https://twitter.com/t3eventures"
+                target=_blank>@t3eventures</a></span> <br>
+            will continue to work closely and support the team in bringing more innovative ways to <br> streaming
+            on
+            <span class="text-primary font-bold"><a href="https://twitter.com/solana" target=_blank>@solana</a></span>.
+            Stay tuned!
+          </h4>
+          <div class="absolute bottom-0 mb-4">
+            <a href="https://twitter.com/Fatassmonkey2/status/1501443694058115073" target=_blank>
+              <h5 class="text-graylight text-xs hover:text-primary">7:24 AM · Mar 9, 2022</h5>
+            </a>
+          </div>
+        </div>
+        <div class="relative block bg-graydark ml-4 mr-4 p-4 rounded mt-5">
+          <img src="imgs/davidholt.png" class="inline-block">
+          <div class="inline-block align-middle ml-4">
+            <a href="https://twitter.com/IDrawCharts" target=_blank>
+              <h3 class="text-white font-bold hover:text-primary">David Holt</h3>
+            </a>
+            <a href="https://twitter.com/IDrawCharts" target=_blank>
+              <h4 class="text-graylight text-sm hover:text-primary">@IDrawCharts</h4>
+            </a>
+          </div>
+          <h4 class="text-white pt-4 pb-8 leading-6 text-sm pb-10">shoutout to the <span
+              class="text-primary font-bold"><a href="https://twitter.com/streamflow_fi"
+                target=_blank>@streamflow_fi</a></span> team
+            we were having an issue pointing a stream contract at our multisig addy and they pushed out a fix within a
+            week
+          </h4>
+          <div class="absolute bottom-0 mb-4">
+            <a href="https://twitter.com/IDrawCharts/status/1504591778468577284" target=_blank>
+              <h5 class="text-graylight text-xs hover:text-primary">11:53 PM · Mar 17 , 2022</h5>
+            </a>
+          </div>
+        </div>
+        <div class="relative block bg-graydark p-4 ml-4 mr-4 rounded-lg mt-5">
+          <img src="imgs/huobiventures.png" class="inline-block">
+          <div class="inline-block align-middle ml-4">
+            <a href="https://twitter.com/HuobiVentures" target=_blank>
+              <h3 class="text-white font-bold hover:text-primary">Huobi Ventures</h3>
+            </a>
+            <a href="https://twitter.com/HuobiVentures" target=_blank>
+              <h4 class="text-graylight text-sm hover:text-primary">@HuobiVentures</h4>
+            </a>
+          </div>
+          <h4 class="text-white pt-4 leading-6 text-sm pb-10">Congrats! ! <span class="text-primary font-bold"><a
+                href="https://twitter.com/streamflow_fi" target=_blank>@streamflow_fi</a></span> <br>
+            Happy to see our new partner had raised 3.1M.
+          </h4>
+          <div class="absolute bottom-0 mb-4">
+            <a href="https://twitter.com/HuobiVentures/status/1500057587282509829" target=_blank>
+              <h5 class="text-graylight text-xs hover:text-primary">11:36 AM · Mar 5, 2022</h5>
+            </a>
+          </div>
+        </div>
+        <div class="relative block bg-graydark p-4 rounded ml-4 mr-4 mt-5">
+          <img src="imgs/daniel.png" class="inline-block">
+          <div class="inline-block align-middle ml-4">
+            <a href="https://twitter.com/Danuuuule" target=_blank>
+              <h3 class="text-white font-bold hover:text-primary">Daniel</h3>
+            </a>
+            <a href="https://twitter.com/Danuuuule" target=_blank>
+              <h4 class="text-graylight text-sm hover:text-primary">@Danuuuule</h4>
+            </a>
+          </div>
+          <h4 class="text-white pt-4 pb-4 leading-6 text-sm pb-10">Major glass eaters, happy to be involved 🤝
+            <br><span class="text-primary font-bold"><a href="https://twitter.com/streamflow_fi"
+                target=_blank>@streamflow_fi</a></span>
+          </h4>
+          <div class="absolute bottom-0 mb-4">
+            <a href="https://twitter.com/Danuuuule/status/1499760779234578437" target=_blank>
+              <h5 class="text-graylight text-xs hover:text-primary">3:56 PM · Mar 4 , 2022</h5>
+            </a>
+          </div>
+        </div>
+        <div class="relative block bg-graydark p-4 rounded ml-4 mr-4 mt-5">
+          <img src="imgs/shanav.png" class="inline-block">
+          <div class="inline-block align-middle ml-4">
+            <a href="https://twitter.com/shanav_m" target=_blank>
+              <h3 class="text-white font-bold hover:text-primary">Shanav K Mehta</h3>
+            </a>
+            <a href="https://twitter.com/shanav_m" target=_blank>
+              <h4 class="text-graylight text-sm hover:text-primary">@shanav_m</h4>
+            </a>
+          </div>
+          <h4 class="text-white pt-4 pb-4 leading-6 text-sm pb-10">Stoked to back the
+            <span class="text-primary font-bold"><a href="https://twitter.com/streamflow_fi"
+                target=_blank>@streamflow_fi</a></span> team as they continue to build
+            a critical primitive on Solana. <span class="text-primary font-bold"><a href="https://twitter.com/imprfekt"
+                target=_blank>@imprfekt</a></span> is
+            a true builder with the kind of persistence and determination
+            you’d back every day of the week
+          </h4>
+          <div class="absolute bottom-0 mb-4">
+            <a href="https://twitter.com/shanav_m/status/1499764850448207872" target=_blank>
+              <h5 class="text-graylight text-xs hover:text-primary">4:12 PM · Mar 4 , 2022</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+      <h2 class="text-white font-bold text-2xl text-center mt-20 ml-4 mr-4 lg:ml-0 lg:m-r0">
+        Excited to start streaming the secure, audited way?
+      </h2>
+      <div class="text-center mb-20">
+        <a href="https://app.streamflow.finance/" target=_blank>
+          <button class="bg-primary rounded-lg mt-6 hover:opacity-70 ml-auto mr-auto">
+            <p class="font-semibold text-base flex pl-4 pr-4 pt-3 pb-3 items-center text-white">
+              Get Started Now
+            </p>
+          </button>
+        </a>
+      </div>
+    </div>
+    <div>
+      <img src="imgs/hrline.png" class="w-full mt-[160px]">
+    </div>
+    <div class="bg-darkblack">
+      <div class="inline-block">
+        <img src="imgs/Frame 5.png" class="pt-20 pl-4 xl:pl-36 lg:pl-14">
+        <p class="pl-4 xl:pl-36 lg:pl-14 pt-4 lg:pt-5 text-graylight text-sm">Made with 💙 in a distributed team.
+        </p>
+        <p class="pl-4 xl:pl-36 lg:pl-14 pt-2 text-graylight text-sm">
+          ©2022 Streamflow Finance.
+        </p>
+      </div>
+      <div class="block lg:inline-block">
+        <div class="pl-4 pt-10 lg:pt-0 lg:pl-0 md:align-top md:inline-block ml-0 lg:ml-40 xl:ml-72">
+          <a href="#about">
+            <p class="text-graylight font-bold hover:text-primary ">About</p>
+          </a>
+          <a href="https://discord.gg/ZC7URcQyM7" target=_blank>
+            <h1 class="text-base text-graylight font-bold hover:text-primary ">
+              Careers
+              <p class="inline-block align-top font-bold text-xs mb-2 text-primary">
+                Hiring
+              </p>
+            </h1>
+          </a>
+          <a href="mailto:hello@streamflow.finance" target=_blank id="mail">
+            <p class="text-graylight font-bold hover:text-primary ">Contact</p>
+          </a>
+        </div>
+        <div class="block md:inline-block ml-4 xl:ml-20 md:ml-20 mt-10 lg:mt-0">
+          <a href="https://discord.gg/ZC7URcQyM7" target=_blank>
+            <p class="text-graylight font-bold hover:text-primary ">Discord</p>
+          </a>
+          <a href="https://twitter.com/streamflow_fi" target=_blank>
+            <h1 class="text-base text-graylight font-bold hover:text-primary ">
+              Twitter
+            </h1>
+          </a>
+          <a href="https://streamflow.medium.com/" target=_blank>
+            <p class="text-graylight font-bold hover:text-primary ">Blog</p>
+          </a>
+          <a href="https://docs.streamflow.finance/integration/sdk" target=_blank>
+            <p class="text-graylight font-bold hover:text-primary ">Integrations
+              <svg class="inline-block align-super" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.4379 1.28891C0.4379 1.6194 0.702293 1.85075 1.01626 1.86727L4.91605 1.76813L0.173508 6.51067C-0.0578359 6.74201 -0.0578359 7.0725 0.173508 7.30385L0.702293 7.83263C0.917112 8.04745 1.26413 8.06398 1.49547 7.83263L6.23801 3.09009L6.13887 6.95683C6.13887 7.28732 6.38673 7.53519 6.7007 7.55171H7.42778C7.74175 7.53519 7.98962 7.28732 7.98962 6.98988V0.54531C7.98962 0.247868 7.74175 0 7.44431 0L0.999735 0C0.702293 0 0.454425 0.247868 0.4379 0.561834V1.28891Z"
+                  fill="#18A2D9" />
+              </svg>
+            </p>
+          </a>
+        </div>
+        <div class="block md:inline-block pl-4 md:ml-20 mt-10 lg:mt-0">
+          <a href="https://docs.streamflow.finance/" target=_blank>
+            <p class="text-graylight font-bold hover:text-primary ">Documentation
+              <svg class="inline-block align-super" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.4379 1.28891C0.4379 1.6194 0.702293 1.85075 1.01626 1.86727L4.91605 1.76813L0.173508 6.51067C-0.0578359 6.74201 -0.0578359 7.0725 0.173508 7.30385L0.702293 7.83263C0.917112 8.04745 1.26413 8.06398 1.49547 7.83263L6.23801 3.09009L6.13887 6.95683C6.13887 7.28732 6.38673 7.53519 6.7007 7.55171H7.42778C7.74175 7.53519 7.98962 7.28732 7.98962 6.98988V0.54531C7.98962 0.247868 7.74175 0 7.44431 0L0.999735 0C0.702293 0 0.454425 0.247868 0.4379 0.561834V1.28891Z"
+                  fill="#18A2D9" />
+              </svg>
+            </p>
+          </a>
+          <a href="https://docs.streamflow.finance/help/tutorials" target=_blank>
+            <p class="text-graylight font-bold hover:text-primary ">Tutorials
+              <svg class="inline-block align-super" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.4379 1.28891C0.4379 1.6194 0.702293 1.85075 1.01626 1.86727L4.91605 1.76813L0.173508 6.51067C-0.0578359 6.74201 -0.0578359 7.0725 0.173508 7.30385L0.702293 7.83263C0.917112 8.04745 1.26413 8.06398 1.49547 7.83263L6.23801 3.09009L6.13887 6.95683C6.13887 7.28732 6.38673 7.53519 6.7007 7.55171H7.42778C7.74175 7.53519 7.98962 7.28732 7.98962 6.98988V0.54531C7.98962 0.247868 7.74175 0 7.44431 0L0.999735 0C0.702293 0 0.454425 0.247868 0.4379 0.561834V1.28891Z"
+                  fill="#18A2D9" />
+              </svg>
+            </p>
+          </a>
+          <a href="https://docs.streamflow.finance/help/faq" target=_blank>
+            <p class="text-graylight font-bold hover:text-primary ">FAQ
+              <svg class="inline-block align-super" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.4379 1.28891C0.4379 1.6194 0.702293 1.85075 1.01626 1.86727L4.91605 1.76813L0.173508 6.51067C-0.0578359 6.74201 -0.0578359 7.0725 0.173508 7.30385L0.702293 7.83263C0.917112 8.04745 1.26413 8.06398 1.49547 7.83263L6.23801 3.09009L6.13887 6.95683C6.13887 7.28732 6.38673 7.53519 6.7007 7.55171H7.42778C7.74175 7.53519 7.98962 7.28732 7.98962 6.98988V0.54531C7.98962 0.247868 7.74175 0 7.44431 0L0.999735 0C0.702293 0 0.454425 0.247868 0.4379 0.561834V1.28891Z"
+                  fill="#18A2D9" />
+              </svg>
+            </p>
+          </a>
+          <a href="https://docs.streamflow.finance/help/fees" target=_blank>
+            <p class="text-graylight font-bold hover:text-primary ">Fees
+              <svg class="inline-block align-super" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.4379 1.28891C0.4379 1.6194 0.702293 1.85075 1.01626 1.86727L4.91605 1.76813L0.173508 6.51067C-0.0578359 6.74201 -0.0578359 7.0725 0.173508 7.30385L0.702293 7.83263C0.917112 8.04745 1.26413 8.06398 1.49547 7.83263L6.23801 3.09009L6.13887 6.95683C6.13887 7.28732 6.38673 7.53519 6.7007 7.55171H7.42778C7.74175 7.53519 7.98962 7.28732 7.98962 6.98988V0.54531C7.98962 0.247868 7.74175 0 7.44431 0L0.999735 0C0.702293 0 0.454425 0.247868 0.4379 0.561834V1.28891Z"
+                  fill="#18A2D9" />
+              </svg>
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="flex justify-center mt-32 pb-8  ">
+        <p class="text-gray text-sm">Audit report available <a
+            href="https://github.com/streamflow-finance/rust-sdk/blob/main/protocol_audit.pdf" target=_blank
+            class="font-bold hover:text-primary">here.</a></p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
