@@ -1311,3 +1311,17 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1;
   }
 }
+
+@media (min-width: 1536px) {
+  .\32xl\:float-right {
+    float: right;
+  }
+
+  .\32xl\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .\32xl\:pr-36 {
+    padding-right: 9rem;
+  }
+}
