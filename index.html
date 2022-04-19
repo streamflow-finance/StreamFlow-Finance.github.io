@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="scroll-smooth">
 
@@ -242,7 +243,7 @@
       <div>
         <div class="lg:inline-block sm:block">
           <h3 class="text-gray text-lg font-bold pt-8 mt-10 lg:mt-0">TVL</h3>
-          <h1 class="text-white text-3xl xl:text-4xl font-bold text-center pt-2">100 Million</h1>
+          <h1 class="text-white text-3xl xl:text-4xl font-bold text-center pt-2">$150+ Million</h1>
           <img src="imgs/linew.png" class="w-full lg:hidden mt-6">
         </div>
         <img class="hidden lg:inline-block w-0.5 h-24 mb-10 ml-40" src="imgs/rectangle60.png" />
@@ -629,7 +630,7 @@
           <img src="imgs/img-angelo-2.png" class="ml-auto mr-auto pt-4 pb-4">
           <div class="text-center">
             <h3 class="text-white font-bold text-sm pb-1">@angelo</h3>
-            <h3 class="text-graylight text-xs mt-1 ">Marketing</h3>
+            <h3 class="text-graylight text-xs mt-1 ">Business Development,<br> Operations</h3>
           </div>
         </div>
         <div class="inline-block w-36 h-40 md:w-56 md:h-40 bg-fieldblack rounded-lg">
@@ -652,7 +653,7 @@
           <img src="imgs/img-goldenninja-1.png" class="ml-auto mr-auto pt-4 pb-4">
           <div class="text-center">
             <h3 class="text-white font-bold text-sm pb-1">@goldenninja</h3>
-            <h3 class="text-graylight text-xs mt-1 leading-[18px]">Intern</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">SE Intern</h3>
           </div>
         </div>
       </div>
@@ -689,9 +690,9 @@
         </div>
         <div class="inline-block w-28 lg:w-60 xl:w-64 bg-fieldblack rounded-lg lg:mr-2 xl:mr-5">
           <img src="imgs/img-angelo-1.png" class="inline-block lg:mr-2 lg:ml-2 xl:mr-4 xl:ml-4 mt-4 mb-4">
-          <div class="inline-block align-middle">
+          <div class="inline-block align-middle mt-3">
             <h3 class="text-white font-bold text-sm">@angelo</h3>
-            <h3 class="text-graylight text-xs mt-1 leading-[18px]">Marketing</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">Business Development,<br> Operations</h3>
           </div>
         </div>
         <div class="inline-block w-28 lg:w-60 xl:w-64 bg-fieldblack rounded-lg">
@@ -714,7 +715,7 @@
           <img src="imgs/img-goldenninja-1.png" class="inline-block lg:mr-2 lg:ml-2 xl:mr-4 xl:ml-4 mt-4 mb-4">
           <div class="inline-block align-middle">
             <h3 class="text-white font-bold text-sm">@goldenninja</h3>
-            <h3 class="text-graylight text-xs mt-1 leading-[18px]">Intern</h3>
+            <h3 class="text-graylight text-xs mt-1 leading-[18px]">SE Intern</h3>
           </div>
         </div>
         <div class="inline-block w-28 lg:w-60 xl:w-64 bg-fieldblack rounded-lg lg:mr-2 xl:mr-5">
@@ -1116,7 +1117,7 @@
           ©2022 Streamflow Finance.
         </p>
       </div>
-      <div class="block lg:inline-block">
+      <div class="block lg:inline-block 2xl:float-right 2xl:pt-20 2xl:pr-36">
         <div class="pl-4 pt-10 lg:pt-0 lg:pl-0 md:align-top md:inline-block ml-0 lg:ml-40 xl:ml-72">
           <a href="#about">
             <p class="text-graylight font-bold hover:text-primary ">About</p>
@@ -1206,6 +1207,43 @@
       </div>
     </div>
   </div>
-</body>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
 
 </html>

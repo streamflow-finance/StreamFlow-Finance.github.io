@@ -640,6 +640,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 8rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -1309,5 +1313,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:float-right {
+    float: right;
+  }
+
+  .\32xl\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .\32xl\:pr-36 {
+    padding-right: 9rem;
   }
 }
