@@ -644,6 +644,86 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 8rem;
 }
 
+.ml-\[50px\] {
+  margin-left: 50px;
+}
+
+.ml-\[500px\] {
+  margin-left: 500px;
+}
+
+.ml-\[15000px\] {
+  margin-left: 15000px;
+}
+
+.ml-\[1500px\] {
+  margin-left: 1500px;
+}
+
+.ml-\[700px\] {
+  margin-left: 700px;
+}
+
+.ml-\[750px\] {
+  margin-left: 750px;
+}
+
+.ml-\[760px\] {
+  margin-left: 760px;
+}
+
+.ml-\[800px\] {
+  margin-left: 800px;
+}
+
+.ml-\[1200px\] {
+  margin-left: 1200px;
+}
+
+.ml-\[1000px\] {
+  margin-left: 1000px;
+}
+
+.ml-\[900px\] {
+  margin-left: 900px;
+}
+
+.ml-\[950px\] {
+  margin-left: 950px;
+}
+
+.ml-\[930px\] {
+  margin-left: 930px;
+}
+
+.ml-36 {
+  margin-left: 9rem;
+}
+
+.ml-72 {
+  margin-left: 18rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.mt-60 {
+  margin-top: 15rem;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
 .block {
   display: block;
 }
@@ -1079,6 +1159,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 14rem;
   }
 
+  .md\:w-\[200px\] {
+    width: 200px;
+  }
+
+  .md\:w-\[250px\] {
+    width: 250px;
+  }
+
   .md\:justify-center {
     justify-content: center;
   }
@@ -1161,6 +1249,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 0.5rem;
   }
 
+  .lg\:ml-20 {
+    margin-left: 5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1187,6 +1279,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-60 {
     width: 15rem;
+  }
+
+  .lg\:w-\[400px\] {
+    width: 400px;
   }
 
   .lg\:pr-14 {
@@ -1262,6 +1358,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 5rem;
   }
 
+  .xl\:ml-40 {
+    margin-left: 10rem;
+  }
+
   .xl\:inline-block {
     display: inline-block;
   }
@@ -1319,6 +1419,34 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1536px) {
   .\32xl\:float-right {
     float: right;
+  }
+
+  .\32xl\:mt-72 {
+    margin-top: 18rem;
+  }
+
+  .\32xl\:mt-\[600px\] {
+    margin-top: 600px;
+  }
+
+  .\32xl\:mt-\[500px\] {
+    margin-top: 500px;
+  }
+
+  .\32xl\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .\32xl\:block {
+    display: block;
+  }
+
+  .\32xl\:hidden {
+    display: none;
+  }
+
+  .\32xl\:w-\[900px\] {
+    width: 900px;
   }
 
   .\32xl\:pt-20 {
