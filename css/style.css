@@ -628,6 +628,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -640,8 +644,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 8rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
+.ml-36 {
+  margin-left: 9rem;
 }
 
 .block {
@@ -1079,6 +1083,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 14rem;
   }
 
+  .md\:w-\[250px\] {
+    width: 250px;
+  }
+
   .md\:justify-center {
     justify-content: center;
   }
@@ -1159,6 +1167,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:ml-2 {
     margin-left: 0.5rem;
+  }
+
+  .lg\:ml-5 {
+    margin-left: 1.25rem;
   }
 
   .lg\:block {
@@ -1254,6 +1266,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 1rem;
   }
 
+  .xl\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
   .xl\:ml-72 {
     margin-left: 18rem;
   }
@@ -1319,6 +1335,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1536px) {
   .\32xl\:float-right {
     float: right;
+  }
+
+  .\32xl\:mt-\[500px\] {
+    margin-top: 500px;
+  }
+
+  .\32xl\:block {
+    display: block;
+  }
+
+  .\32xl\:hidden {
+    display: none;
   }
 
   .\32xl\:pt-20 {
