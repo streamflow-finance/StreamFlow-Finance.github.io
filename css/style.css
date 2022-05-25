@@ -644,6 +644,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 8rem;
 }
 
+
 .ml-\[50px\] {
   margin-left: 50px;
 }
@@ -722,7 +723,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-0 {
   margin-top: 0px;
-}
 
 .block {
   display: block;
@@ -1448,6 +1448,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   .\32xl\:w-\[900px\] {
     width: 900px;
   }
+
 
   .\32xl\:pt-20 {
     padding-top: 5rem;
