@@ -576,10 +576,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
-.ml-40 {
-  margin-left: 10rem;
-}
-
 .mt-28 {
   margin-top: 7rem;
 }
@@ -644,10 +640,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 8rem;
 }
 
-.ml-36 {
-  margin-left: 9rem;
-}
-
 .block {
   display: block;
 }
@@ -662,10 +654,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hidden {
   display: none;
-}
-
-.h-24 {
-  height: 6rem;
 }
 
 .h-\[24px\] {
@@ -684,14 +672,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 300px;
 }
 
-.w-0\.5 {
-  width: 0.125rem;
-}
-
-.w-0 {
-  width: 0px;
-}
-
 .w-\[109px\] {
   width: 109px;
 }
@@ -708,6 +688,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-28 {
   width: 7rem;
+}
+
+.w-\[250px\] {
+  width: 250px;
 }
 
 .cursor-pointer {
@@ -1075,16 +1059,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 10rem;
   }
 
+  .md\:w-\[250px\] {
+    width: 250px;
+  }
+
   .md\:w-\[600px\] {
     width: 600px;
   }
 
   .md\:w-56 {
     width: 14rem;
-  }
-
-  .md\:w-\[250px\] {
-    width: 250px;
   }
 
   .md\:justify-center {
@@ -1125,8 +1109,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 0px;
   }
 
-  .lg\:ml-40 {
-    margin-left: 10rem;
+  .lg\:ml-20 {
+    margin-left: 5rem;
   }
 
   .lg\:mt-20 {
@@ -1169,8 +1153,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 0.5rem;
   }
 
-  .lg\:ml-5 {
-    margin-left: 1.25rem;
+  .lg\:ml-40 {
+    margin-left: 10rem;
   }
 
   .lg\:block {
@@ -1248,6 +1232,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:ml-36 {
     margin-left: 9rem;
+  }
+
+  .xl\:ml-40 {
+    margin-left: 10rem;
   }
 
   .xl\:ml-24 {
@@ -1337,16 +1325,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     float: right;
   }
 
+  .\32xl\:ml-4 {
+    margin-left: 1rem;
+  }
+
   .\32xl\:mt-\[500px\] {
     margin-top: 500px;
   }
 
-  .\32xl\:block {
-    display: block;
+  .\32xl\:w-\[600px\] {
+    width: 600px;
   }
 
-  .\32xl\:hidden {
-    display: none;
+  .\32xl\:w-\[800px\] {
+    width: 800px;
   }
 
   .\32xl\:pt-20 {
