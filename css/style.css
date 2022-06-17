@@ -1374,3 +1374,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
