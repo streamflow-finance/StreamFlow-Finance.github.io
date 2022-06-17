@@ -1373,3 +1373,35 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 9rem;
   }
 }
+
+
+
+
+.services-section {
+  padding: 20px 50px;
+}
+
+.container {
+  /* Always make the parent element as flex */
+  display:flex;
+}
+
+.services-section .flex-services {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction:row;
+  
+  /* Make the content align at baseline */
+  align-self: baseline;
+  
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.services-section .flex-services div {
+  text-align: center;
+  padding: 5px;
+  flex: 1 1;
+  margin: 15px;
+}
