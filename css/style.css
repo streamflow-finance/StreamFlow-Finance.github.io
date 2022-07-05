@@ -774,6 +774,14 @@ video {
   margin-top: 0px;
 }
 
+.ml-20 {
+  margin-left: 5rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
 .block {
   display: block;
 }
