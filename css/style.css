@@ -1275,6 +1275,10 @@ video {
     margin-left: 9rem;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:ml-20 {
     margin-left: 5rem;
   }
@@ -1289,10 +1293,6 @@ video {
 
   .md\:mb-24 {
     margin-bottom: 6rem;
-  }
-
-  .md\:mb-0 {
-    margin-bottom: 0px;
   }
 
   .md\:block {
@@ -1451,10 +1451,6 @@ video {
     margin-left: 10rem;
   }
 
-  .lg\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .lg\:block {
     display: block;
   }
@@ -1543,10 +1539,6 @@ video {
 
   .xl\:ml-24 {
     margin-left: 6rem;
-  }
-
-  .xl\:mb-0 {
-    margin-bottom: 0px;
   }
 
   .xl\:mr-5 {
