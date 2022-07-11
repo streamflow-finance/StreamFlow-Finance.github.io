@@ -17,12 +17,12 @@ module.exports = {
         green: "var(--green)",
         orange: "var(--orange)",
         gray: "var(--gray)",
-        'orangeop': "rgba(242, 153, 74, 0.2)",
+        orangeop: "rgba(242, 153, 74, 0.2)",
       },
     },
   },
   variants: {
-    fill: ['hover', 'focus'], 
+    fill: ["hover", "focus"],
   },
   plugins: [],
 };
