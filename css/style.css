@@ -646,6 +646,10 @@ video {
   margin-right: 28px;
 }
 
+.mt-32 {
+  margin-top: 8rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -744,10 +748,6 @@ video {
 
 .mt-\[160px\] {
   margin-top: 160px;
-}
-
-.mt-32 {
-  margin-top: 8rem;
 }
 
 .mb-\[-40px\] {
@@ -1259,10 +1259,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:mt-32 {
-    margin-top: 8rem;
-  }
-
   .md\:ml-auto {
     margin-left: auto;
   }
