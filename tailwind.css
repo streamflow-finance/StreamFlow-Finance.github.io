@@ -15,3 +15,18 @@
   --orange: #f2994a;
   --gray: #718298;
 }
+.dropcontent {
+  display: none !important;
+  position: absolute !important;
+  z-index: 1 !important;
+}
+
+.show {
+  display: block !important;
+}
+
+@media screen and (max-width: 768px) {
+  .dropcontent {
+    position: relative !important;
+  }
+}
