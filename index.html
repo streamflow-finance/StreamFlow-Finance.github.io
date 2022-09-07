@@ -123,6 +123,36 @@
     </div>
     <img src="imgs/separator.png" class="lg:hidden w-full mt-6" />
     <div class="hidden mt-6 ml-6" id="mobile-menu">
+      <!-- <div class="mb-6">
+        <div class="dropdown">
+          <div onclick="useCases()">
+            <p
+              class="cursor-pointer droptitle hover:text-primary font-bold text-base text-graylight inline-block"
+            >
+              Use Cases
+            </p>
+            <img
+              src="imgs/icn-arrow-down.png"
+              class="inline-block align-middle"
+            />
+          </div>
+          <div
+            id="casesDropdownMob"
+            class="dropcontent bg-transparent rounded-[8px]"
+          >
+            <p
+              class="text-graylight font-bold text-base hover:text-primary pl-6 pr-10 pt-4"
+            >
+              <a href="#">GameFi</a>
+            </p>
+            <p
+              class="text-graylight font-bold text-base hover:text-primary pl-6 pr-10"
+            >
+              <a href="#">NFT</a>
+            </p>
+          </div>
+        </div>
+      </div>-->
       <div class="mb-8">
         <h1
           class="text-base text-graylight font-bold font-bold hover:text-primary"
@@ -204,9 +234,39 @@
           alt="StreamFlow Finance logo"
           class="sm:hidden lg:block cursor-pointer hover:opacity-70"
         />
+        <!-- <div>
+          <div class="dropdown">
+            <div onclick="useCases()">
+              <p
+                class="cursor-pointer droptitle hover:text-primary font-bold lg:text-xs xl:text-base text-graylight inline-block"
+              >
+                Use Cases
+              </p>
+              <img
+                src="imgs/icn-arrow-down.png"
+                class="inline-block align-middle"
+              />
+            </div>
+            <div
+              id="casesDropdown"
+              class="dropcontent bg-graydark rounded-[8px] mt-2"
+            >
+              <p
+                class="text-graylight font-normal text-base lg:text-xs xl:text-base hover:text-primary pl-6 pr-10 pt-6"
+              >
+                <a href="#home">GameFi</a>
+              </p>
+              <p
+                class="text-graylight font-normal text-base lg:text-xs xl:text-base hover:text-primary pl-6 pr-10 pb-6"
+              >
+                <a href="#home">NFT</a>
+              </p>
+            </div>
+          </div>
+        </div>-->
         <div>
           <h1
-            class="lg:text-xs xl:text-base text-graylight font-bold font-bold lg:ml-0 xl:ml-8 hover:text-primary"
+            class="lg:text-xs xl:text-base text-graylight font-bold font-bold lg:ml-4 xl:ml-8 hover:text-primary"
           >
             <a href="https://docs.streamflow.finance/" target="_blank">
               Documentation
@@ -290,7 +350,7 @@
 
           <!--twitter-->
           <div
-            class="text-graylight hover:text-primary inline-block lg:ml-[20px] xl:ml-[33px]"
+            class="text-graylight hover:text-primary inline-block lg:ml-[10px] xl:ml-[33px]"
           >
             <a href="https://twitter.com/streamflow_fi" target="_blank">
               <svg
@@ -310,7 +370,7 @@
           </div>
           <!--Medium-->
           <div
-            class="text-graylight hover:text-primary inline-block lg:ml-[20px] xl:ml-[33px] mr-[28px]"
+            class="text-graylight hover:text-primary inline-block lg:ml-[10px] xl:ml-[33px] mr-[28px]"
           >
             <a href="https://streamflow.medium.com/" target="_blank">
               <svg
@@ -331,7 +391,7 @@
           <a href="https://app.streamflow.finance/" target="_blank">
             <button class="bg-primary rounded-lg hover:opacity-70">
               <p
-                class="pt-2 pb-2 pl-3 pr-3 font-semibold text-baseitems-center text-white"
+                class="pt-2 pb-2 pl-2 pr-2 font-semibold text-base lg:text-xs xl:text-base items-center text-white"
               >
                 Get Started
               </p>
@@ -383,8 +443,8 @@
           </button>
         </a>
 
-        <div class="mt-16">
-          <span class="text-graylight xl:ml-36 ml-4 mr-3">Powered by</span>
+        <div class="mt-16 xl:ml-36 ml-4">
+          <span class="text-graylight mr-3">Powered by</span>
           <a href="https://solana.com/" target="_blank"
             ><img class="inline-block mr-4" src="imgs/solana-logo2.png"
           /></a>
@@ -395,6 +455,28 @@
             target="_blank"
             ><img class="inline-block" src="imgs/opcodes.png"
           /></a>
+          <p class="text-graylight text-base mt-6">
+            Leaders for token vesting on Solana
+          </p>
+          <a
+            href="https://www.datawisp.io/case-studies/streamflow"
+            class="text-primary font-bold text-base inline-block mt-1"
+            target="_blank"
+            >datawisp.io/case-studies/streamflow</a
+          >
+          <svg
+            class="inline-block align-super"
+            width="8"
+            height="8"
+            viewBox="0 0 8 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.4379 1.28891C0.4379 1.6194 0.702293 1.85075 1.01626 1.86727L4.91605 1.76813L0.173508 6.51067C-0.0578359 6.74201 -0.0578359 7.0725 0.173508 7.30385L0.702293 7.83263C0.917112 8.04745 1.26413 8.06398 1.49547 7.83263L6.23801 3.09009L6.13887 6.95683C6.13887 7.28732 6.38673 7.53519 6.7007 7.55171H7.42778C7.74175 7.53519 7.98962 7.28732 7.98962 6.98988V0.54531C7.98962 0.247868 7.74175 0 7.44431 0L0.999735 0C0.702293 0 0.454425 0.247868 0.4379 0.561834V1.28891Z"
+              fill="#18A2D9"
+            />
+          </svg>
         </div>
       </div>
       <div class="hidden xl:inline-block float-right">
@@ -2250,6 +2332,27 @@
         </div>
       </div>
     </div>
+    <!--Dropdown JavaScript-->
+    <script>
+      function useCases() {
+        document.getElementById("casesDropdown").classList.toggle("show");
+        document.getElementById("casesDropdownMob").classList.toggle("show");
+      }
+
+      window.onclick = function (event) {
+        if (!event.target.matches(".droptitle")) {
+          var dropdowns = document.getElementsByClassName("dropcontent");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+
     <!-- Code injected by live-server -->
     <script type="text/javascript">
       // <![CDATA[  <-- For SVG support
