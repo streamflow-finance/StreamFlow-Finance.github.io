@@ -123,6 +123,36 @@
     </div>
     <img src="imgs/separator.png" class="lg:hidden w-full mt-6" />
     <div class="hidden mt-6 ml-6" id="mobile-menu">
+      <!-- <div class="mb-6">
+        <div class="dropdown">
+          <div onclick="useCases()">
+            <p
+              class="cursor-pointer droptitle hover:text-primary font-bold text-base text-graylight inline-block"
+            >
+              Use Cases
+            </p>
+            <img
+              src="imgs/icn-arrow-down.png"
+              class="inline-block align-middle"
+            />
+          </div>
+          <div
+            id="casesDropdownMob"
+            class="dropcontent bg-transparent rounded-[8px]"
+          >
+            <p
+              class="text-graylight font-notmal text-base hover:text-primary pl-6 pr-10 pt-6"
+            >
+              <a href="#home">GameFi</a>
+            </p>
+            <p
+              class="text-graylight font-notmal text-base hover:text-primary pl-6 pr-10"
+            >
+              <a href="#home">NFT</a>
+            </p>
+          </div>
+        </div>
+      </div>-->
       <div class="mb-8">
         <h1
           class="text-base text-graylight font-bold font-bold hover:text-primary"
@@ -204,6 +234,36 @@
           alt="StreamFlow Finance logo"
           class="sm:hidden lg:block cursor-pointer hover:opacity-70"
         />
+        <!--<div>
+          <div class="dropdown">
+            <div onclick="useCases()">
+              <p
+                class="cursor-pointer droptitle hover:text-primary font-bold text-base text-graylight inline-block"
+              >
+                Use Cases
+              </p>
+              <img
+                src="imgs/icn-arrow-down.png"
+                class="inline-block align-middle"
+              />
+            </div>
+            <div
+              id="casesDropdown"
+              class="dropcontent bg-graydark rounded-[8px] mt-2"
+            >
+              <p
+                class="text-graylight font-notmal text-base hover:text-primary pl-6 pr-10 pt-6"
+              >
+                <a href="#home">GameFi</a>
+              </p>
+              <p
+                class="text-graylight font-notmal text-base hover:text-primary pl-6 pr-10 pb-6"
+              >
+                <a href="#home">NFT</a>
+              </p>
+            </div>
+          </div>
+        </div>-->
         <div>
           <h1
             class="lg:text-xs xl:text-base text-graylight font-bold font-bold lg:ml-0 xl:ml-8 hover:text-primary"
@@ -2274,6 +2334,27 @@
         </div>
       </div>
     </div>
+    <!--Dropdown JavaScript-->
+    <script>
+      function useCases() {
+        document.getElementById("casesDropdown").classList.toggle("show");
+        document.getElementById("casesDropdownMob").classList.toggle("show");
+      }
+
+      window.onclick = function (event) {
+        if (!event.target.matches(".droptitle")) {
+          var dropdowns = document.getElementsByClassName("dropcontent");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+
     <!-- Code injected by live-server -->
     <script type="text/javascript">
       // <![CDATA[  <-- For SVG support
