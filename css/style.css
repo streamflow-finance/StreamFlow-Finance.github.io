@@ -1491,6 +1491,18 @@ video {
     margin-left: 10rem;
   }
 
+  .lg\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .lg\:ml-\[10px\] {
+    margin-left: 10px;
+  }
+
+  .lg\:ml-\[20px\] {
+    margin-left: 20px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1562,6 +1574,11 @@ video {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .lg\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1607,6 +1624,10 @@ video {
 
   .xl\:ml-20 {
     margin-left: 5rem;
+  }
+
+  .xl\:ml-\[33px\] {
+    margin-left: 33px;
   }
 
   .xl\:inline-block {
