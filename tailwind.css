@@ -25,10 +25,6 @@
   display: block !important;
 }
 
-.bgcontain {
-  background-size: 100% 20% !important;
-}
-
 @media screen and (max-width: 768px) {
   .dropcontent {
     position: relative !important;
