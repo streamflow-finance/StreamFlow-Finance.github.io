@@ -574,16 +574,16 @@ video {
   bottom: 0px;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .z-50 {
   z-index: 50;
 }
 
 .-z-10 {
   z-index: -10;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .order-2 {
@@ -614,10 +614,6 @@ video {
   float: right;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .ml-4 {
   margin-left: 1rem;
 }
@@ -632,10 +628,6 @@ video {
 
 .mr-4 {
   margin-right: 1rem;
-}
-
-.ml-6 {
-  margin-left: 1.5rem;
 }
 
 .mb-6 {
@@ -658,16 +650,48 @@ video {
   margin-right: 28px;
 }
 
-.mt-32 {
-  margin-top: 8rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-32 {
+  margin-top: 8rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .mt-16 {
@@ -686,10 +710,6 @@ video {
   margin-top: 5rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .mt-28 {
   margin-top: 7rem;
 }
@@ -706,10 +726,6 @@ video {
   margin-right: 0px;
 }
 
-.ml-0 {
-  margin-left: 0px;
-}
-
 .mr-12 {
   margin-right: 3rem;
 }
@@ -718,20 +734,12 @@ video {
   margin-left: 3rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mr-8 {
   margin-right: 2rem;
 }
 
 .ml-2 {
   margin-left: 0.5rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
 }
 
 .mt-\[120px\] {
@@ -758,20 +766,12 @@ video {
   margin-bottom: -40px;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
 }
 
 .mt-12 {
   margin-top: 3rem;
-}
-
-.mt-40 {
-  margin-top: 10rem;
 }
 
 .block {
@@ -794,36 +794,44 @@ video {
   display: none;
 }
 
-.h-40 {
-  height: 10rem;
+.h-screen {
+  height: 100vh;
 }
 
 .h-20 {
   height: 5rem;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
 .h-\[40px\] {
   height: 40px;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .w-full {
   width: 100%;
 }
 
-.w-\[250px\] {
-  width: 250px;
+.w-screen {
+  width: 100vw;
 }
 
 .w-\[300px\] {
   width: 300px;
+}
+
+.w-\[50px\] {
+  width: 50px;
+}
+
+.w-\[250px\] {
+  width: 250px;
 }
 
 .w-fit {
@@ -842,14 +850,6 @@ video {
 
 .w-8 {
   width: 2rem;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.w-\[50px\] {
-  width: 50px;
 }
 
 .max-w-\[1140px\] {
@@ -882,12 +882,12 @@ video {
   cursor: pointer;
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -910,10 +910,6 @@ video {
   justify-content: space-evenly;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-8 {
   gap: 2rem;
 }
@@ -922,16 +918,20 @@ video {
   gap: 1.5rem;
 }
 
-.gap-4 {
-  gap: 1rem;
+.gap-0 {
+  gap: 0px;
 }
 
 .gap-10 {
   gap: 2.5rem;
 }
 
-.gap-0 {
-  gap: 0px;
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .self-start {
@@ -1002,12 +1002,12 @@ video {
   background-color: var(--darkblack);
 }
 
-.bg-\[url\(\'\/imgs\/img-nft-hero-mob\.png\'\)\] {
-  background-image: url('/imgs/img-nft-hero-mob.png');
-}
-
 .bg-\[url\(\'\/imgs\/img-gamefi-hero\.png\'\)\] {
   background-image: url('/imgs/img-gamefi-hero.png');
+}
+
+.bg-\[url\(\'\/imgs\/img-nft-hero-mob\.png\'\)\] {
+  background-image: url('/imgs/img-nft-hero-mob.png');
 }
 
 .bg-cover {
@@ -1040,6 +1040,14 @@ video {
   padding-bottom: 2rem;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1068,20 +1076,16 @@ video {
   padding-top: 1rem;
 }
 
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
-}
-
 .pl-2 {
   padding-left: 0.5rem;
 }
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .pl-4 {
@@ -1092,6 +1096,10 @@ video {
   padding-right: 1rem;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -1100,12 +1108,32 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
+.pt-\[80px\] {
+  padding-top: 80px;
 }
 
 .pt-\[120px\] {
   padding-top: 120px;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .pr-5 {
@@ -1132,40 +1160,12 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.pb-8 {
-  padding-bottom: 2rem;
-}
-
 .pt-12 {
   padding-top: 3rem;
 }
 
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pt-\[80px\] {
-  padding-top: 80px;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
-}
-
 .pb-\[120px\] {
   padding-bottom: 120px;
-}
-
-.pt-32 {
-  padding-top: 8rem;
 }
 
 .text-left {
@@ -1217,6 +1217,11 @@ video {
   line-height: 2rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1225,11 +1230,6 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-semibold {
@@ -1254,6 +1254,10 @@ video {
 
 .leading-6 {
   line-height: 1.5rem;
+}
+
+.leading-\[64px\] {
+  line-height: 64px;
 }
 
 .text-white {
@@ -1310,6 +1314,18 @@ video {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  #dragon-hero {
+    transform: translate(250%, -80%);
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  #dragon-hero {
+    transform: translate(340%, -80%);
+  }
+}
+
 .hover\:text-primary:hover {
   color: var(--primary);
 }
@@ -1333,6 +1349,26 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .md\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .md\:ml-20 {
+    margin-left: 5rem;
+  }
+
   .md\:ml-auto {
     margin-left: auto;
   }
@@ -1353,28 +1389,8 @@ video {
     margin-bottom: 0px;
   }
 
-  .md\:ml-20 {
-    margin-left: 5rem;
-  }
-
   .md\:mb-\[-225px\] {
     margin-bottom: -225px;
-  }
-
-  .md\:mb-20 {
-    margin-bottom: 5rem;
-  }
-
-  .md\:mb-24 {
-    margin-bottom: 6rem;
-  }
-
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
-
-  .md\:mb-16 {
-    margin-bottom: 4rem;
   }
 
   .md\:block {
@@ -1397,16 +1413,16 @@ video {
     height: 10rem;
   }
 
+  .md\:w-\[auto\] {
+    width: auto;
+  }
+
   .md\:w-\[600px\] {
     width: 600px;
   }
 
   .md\:w-56 {
     width: 14rem;
-  }
-
-  .md\:w-\[auto\] {
-    width: auto;
   }
 
   .md\:-translate-y-\[450px\] {
@@ -1439,12 +1455,12 @@ video {
     justify-content: center;
   }
 
-  .md\:gap-6 {
-    gap: 1.5rem;
-  }
-
   .md\:gap-32 {
     gap: 8rem;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
   }
 
   .md\:self-auto {
@@ -1455,20 +1471,8 @@ video {
     background-image: url('/imgs/img-nft-hero2.png');
   }
 
-  .md\:bg-\[url\(\'\/imgs\/img-gamefi-hero\.png\'\)\] {
-    background-image: url('/imgs/img-gamefi-hero.png');
-  }
-
-  .md\:pr-20 {
-    padding-right: 5rem;
-  }
-
-  .md\:pr-10 {
-    padding-right: 2.5rem;
-  }
-
-  .md\:pt-0 {
-    padding-top: 0px;
+  .md\:bg-\[url\(\'\/imgs\/img-nft-hero2-test\.png\'\)\] {
+    background-image: url('/imgs/img-nft-hero2-test.png');
   }
 
   .md\:pl-0 {
@@ -1485,6 +1489,22 @@ video {
 
   .md\:pt-4 {
     padding-top: 1rem;
+  }
+
+  .md\:pr-20 {
+    padding-right: 5rem;
+  }
+
+  .md\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .md\:pt-2 {
+    padding-top: 0.5rem;
   }
 
   .md\:text-left {
@@ -1523,12 +1543,16 @@ video {
     margin-left: 10px;
   }
 
-  .lg\:mt-56 {
-    margin-top: 14rem;
+  .lg\:ml-40 {
+    margin-left: 10rem;
   }
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mt-56 {
+    margin-top: 14rem;
   }
 
   .lg\:ml-20 {
@@ -1583,10 +1607,6 @@ video {
     margin-left: 0.5rem;
   }
 
-  .lg\:ml-40 {
-    margin-left: 10rem;
-  }
-
   .lg\:block {
     display: block;
   }
@@ -1624,10 +1644,6 @@ video {
     background-color: transparent;
   }
 
-  .lg\:pr-14 {
-    padding-right: 3.5rem;
-  }
-
   .lg\:pl-14 {
     padding-left: 3.5rem;
   }
@@ -1642,6 +1658,10 @@ video {
 
   .lg\:pl-0 {
     padding-left: 0px;
+  }
+
+  .lg\:pr-14 {
+    padding-right: 3.5rem;
   }
 
   .lg\:align-super {
@@ -1678,6 +1698,14 @@ video {
     margin-left: 33px;
   }
 
+  .xl\:ml-72 {
+    margin-left: 18rem;
+  }
+
+  .xl\:ml-20 {
+    margin-left: 5rem;
+  }
+
   .xl\:ml-36 {
     margin-left: 9rem;
   }
@@ -1706,14 +1734,6 @@ video {
     margin-left: 1.25rem;
   }
 
-  .xl\:ml-72 {
-    margin-left: 18rem;
-  }
-
-  .xl\:ml-20 {
-    margin-left: 5rem;
-  }
-
   .xl\:inline-block {
     display: inline-block;
   }
@@ -1734,8 +1754,8 @@ video {
     width: 16rem;
   }
 
-  .xl\:-translate-y-3\/4 {
-    --tw-translate-y: -75%;
+  .xl\:-translate-y-\[500px\] {
+    --tw-translate-y: -500px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -1761,14 +1781,18 @@ video {
     line-height: 1.5rem;
   }
 
-  .xl\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
+  .xl\:text-\[64px\] {
+    font-size: 64px;
   }
 
   .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .xl\:text-4xl {
@@ -1779,10 +1803,6 @@ video {
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .xl\:text-\[64px\] {
-    font-size: 64px;
   }
 }
 
@@ -1807,13 +1827,8 @@ video {
     width: 400px;
   }
 
-  .\32xl\:translate-x-\[1200px\] {
-    --tw-translate-x: 1200px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .\32xl\:bg-bottom {
-    background-position: bottom;
+  .\32xl\:bg-top {
+    background-position: top;
   }
 
   .\32xl\:pt-20 {
