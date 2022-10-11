@@ -30,3 +30,15 @@
     position: relative !important;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  #dragon-hero {
+    transform: translate(250%, -80%);
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  #dragon-hero {
+    transform: translate(340%, -80%);
+  }
+}
