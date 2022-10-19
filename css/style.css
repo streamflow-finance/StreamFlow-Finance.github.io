@@ -686,8 +686,40 @@ video {
   margin-top: 8rem;
 }
 
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.ml-\[27px\] {
+  margin-left: 27px;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .ml-6 {
@@ -700,14 +732,6 @@ video {
 
 .mr-3 {
   margin-right: 0.75rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .mt-28 {
@@ -738,20 +762,12 @@ video {
   margin-right: 2rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
 .mt-\[120px\] {
   margin-top: 120px;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .mt-5 {
@@ -764,10 +780,6 @@ video {
 
 .mb-\[-40px\] {
   margin-bottom: -40px;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
 }
 
 .mt-12 {
@@ -806,6 +818,30 @@ video {
   height: 40px;
 }
 
+.h-0\.5 {
+  height: 0.125rem;
+}
+
+.h-0 {
+  height: 0px;
+}
+
+.h-\[60px\] {
+  height: 60px;
+}
+
+.h-\[32px\] {
+  height: 32px;
+}
+
+.h-\[24px\] {
+  height: 24px;
+}
+
+.h-\[72px\] {
+  height: 72px;
+}
+
 .h-40 {
   height: 10rem;
 }
@@ -828,6 +864,30 @@ video {
 
 .w-\[50px\] {
   width: 50px;
+}
+
+.w-\[260px\] {
+  width: 260px;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[311px\] {
+  width: 311px;
+}
+
+.w-\[32px\] {
+  width: 32px;
+}
+
+.w-\[24px\] {
+  width: 24px;
+}
+
+.w-\[344px\] {
+  width: 344px;
 }
 
 .w-\[250px\] {
@@ -904,6 +964,14 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .justify-evenly {
@@ -1000,6 +1068,11 @@ video {
 
 .bg-darkblack {
   background-color: var(--darkblack);
+}
+
+.bg-\[\#708197\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(112 129 151 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/imgs\/img-gamefi-hero\.png\'\)\] {
@@ -1120,16 +1193,20 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
 .pt-20 {
   padding-top: 5rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .pt-8 {
@@ -1227,6 +1304,11 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1248,6 +1330,10 @@ video {
   font-style: italic;
 }
 
+.leading-\[64px\] {
+  line-height: 64px;
+}
+
 .leading-\[18px\] {
   line-height: 18px;
 }
@@ -1256,8 +1342,12 @@ video {
   line-height: 1.5rem;
 }
 
-.leading-\[64px\] {
-  line-height: 64px;
+.tracking-\[12px\] {
+  letter-spacing: 12px;
+}
+
+.tracking-\[10px\] {
+  letter-spacing: 10px;
 }
 
 .text-white {
@@ -1274,6 +1364,16 @@ video {
 
 .text-gray {
   color: var(--gray);
+}
+
+.text-\[\#fde88d\] {
+  --tw-text-opacity: 1;
+  color: rgb(253 232 141 / var(--tw-text-opacity));
+}
+
+.text-\[\#cdd7e3\] {
+  --tw-text-opacity: 1;
+  color: rgb(205 215 227 / var(--tw-text-opacity));
 }
 
 .text-yellow {
@@ -1296,6 +1396,42 @@ video {
   --green: #6fcf97;
   --orange: #f2994a;
   --gray: #718298;
+}
+
+.checkboxes {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid var(--gray);
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkboxes:checked {
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  accent-color: var(--primary);
+}
+
+input[type="text"]:focus {
+  outline: 2px solid var(--gray);
+}
+
+input[type="text"]:-webkit-autofill,
+input[type="text"]:-webkit-autofill:hover,
+input[type="text"]:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px var(--graydark) inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  border: none;
 }
 
 .dropcontent {
@@ -1417,6 +1553,10 @@ video {
     width: auto;
   }
 
+  .md\:w-\[500px\] {
+    width: 500px;
+  }
+
   .md\:w-\[600px\] {
     width: 600px;
   }
@@ -1471,16 +1611,16 @@ video {
     background-image: url('/imgs/img-nft-hero2.png');
   }
 
-  .md\:bg-\[url\(\'\/imgs\/img-nft-hero2-test\.png\'\)\] {
-    background-image: url('/imgs/img-nft-hero2-test.png');
-  }
-
   .md\:pl-0 {
     padding-left: 0px;
   }
 
   .md\:pr-0 {
     padding-right: 0px;
+  }
+
+  .md\:pt-2 {
+    padding-top: 0.5rem;
   }
 
   .md\:pb-10 {
@@ -1501,10 +1641,6 @@ video {
 
   .md\:pt-0 {
     padding-top: 0px;
-  }
-
-  .md\:pt-2 {
-    padding-top: 0.5rem;
   }
 
   .md\:text-left {
@@ -1551,6 +1687,10 @@ video {
     margin-top: 0px;
   }
 
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .lg\:mt-56 {
     margin-top: 14rem;
   }
@@ -1595,10 +1735,6 @@ video {
     margin-left: 3rem;
   }
 
-  .lg\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
   .lg\:mr-2 {
     margin-right: 0.5rem;
   }
@@ -1625,6 +1761,22 @@ video {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:w-\[800px\] {
+    width: 800px;
+  }
+
+  .lg\:w-\[728px\] {
+    width: 728px;
+  }
+
+  .lg\:w-\[600px\] {
+    width: 600px;
+  }
+
+  .lg\:w-\[195px\] {
+    width: 195px;
   }
 
   .lg\:w-\[900px\] {
@@ -1662,6 +1814,10 @@ video {
 
   .lg\:pr-14 {
     padding-right: 3.5rem;
+  }
+
+  .lg\:align-bottom {
+    vertical-align: bottom;
   }
 
   .lg\:align-super {
@@ -1742,12 +1898,16 @@ video {
     display: none;
   }
 
-  .xl\:w-\[400px\] {
-    width: 400px;
+  .xl\:w-\[1000px\] {
+    width: 1000px;
   }
 
   .xl\:w-\[1140px\] {
     width: 1140px;
+  }
+
+  .xl\:w-\[400px\] {
+    width: 400px;
   }
 
   .xl\:w-64 {
@@ -1837,5 +1997,13 @@ video {
 
   .\32xl\:pr-36 {
     padding-right: 9rem;
+  }
+
+  .\32xl\:pb-72 {
+    padding-bottom: 18rem;
+  }
+
+  .\32xl\:pt-44 {
+    padding-top: 11rem;
   }
 }
