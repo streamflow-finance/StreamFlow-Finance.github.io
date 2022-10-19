@@ -15,6 +15,34 @@
   --orange: #f2994a;
   --gray: #718298;
 }
+.checkboxes {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid var(--gray);
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.checkboxes:checked {
+  appearance: auto;
+  clip-path: circle(50% at 50% 50%);
+  accent-color: var(--primary);
+}
+
+input[type="text"]:focus {
+  outline: 2px solid var(--gray);
+}
+input[type="text"]:-webkit-autofill,
+input[type="text"]:-webkit-autofill:hover,
+input[type="text"]:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px var(--graydark) inset;
+  transition: background-color 5000s ease-in-out 0s;
+  border: none;
+}
 .dropcontent {
   display: none !important;
   position: absolute !important;
