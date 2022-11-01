@@ -49,12 +49,21 @@ input[type="text"]:-webkit-autofill:focus {
   z-index: 1 !important;
 }
 
+.productsdropcontent {
+  display: none !important;
+  position: absolute !important;
+  z-index: 1 !important;
+}
+
 .show {
   display: block !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .dropcontent {
+    position: relative !important;
+  }
+  .productsdropcontent {
     position: relative !important;
   }
 }

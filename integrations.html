@@ -67,15 +67,15 @@
         style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
-    <div class="flex justify-center items-center mt-6 lg:hidden">
+    <div class="flex justify-center items-center mt-6 xl:hidden">
       <a href="index.html" target="_blank"
         ><img
           src="imgs/img-logo-1.png"
           alt="StreamFlow Finance logo"
-          class="lg:hidden inline-block cursor-pointer ml-4 hover:opacity-70"
+          class="xl:hidden inline-block cursor-pointer ml-4 hover:opacity-70"
       /></a>
       <button
-        class="lg:hidden inline-block ml-auto mr-auto bg-primary rounded-lg hover:opacity-70"
+        class="xl:hidden inline-block ml-auto mr-auto bg-primary rounded-lg hover:opacity-70"
       >
         <a href="https://app.streamflow.finance/" target="_blank">
           <p
@@ -124,6 +124,40 @@
     </div>
     <img src="imgs/separator.png" class="lg:hidden w-full mt-6" />
     <div class="hidden mt-6 ml-6" id="mobile-menu">
+      <div class="mb-6">
+        <div class="dropdown">
+          <div onclick="products()">
+            <p
+              class="cursor-pointer productsdroptitle hover:text-primary font-bold text-base text-graylight inline-block"
+            >
+              Products
+              <object class="pointer-events-none inline-block align-middle">
+                <img src="imgs/icn-arrow-down.png" />
+              </object>
+            </p>
+          </div>
+          <div
+            id="productsDropdownMob"
+            class="productsdropcontent bg-transparent rounded-[8px]"
+          >
+            <p
+              class="text-graylight font-bold text-base hover:text-primary pl-6 pr-10 pt-4"
+            >
+              <a href="payroll.html">Payroll</a>
+            </p>
+            <p
+              class="text-graylight font-bold text-base hover:text-primary pl-6 pr-10"
+            >
+              <a href="vesting.html">Vesting</a>
+            </p>
+            <p
+              class="text-graylight font-bold text-base hover:text-primary pl-6 pr-10"
+            >
+              <a href="multisig.html">Multisig</a>
+            </p>
+          </div>
+        </div>
+      </div>
       <div class="mb-6">
         <div class="dropdown">
           <div onclick="useCases()">
@@ -223,7 +257,7 @@
       </div>
     </div>
     <div id="content">
-      <div class="hidden lg:flex items-center p-6">
+      <div class="hidden xl:flex items-center p-6">
         <a href="index.html" target="_blank">
           <img
             src="imgs/streamflow-logo-desktop.PNG"
@@ -231,6 +265,40 @@
             class="sm:hidden lg:block cursor-pointer hover:opacity-70"
         /></a>
         <div>
+          <div class="dropdown">
+            <div onclick="products()">
+              <p
+                class="cursor-pointer productsdroptitle hover:text-primary font-bold lg:text-xs xl:text-base text-graylight inline-block"
+              >
+                Products
+                <object class="pointer-events-none inline-block align-middle">
+                  <img src="imgs/icn-arrow-down.png" />
+                </object>
+              </p>
+            </div>
+            <div
+              id="productsDropdown"
+              class="productsdropcontent bg-graydark rounded-[8px] mt-2"
+            >
+              <p
+                class="text-graylight font-normal text-base lg:text-xs xl:text-base hover:text-primary pl-6 pr-10 pt-6"
+              >
+                <a href="payroll.html">Payroll</a>
+              </p>
+              <p
+                class="pt-4 text-graylight font-normal text-base lg:text-xs xl:text-base hover:text-primary pl-6 pr-10"
+              >
+                <a href="vesting.html">Vesting</a>
+              </p>
+              <p
+                class="pt-4 text-graylight font-normal text-base lg:text-xs xl:text-base hover:text-primary pl-6 pr-10 pb-6"
+              >
+                <a href="multisig.html">Multisig</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:ml-4 xl:ml-8">
           <div class="dropdown">
             <div onclick="useCases()">
               <p
@@ -1583,6 +1651,27 @@
             var openDropdown = dropdowns[i];
             if (openDropdown.classList.contains("show")) {
               openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+    <script>
+      const products = () => {
+        document.getElementById("productsDropdown").classList.toggle("show");
+        document.getElementById("productsDropdownMob").classList.toggle("show");
+      };
+
+      window.onclick = function (event) {
+        if (!event.target.matches(".productsdroptitle")) {
+          let productDropdowns = document.getElementsByClassName(
+            "productsdropcontent"
+          );
+          let i;
+          for (i = 0; i < productDropdowns.length; i++) {
+            let productsDropdown = productDropdowns[i];
+            if (productsOpenDropdown.classList.contains("show")) {
+              productsOpenDropdown.classList.remove("show");
             }
           }
         }
