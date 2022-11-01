@@ -762,6 +762,10 @@ video {
   margin-left: 3rem;
 }
 
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
 .mr-8 {
   margin-right: 2rem;
 }
@@ -800,6 +804,10 @@ video {
 
 .ml-20 {
   margin-left: 5rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
 }
 
 .block {
@@ -1304,6 +1312,10 @@ video {
 
 .pb-\[120px\] {
   padding-bottom: 120px;
+}
+
+.pr-20 {
+  padding-right: 5rem;
 }
 
 .text-left {
