@@ -598,6 +598,10 @@ video {
   grid-column: span 1 / span 1;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
@@ -690,10 +694,6 @@ video {
   margin-top: 8rem;
 }
 
-.mr-6 {
-  margin-right: 1.5rem;
-}
-
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -762,16 +762,8 @@ video {
   margin-left: 3rem;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
 .mr-8 {
   margin-right: 2rem;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
 }
 
 .mt-\[120px\] {
@@ -798,6 +790,14 @@ video {
   margin-top: 3rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
 .mr-20 {
   margin-right: 5rem;
 }
@@ -806,8 +806,16 @@ video {
   margin-left: 5rem;
 }
 
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
 .ml-10 {
   margin-left: 2.5rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .block {
@@ -960,12 +968,28 @@ video {
   width: auto;
 }
 
+.w-\[1280px\] {
+  width: 1280px;
+}
+
 .max-w-\[1140px\] {
   max-width: 1140px;
 }
 
 .max-w-\[754px\] {
   max-width: 754px;
+}
+
+.max-w-\[330px\] {
+  max-width: 330px;
+}
+
+.max-w-\[270px\] {
+  max-width: 270px;
+}
+
+.max-w-\[376px\] {
+  max-width: 376px;
 }
 
 .flex-1 {
@@ -1095,6 +1119,10 @@ video {
   border-radius: 20px;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1180,6 +1208,26 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pt-6 {
@@ -1314,8 +1362,12 @@ video {
   padding-bottom: 120px;
 }
 
-.pr-20 {
-  padding-right: 5rem;
+.pb-40 {
+  padding-bottom: 10rem;
+}
+
+.pt-\[40px\] {
+  padding-top: 40px;
 }
 
 .text-left {
@@ -1545,7 +1597,7 @@ input[type="text"]:-webkit-autofill:focus {
   display: block !important;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .dropcontent {
     position: relative !important;
   }
@@ -1634,6 +1686,22 @@ input[type="text"]:-webkit-autofill:focus {
     margin-bottom: -225px;
   }
 
+  .md\:ml-64 {
+    margin-left: 16rem;
+  }
+
+  .md\:ml-52 {
+    margin-left: 13rem;
+  }
+
+  .md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .md\:mt-1 {
+    margin-top: 0.25rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1668,6 +1736,18 @@ input[type="text"]:-webkit-autofill:focus {
 
   .md\:w-56 {
     width: 14rem;
+  }
+
+  .md\:max-w-\[376px\] {
+    max-width: 376px;
+  }
+
+  .md\:max-w-\[340px\] {
+    max-width: 340px;
+  }
+
+  .md\:max-w-\[600px\] {
+    max-width: 600px;
   }
 
   .md\:-translate-y-\[450px\] {
@@ -1754,6 +1834,10 @@ input[type="text"]:-webkit-autofill:focus {
 
   .md\:pt-0 {
     padding-top: 0px;
+  }
+
+  .md\:pb-40 {
+    padding-bottom: 10rem;
   }
 
   .md\:text-left {
@@ -1858,6 +1942,10 @@ input[type="text"]:-webkit-autofill:focus {
 
   .lg\:ml-2 {
     margin-left: 0.5rem;
+  }
+
+  .lg\:ml-80 {
+    margin-left: 20rem;
   }
 
   .lg\:block {
@@ -2015,6 +2103,10 @@ input[type="text"]:-webkit-autofill:focus {
     margin-left: 1.25rem;
   }
 
+  .xl\:ml-52 {
+    margin-left: 13rem;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -2059,6 +2151,10 @@ input[type="text"]:-webkit-autofill:focus {
   .xl\:translate-x-\[600px\] {
     --tw-translate-x: 600px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:bg-transparent {
@@ -2120,6 +2216,26 @@ input[type="text"]:-webkit-autofill:focus {
     margin-top: 500px;
   }
 
+  .\32xl\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .\32xl\:block {
+    display: block;
+  }
+
+  .\32xl\:inline-block {
+    display: inline-block;
+  }
+
+  .\32xl\:flex {
+    display: flex;
+  }
+
+  .\32xl\:hidden {
+    display: none;
+  }
+
   .\32xl\:w-\[600px\] {
     width: 600px;
   }
@@ -2130,6 +2246,10 @@ input[type="text"]:-webkit-autofill:focus {
 
   .\32xl\:w-\[400px\] {
     width: 400px;
+  }
+
+  .\32xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .\32xl\:bg-top {

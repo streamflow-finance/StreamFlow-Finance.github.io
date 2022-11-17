@@ -59,7 +59,7 @@ input[type="text"]:-webkit-autofill:focus {
   display: block !important;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .dropcontent {
     position: relative !important;
   }
