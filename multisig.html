@@ -57,7 +57,7 @@
     <script src="menu.js"></script>
   </head>
 
-  <body class="font-inter">
+  <body class="font-inter bg-darkblack">
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -69,7 +69,7 @@
     ></noscript>
 
     <div
-      class="bg-fieldblack flex justify-center items-center pt-6 pb-6 lg:hidden"
+      class="bg-darkblack flex justify-center items-center pt-6 pb-6 lg:hidden"
     >
       <a href="https://streamflow.finance" target="_blank">
         <img
@@ -150,7 +150,8 @@
         class="md:hidden inline-block ml-auto mr-auto bg-primary rounded-lg hover:opacity-70" onclick="dataLayer.push({'event': 'get-started-click'});"
 
       >
-        <a href="https://app.streamflow.finance/" target="_blank">
+        <a href="https://app.streamflow.finance/" target="_blank" onclick="dataLayer.push({'event': 'get-started-click'});"
+        >
           <p
             class="font-semibold pt-2 pb-2 pl-3 pr-3 text-base items-center text-white"
           >
@@ -197,7 +198,7 @@
     </div>
     <img src="imgs/separator.png" class="lg:hidden w-full" />
     <div
-      class="hidden bg-fieldblack pt-6 pl-6 w-screen h-screen"
+      class="hidden bg-darkblack pt-6 pl-6 w-screen h-screen"
       id="mobile-menu"
     >
       <div class="mb-6">
@@ -341,9 +342,7 @@
     </div>
 
     <div id="content">
-      <div
-        class="bg-[url('/imgs/img-nft-hero-mob.png')] md:bg-[url('/imgs/img-nft-hero2.png')] bg-center bg-cover"
-      >
+      <div class="z-50 relative bg-darkblack">
         <div class="hidden lg:flex items-center p-6">
           <a href="https://streamflow.finance" target="_blank">
             <img
@@ -611,110 +610,116 @@
           </div>
         </div>
 
-        <div class="">
-          <h1
-            class="leading-[64px] text-graylight text-center font-bold text-5xl xl:text-[64px] pt-32"
-          >
-            <span
-              class="text-white font-bold text-center text-5xl xl:text-[64px]"
+        <div class="bg-darkblack">
+          <div>
+            <img
+              src="imgs/logos2.png"
+              class="ml-auto mr-auto pt-32 hidden md:block"
+            />
+            <img
+              src="imgs/logos2-mobile.png"
+              class="ml-auto mr-auto pt-32 md:hidden block"
+            />
+            <h1
+              class="w-[260px] lg:w-[800px] xl:w-[1200px] ml-auto mr-auto leading-[64px] xl:leading-normal text-white text-center font-bold text-5xl xl:text-[64px] pt-16"
             >
-              NFT
-            </span>
-            communities run better with
-          </h1>
-          <p class="text-white font-bold text-center text-5xl xl:text-[64px]">
-            Streamflow
-          </p>
-          <p
-            class="text-graylight text-center text-lg lg:text-xl xl:text-2xl max-w-[1140px] mt-8 ml-auto mr-auto mb-10 pl-4 pr-4 md:pl-0 md:pr-0"
-          >
-            Expand your community offerings by integrating with the Streamflow
-            SDK to access on-chain payments, including lock-drop NFTs, token
-            airdrops, and more. With Streamflow, you can distribute assets to
-            community members securely and transparently.
-          </p>
-          <div class="flex justify-center md:flex-row pb-20 md:pb-30 gap-8">
-            <a
-              href="https://app.streamflow.finance/"
-              class="flex flex-row transition-all5 self-start md:self-auto static bg-primary rounded-lg hover:opacity-70 font-semibold text-base pl-4 pr-4 pt-3 pb-3 items-center text-white"
-              target="_blank"
-              onclick="dataLayer.push({'event': 'get-started-click'});"
+              Store and send team funds securely with Streamflows
+              Multi-signature Wallet app
+            </h1>
 
+            <p
+              class="lg:leading-normal xl:leading-normal text-graylight text-center text-lg lg:text-xl md:w-[500px] lg:w-[800px] xl:w-[1140px] xl:text-2xl max-w-[1140px] mt-8 ml-auto mr-auto pl-4 pr-4 md:pl-0 md:pr-0"
             >
-              Get Started
-            </a>
-            <a
-              href="https://docs.streamflow.finance/"
-              class="ghost-btn transition-all5 flex flex-row self-start md:self-auto static border border-solid border-gray rounded-lg hover:opacity-70 font-semibold text-base pl-4 pr-4 pt-3 pb-3 items-center text-white"
-              target="_blank"
-              >View Our Docs</a
+              Store your team's funds, and distribute them when needed using our
+              Multisig app. Multisig wallets derive their security from
+              requiring multiple members with private keys to approve
+              transactions to transfer funds from or change configurations to
+              the multisig. The more members, the more secure the wallet.
+            </p>
+            <div
+              class="flex justify-center md:flex-row pt-20 pb-20 md:pb-30 gap-8"
             >
+              <a
+                href="https://app.streamflow.finance/"
+                class="flex flex-row transition-all5 self-start md:self-auto static bg-primary rounded-lg hover:opacity-70 font-semibold text-base pl-4 pr-4 pt-3 pb-3 items-center text-white"
+                target="_blank"
+                onclick="dataLayer.push({'event': 'get-started-click'});"
+
+              >
+                Get Started
+              </a>
+              <a
+                href="https://calendly.com/streamflow-bd/token-vesting?month=2022-10"
+                class="ghost-btn transition-all5 flex flex-row self-start md:self-auto static border border-solid border-gray rounded-lg hover:opacity-70 font-semibold text-base pl-4 pr-4 pt-3 pb-3 items-center text-white"
+                target="_blank"
+                >Book a Demo</a
+              >
+            </div>
+            <div class="flex justify-center">
+              <span class="text-graylight mr-3">Powered by</span>
+              <a href="https://solana.com/" target="_blank"
+                ><img class="inline-block mr-4" src="imgs/solana-logo2.png"
+              /></a>
+              <span class="text-graylight mr-4">/</span
+              ><span class="text-graylight mr-3">Audited by</span>
+              <a
+                href="https://github.com/streamflow-finance/rust-sdk/blob/main/protocol_audit.pdf"
+                target="_blank"
+                ><img class="inline-block" src="imgs/opcodes.png"
+              /></a>
+            </div>
+            <div class="flex justify-center">
+              <img class="translate-y-[50px]" src="imgs/img-multisig-2.png" />
+            </div>
           </div>
         </div>
       </div>
       <div
-        class="bg-darkblack text-center border-t-2 border-solid border-graydark"
+        class="z-50 relative bg-darkblack pl-4 pr-4 pt-[80px] pb-20 md:pb-30 border-t-2 border-solid border-graydark"
       >
-        <div>
-          <div class="lg:inline-block sm:block">
-            <h3 class="text-gray text-lg font-bold pt-4 xl:pt-8 mt-10 lg:mt-0">
-              TVL
-            </h3>
-            <h1
-              class="text-white text-3xl xl:text-4xl font-bold text-center pt-2"
-            >
-              ~$500M
-            </h1>
-            <img src="imgs/linew.png" class="w-full lg:hidden mt-6" />
+        <h2
+          class="text-2xl text-primary text-center font-bold md:mb-20 mb-10 max-w-[1140px] ml-auto mr-auto"
+        >
+          Providing a platform for institutions and Web 3 teams to store and
+          send funds securely, and cost-efficiently
+        </h2>
+        <div
+          class="grid md:grid-cols-2 grid-cols-1 gap-6 max-w-[1140px] ml-auto mr-auto"
+        >
+          <div>
+            <div class="flex justify-center h-20">
+              <img src="imgs/img-darley-go.png" alt="DarleyGo" />
+            </div>
+            <div class="flex justify-center items-center p-4 h-13">
+              <h3 class="text-white text-center text-xs font-bold">DarleyGo</h3>
+            </div>
           </div>
-          <img
-            class="hidden lg:inline-block mb-10 lg:ml-20 xl:ml-40"
-            src="imgs/rectangle60.png"
-          />
-          <div class="lg:inline-block sm:block">
-            <h3 class="text-gray text-lg font-bold lg:ml-20 xl:ml-40 mt-10">
-              Streams
-            </h3>
-            <h1
-              class="text-white text-3xl xl:text-4xl font-bold lg:ml-20 xl:ml-40 text-center pt-2"
-            >
-              ~37 750
-            </h1>
-            <img src="imgs/linew.png" class="w-full lg:hidden mt-6" />
-          </div>
-          <img
-            class="hidden lg:inline-block mb-10 lg:ml-20 xl:ml-40"
-            src="imgs/rectangle60.png"
-          />
-          <div class="lg:inline-block sm:block">
-            <h3 class="text-gray text-lg font-bold lg:ml-20 xl:ml-40 mt-10">
-              Number of Tokens
-            </h3>
-            <h1
-              class="text-white text-3xl xl:text-4xl font-bold lg:ml-20 xl:ml-40 text-center pt-2"
-            >
-              185+
-            </h1>
-            <img src="imgs/linew.png" class="w-full lg:hidden mt-6" />
+          <div>
+            <div class="flex justify-center h-20">
+              <img src="imgs/img-heavenland-1.png" alt="Heavenland" />
+            </div>
+            <div class="flex justify-center items-center p-4 h-13">
+              <h3 class="text-white text-center text-xs font-bold">
+                Heavenland
+              </h3>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="bg-fieldblack pl-4 pr-4 pt-[120px] pb-10 md:pb-30">
+      <div
+        class="z-50 relative bg-fieldblack pl-4 pr-4 pt-[120px] pb-10 md:pb-30"
+      >
         <div class="max-w-[1140px] ml-auto mr-auto">
-          <h2
-            class="text-white text-center font-bold text-4xl md:text-5xl mb-6"
+          <p
+            class="text-white text-center font-bold leading-normal md:leading-normal text-4xl md:text-5xl mb-6"
           >
-            Enhance your NFT project with streams
-          </h2>
+            Safeguard your treasury with Streamflows multisig app
+          </p>
           <p
             class="text-center text-base text-graylight mb-20 pl-4 pr-4 md:pl-0 md:pr-0"
           >
-            Need to lock up NFTs for a period of time? or Have you released a
-            companion token for your NFT project? With the streamflow vesting
-            app, you can create an on-chain vesting contract of your tokens or
-            NFTs so your community can view transactions and follow your
-            designated schedule.
+            With Streamflows Multisig app you can securely store your team's
+            funds, and vote on proposals to distribute them when needed.
           </p>
 
           <div class="max-w-[754px] ml-auto mr-auto mb-38 pl-4 pr-4">
@@ -724,20 +729,20 @@
               >
                 <img
                   class="relative z-10"
-                  src="imgs/streaming-primitive.png"
-                  alt="Streaming Primitive"
+                  src="imgs/streaming-primitive-2.png"
+                  alt="Streaming primitive"
                 />
                 <div class="ellipse"></div>
               </div>
               <div class="flex flex-col justify-center flex-1 mt-4 md:mt-0">
                 <h3 class="text-white font-bold text-2xl md:text-4xl mb-2">
-                  Streaming Primitive
+                  Streaming primitive
                 </h3>
                 <p class="text-base text-graylight">
-                  With our streaming primitive you can issue payments to users
-                  by the: minute, hour, week, month, etc. No matter the
-                  schedule, Streamflow allows you to distribute assets securely
-                  and cost-efficiently.
+                  Our Multisig app takes full advantage of our streaming
+                  primitive, allowing members to create vesting and payment
+                  streams directly from the app. You can think of our multisig
+                  as a secure team treasury with payment streaming capabilities.
                 </p>
               </div>
             </div>
@@ -747,78 +752,92 @@
               >
                 <img
                   class="relative z-10"
-                  src="imgs/lock-drop-nft.png"
-                  alt="Lock drop NFT"
+                  src="imgs/members-vote.png"
+                  alt="Members vote on proposals — Collective Ownership "
                 />
                 <div class="ellipse"></div>
               </div>
               <div class="flex flex-col justify-center flex-1 mt-4 md:mt-0">
                 <h3 class="text-white font-bold text-2xl md:text-4xl mb-2">
-                  Lock drop NFT
+                  Members vote on proposals — Collective Ownership
                 </h3>
                 <p class="text-base text-graylight">
-                  Use the Streamflow vesting app to lock NFTs for distribution
-                  to your community until a later date
-                </p>
-              </div>
-            </div>
-
-            <div class="flex md:mb-24 mb-20 md:flex-row flex-col gap-0">
-              <div
-                class="shadow-mm rounded-20px basis-70 relative basis-auto self-start"
-              >
-                <img
-                  class="relative z-10"
-                  src="imgs/nft-project-currencies.png"
-                  alt="NFT project currencies"
-                />
-                <div class="ellipse"></div>
-              </div>
-              <div class="flex flex-col justify-center flex-1 mt-4 md:mt-0">
-                <h3 class="text-white font-bold text-2xl md:text-4xl mb-2">
-                  NFT project currencies
-                </h3>
-                <p class="text-base text-graylight">
-                  Do you have a token accompanying your NFT project? Use the
-                  Streamflow vesting app to distribute your tokens to NFT
-                  stakers or team members programmatically.
+                  Multisig members must vote on proposals to add members, stream
+                  funds, and change the wallet name.
                 </p>
               </div>
             </div>
 
-            <div class="flex md:mb-24 mb-20 md:flex-row flex-col gap-0">
+            <div class="flex md:flex-row flex-col gap-0">
               <div
                 class="shadow-mm rounded-20px basis-70 relative basis-auto self-start"
               >
                 <img
                   class="relative z-10"
-                  src="imgs/airdrop-nfts-or-tokens.png"
-                  alt="Airdrop NFTs or tokens"
+                  src="imgs/security.png"
+                  alt="Security"
                 />
                 <div class="ellipse"></div>
               </div>
               <div class="flex flex-col justify-center flex-1 mt-4 md:mt-0">
                 <h3 class="text-white font-bold text-2xl md:text-4xl mb-2">
-                  Airdrop NFTs or tokens
+                  Security
                 </h3>
                 <p class="text-base text-graylight">
-                  Do you need to airdrop tokens or NFTs to hundreds or thousands
-                  of recipients? Use Streamflow’s batch contract creation for
-                  vesting streams to create hundreds of vesting contracts in a
-                  matter of minutes!
+                  Multi-signature Wallets increase the security of funds by
+                  spreading the authorization process for transactions among
+                  multiple people— The more members, the more secure the wallet.
                 </p>
               </div>
+            </div>
+            <div class="md:mb-16 mb-10 pt-6 md:pt-2 flex flex-col text-center">
+              <p class="text-gray text-xs font-normal">Used by</p>
+              <img
+                src="imgs/img-heavenland-1.png"
+                class="w-[90px] h-[55px] ml-auto mr-auto pt-2"
+              />
+              <p class="text-xs text-white font-bold pt-2">Heavenland</p>
+            </div>
+            <div class="flex md:flex-row flex-col gap-0">
+              <div
+                class="shadow-mm rounded-20px basis-70 relative basis-auto self-start"
+              >
+                <img
+                  class="relative z-10"
+                  src="imgs/self-custody.png"
+                  alt="Self-custody On-chain"
+                />
+                <div class="ellipse"></div>
+              </div>
+              <div class="flex flex-col justify-center flex-1 mt-4 md:mt-0">
+                <h3 class="text-white font-bold text-2xl md:text-4xl mb-2">
+                  Self-custody On-chain
+                </h3>
+                <p class="text-base text-graylight">
+                  Your team's funds are stored securely on-chain. All Multisig
+                  wallet transactions are viewable via the Solana blockchain
+                  explorer.
+                </p>
+              </div>
+            </div>
+            <div class="md:mb-16 mb-10 pt-6 md:pt-2 flex flex-col text-center">
+              <p class="text-gray text-xs font-normal">Used by</p>
+              <img
+                src="imgs/img-darley-go.png"
+                class="w-[60px] h-[30px] ml-auto mr-auto pt-2"
+              />
+              <p class="text-xs text-white font-bold pt-2">DarleyGo</p>
             </div>
           </div>
 
           <h2
-            class="leading-[64px] text-white text-center font-bold text-5xl mb-6 pt-20 pl-4 pr-4 md:pl-0 md:pr-0"
+            class="leading-[64px] text-white text-center font-bold text-5xl mb-6 mt-40 pl-4 pr-4 md:pl-0 md:pr-0"
           >
-            Take your NFT project to the next level with Streamflow
+            Get Started
           </h2>
           <p class="text-center text-base text-graylight mb-10">
-            Check out our SDK and other developer resources in our
-            documentation.
+            Store your team's tokens for safekeeping, and distribute them
+            efficiently when the time comes.
           </p>
 
           <div class="flex justify-center gap-8 md:flex-row flex-col mb-20">
@@ -832,16 +851,10 @@
               Get Started
             </a>
             <a
-              href="https://streamflow.finance/js-sdk"
+              href="https://calendly.com/streamflow-bd/token-vesting?month=2022-10"
               class="ghost-btn transition-all5 flex flex-row self-center static border border-solid border-gray rounded-lg hover:opacity-70 font-semibold text-base pl-4 pr-4 pt-3 pb-3 items-center text-white"
               target="_blank"
-              >Check Out SDK</a
-            >
-            <a
-              href="https://streamflow.notion.site/Streamflow-Developer-Grant-Program-c524b0a41dbb4d0e8265b3b83298c502"
-              class="ghost-btn transition-all5 flex flex-row self-center static border border-solid border-gray rounded-lg hover:opacity-70 font-semibold text-base pl-4 pr-4 pt-3 pb-3 items-center text-white"
-              target="_blank"
-              >Apply for Grant</a
+              >Book a Demo</a
             >
           </div>
         </div>
