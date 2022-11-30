@@ -717,6 +717,13 @@
                 method="POST"
                 class="ml-auto mr-auto xl:col-span-2"
               >
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="box" />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://streamflow.finance/success"
+                />
                 <p class="text-white font-bold text-4xl leading-normal">
                   Get In Touch
                 </p>
@@ -749,6 +756,7 @@
                     >Email address</label
                   >
                   <input
+                    type="text"
                     class="text-white pl-3 text-sm mt-2 w-[328px] md:w-[708px] xl:w-[716px] h-[48px] bg-graydark rounded-lg"
                     placeholder="i.e. hello@company.com"
                     name="email_address"
@@ -759,6 +767,7 @@
                   <input
                     class="text-white pl-3 text-sm mt-2 w-[328px] md:w-[708px] xl:w-[716px] h-[48px] bg-graydark rounded-lg"
                     placeholder="i.e. Company"
+                    type="text"
                     name="organization"
                   />
                 </div>
