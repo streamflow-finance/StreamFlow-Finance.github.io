@@ -58,6 +58,10 @@ input[type="text"]:-webkit-autofill:focus {
 .show {
   display: block !important;
 }
+[contentEditable="true"]:empty:before {
+  content: attr(placeholder);
+  opacity: 0.6;
+}
 
 @media screen and (max-width: 768px) {
   .dropcontent {
