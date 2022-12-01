@@ -2465,18 +2465,27 @@
     </div>
     <script>
       const casesDropdown = () => {
-        document.getElementById("casesDropdown").classList.toggle("show");
-        document.getElementById("casesDropdownMob").classList.toggle("show");
+        document.querySelector("#casesDropdown").classList.toggle("show");
+        document.querySelector("#casesDropdownMob").classList.toggle("show");
+        document.querySelector("#productsDropdown").classList.remove("show");
+        document.querySelector("#productsDropdownMob").classList.remove("show");
+        document.querySelector("#moreDropdown").classList.remove("show");
       };
 
       const productsDropdown = () => {
-        document.getElementById("productsDropdown").classList.toggle("show");
-        document.getElementById("productsDropdownMob").classList.toggle("show");
+        document.querySelector("#productsDropdown").classList.toggle("show");
+        document.querySelector("#productsDropdownMob").classList.toggle("show");
+        document.querySelector("#casesDropdown").classList.remove("show");
+        document.querySelector("#casesDropdownMob").classList.remove("show");
+        document.querySelector("#moreDropdown").classList.remove("show");
       };
 
       const moreDropdown = () => {
-        document.getElementById("moreDropdown").classList.toggle("show");
-        document.getElementById("moreDropdownMob").classList.toggle("show");
+        document.querySelector("#moreDropdown").classList.toggle("show");
+        document.querySelector("#productsDropdown").classList.remove("show");
+        document.querySelector("#productsDropdownMob").classList.remove("show");
+        document.querySelector("#casesDropdown").classList.remove("show");
+        document.querySelector("#casesDropdownMob").classList.remove("show");
       };
 
       window.onclick = function (event) {
