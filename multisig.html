@@ -159,7 +159,9 @@
           </a>
         </div>
         <a href="https://app.streamflow.finance/" target="_blank">
-          <button class="bg-primary rounded-lg hover:opacity-70" onclick="dataLayer.push({'event': 'get-started-click'});"
+          <button
+            class="bg-primary rounded-lg hover:opacity-70"
+            onclick="dataLayer.push({'event': 'get-started-click'});"
           >
             <p
               class="pt-2 pb-2 pl-2 pr-2 font-semibold text-base lg:text-xs xl:text-base items-center text-white"
@@ -170,10 +172,13 @@
         </a>
       </div>
       <button
-        class="md:hidden inline-block ml-auto mr-auto bg-primary rounded-lg hover:opacity-70" onclick="dataLayer.push({'event': 'get-started-click'});"
-
+        class="md:hidden inline-block ml-auto mr-auto bg-primary rounded-lg hover:opacity-70"
+        onclick="dataLayer.push({'event': 'get-started-click'});"
       >
-        <a href="https://app.streamflow.finance/" target="_blank" onclick="dataLayer.push({'event': 'get-started-click'});"
+        <a
+          href="https://app.streamflow.finance/"
+          target="_blank"
+          onclick="dataLayer.push({'event': 'get-started-click'});"
         >
           <p
             class="font-semibold pt-2 pb-2 pl-3 pr-3 text-base items-center text-white"
@@ -513,7 +518,7 @@
                 <p
                   class="pt-4 text-graylight font-normal text-base hover:text-primary pl-6 pr-10 pb-6"
                 >
-                  <a href="https://streamflow.finance/nft">Contact</a>
+                  <a href="https://streamflow.finance/contact">Contact</a>
                 </p>
               </div>
             </div>
@@ -647,7 +652,9 @@
             </div>
 
             <a href="https://app.streamflow.finance/" target="_blank">
-              <button class="bg-primary rounded-lg hover:opacity-70" onclick="dataLayer.push({'event': 'get-started-click'});"
+              <button
+                class="bg-primary rounded-lg hover:opacity-70"
+                onclick="dataLayer.push({'event': 'get-started-click'});"
               >
                 <p
                   class="px-2 py-2 font-semibold text-base lg:text-xs xl:text-base items-center text-white"
@@ -692,7 +699,6 @@
                 class="flex flex-row transition-all5 self-start md:self-auto static bg-primary rounded-lg hover:opacity-70 font-semibold text-base pl-4 pr-4 pt-3 pb-3 items-center text-white"
                 target="_blank"
                 onclick="dataLayer.push({'event': 'get-started-click'});"
-
               >
                 Get Started
               </a>
@@ -895,7 +901,6 @@
               class="flex transition-all5 flex-row self-center static bg-primary rounded-lg hover:opacity-70 font-semibold text-base pl-4 pr-4 pt-3 pb-3 items-center text-white"
               target="_blank"
               onclick="dataLayer.push({'event': 'get-started-click'});"
-
             >
               Get Started
             </a>
@@ -1163,18 +1168,27 @@
 
     <script>
       const casesDropdown = () => {
-        document.getElementById("casesDropdown").classList.toggle("show");
-        document.getElementById("casesDropdownMob").classList.toggle("show");
+        document.querySelector("#casesDropdown").classList.toggle("show");
+        document.querySelector("#casesDropdownMob").classList.toggle("show");
+        document.querySelector("#productsDropdown").classList.remove("show");
+        document.querySelector("#productsDropdownMob").classList.remove("show");
+        document.querySelector("#moreDropdown").classList.remove("show");
       };
 
       const productsDropdown = () => {
-        document.getElementById("productsDropdown").classList.toggle("show");
-        document.getElementById("productsDropdownMob").classList.toggle("show");
+        document.querySelector("#productsDropdown").classList.toggle("show");
+        document.querySelector("#productsDropdownMob").classList.toggle("show");
+        document.querySelector("#casesDropdown").classList.remove("show");
+        document.querySelector("#casesDropdownMob").classList.remove("show");
+        document.querySelector("#moreDropdown").classList.remove("show");
       };
 
       const moreDropdown = () => {
-        document.getElementById("moreDropdown").classList.toggle("show");
-        document.getElementById("moreDropdownMob").classList.toggle("show");
+        document.querySelector("#moreDropdown").classList.toggle("show");
+        document.querySelector("#productsDropdown").classList.remove("show");
+        document.querySelector("#productsDropdownMob").classList.remove("show");
+        document.querySelector("#casesDropdown").classList.remove("show");
+        document.querySelector("#casesDropdownMob").classList.remove("show");
       };
 
       window.onclick = function (event) {
