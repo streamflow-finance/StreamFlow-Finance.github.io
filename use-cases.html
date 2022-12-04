@@ -57,7 +57,7 @@
     <script src="menu.js"></script>
   </head>
 
-  <body class="font-inter bg-darkblack">
+  <body class="font-inter bg-fieldblack">
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -67,8 +67,9 @@
         style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
+
     <div
-      class="bg-darkblack flex justify-center items-center pt-6 pb-6 lg:hidden"
+      class="bg-fieldblack flex justify-center items-center pt-6 pb-6 lg:hidden"
     >
       <a href="https://streamflow.finance" target="_blank">
         <img
@@ -224,7 +225,7 @@
     </div>
     <img src="imgs/separator.png" class="lg:hidden w-full" />
     <div
-      class="hidden bg-darkblack pt-6 pl-6 w-screen h-screen"
+      class="hidden bg-fieldblack pt-6 pl-6 w-screen h-screen"
       id="mobile-menu"
     >
       <div class="mb-6">
@@ -382,7 +383,7 @@
     </div>
 
     <div id="content">
-      <div class="z-50 relative bg-darkblack">
+      <div class="z-50 relative bg-fieldblack">
         <div class="hidden lg:flex items-center p-6">
           <a href="https://streamflow.finance" target="_blank">
             <img
@@ -684,32 +685,21 @@
           </div>
         </div>
 
-        <div class="bg-darkblack">
-          <div>
-            <img
-              src="imgs/logos2.png"
-              class="ml-auto mr-auto pt-32 hidden md:block"
-            />
-            <img
-              src="imgs/logos2-mobile.png"
-              class="ml-auto mr-auto pt-32 md:hidden block"
-            />
+        <div class="bg-fieldblack">
+          <div class="pt-32">
             <h1
               class="w-[260px] lg:w-[800px] xl:w-[1200px] ml-auto mr-auto leading-[64px] text-white text-center font-bold text-5xl xl:text-[64px] pt-16"
             >
-              Affordable and automated payroll
+              Use Cases Overview
             </h1>
 
             <p
               class="lg:leading-normal xl:leading-normal text-graylight text-center text-lg lg:text-xl md:w-[500px] lg:w-[800px] xl:w-[1140px] xl:text-2xl max-w-[1140px] mt-8 ml-auto mr-auto pl-4 pr-4 md:pl-0 md:pr-0"
             >
-              Streamflow provides organizations with a low-cost and efficient
-              payroll solution for processing remittances to employees and
-              contractors globally.
+              Streamflow provides Web3 teams with the infrastructure to
+              distribute value programmatically.
             </p>
-            <div
-              class="flex justify-center md:flex-row pt-20 pb-20 md:pb-30 gap-8"
-            >
+            <div class="flex justify-center md:flex-row pt-20 gap-8">
               <a
                 href="https://app.streamflow.finance/"
                 class="flex flex-row transition-all5 self-start md:self-auto static bg-primary rounded-lg hover:opacity-70 font-semibold text-base pl-4 pr-4 pt-3 pb-3 items-center text-white"
@@ -725,235 +715,242 @@
                 >Book a Demo</a
               >
             </div>
-            <div class="flex justify-center">
-              <span class="text-graylight mr-3">Powered by</span>
-              <a href="https://solana.com/" target="_blank"
-                ><img class="inline-block mr-4" src="imgs/solana-logo2.png"
-              /></a>
-              <span class="text-graylight mr-4">/</span
-              ><span class="text-graylight mr-3">Audited by</span>
-              <a
-                href="https://github.com/streamflow-finance/rust-sdk/blob/main/protocol_audit.pdf"
-                target="_blank"
-                ><img class="inline-block" src="imgs/opcodes.png"
-              /></a>
-            </div>
-            <div class="flex justify-center">
-              <img
-                class="translate-y-[50px]"
-                src="imgs/img-integrations-2.png"
-              />
-            </div>
           </div>
         </div>
-      </div>
-
-      <div
-        class="z-50 relative bg-darkblack pl-4 pr-4 pt-[80px] pb-20 md:pb-30 border-t-2 border-solid border-graydark"
-      >
-        <h2 class="text-2xl text-primary text-center font-bold md:mb-20 mb-10">
-          Powering Web 3’s financial infrastructure
-        </h2>
-        <div
-          class="grid md:grid-cols-3 grid-cols-2 gap-6 max-w-[1140px] ml-auto mr-auto"
-        >
-          <div>
-            <div class="flex justify-center h-20">
-              <img src="imgs/tulip-protocol.png" alt="Tulip Protocol" />
-            </div>
-            <div class="flex justify-center items-center p-4 h-13">
-              <h3 class="text-white text-center text-xs font-bold">
-                Tulip Protocol
-              </h3>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-center h-20">
-              <img src="imgs/grape-protocol.png" alt="Grape Protocol" />
-            </div>
-            <div class="flex justify-center items-center p-4 h-13">
-              <h3 class="text-white text-center text-xs font-bold">
-                Grape Protocol
-              </h3>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-center h-20">
-              <img src="imgs/img-jungle-defi-1.png" alt="Jungle DeFi" />
-            </div>
-            <div class="flex justify-center items-center p-4 h-13">
-              <h3 class="text-white text-center text-xs font-bold">
-                Jungle DeFi
-              </h3>
-            </div>
-          </div>
+        <div class="ml-28 md:ml-0 md:flex justify-center pt-16 pb-20 md:pb-40">
+          <span class="text-graylight mr-3 mt-2">Powered by</span>
+          <a href="https://solana.com/" target="_blank">
+            <img
+              class="inline-block mr-4 w-[42px] h-[42px]"
+              src="imgs/powered-by-solana.png"
+            />
+          </a>
+          <!-- <a href="https://aptoslabs.com/" target="_blank">
+            <img
+              class="inline-block mr-4 w-[42px] h-[42px]"
+              src="imgs/logo.png"
+            />
+          </a> -->
+          <br class="md:hidden" />
+          <span class="text-graylight mr-4 hidden md:block mt-2">/</span>
+          <span class="text-graylight mr-3 mt-2">Audited by</span>
+          <a
+            href="https://github.com/streamflow-finance/rust-sdk/blob/main/protocol_audit.pdf"
+            target="_blank"
+            ><img class="inline-block mt-2" src="imgs/opcodes.png"
+          /></a>
         </div>
       </div>
-      <div
-        class="z-50 relative bg-fieldblack pl-4 pr-4 pt-[120px] pb-10 md:pb-30"
-      >
-        <div class="max-w-[1140px] ml-auto mr-auto">
-          <p
-            class="text-white text-center font-bold leading-normal md:leading-normal text-4xl md:text-5xl mb-6"
-          >
-            Reduce your overhead costs with payroll streams
-          </p>
-          <p
-            class="text-center text-base text-graylight mb-20 pl-4 pr-4 md:pl-0 md:pr-0"
-          >
-            With our token distribution platform, you can operate with less
-            working capital and compensate employees at a fraction of the cost
-            of traditional payroll solutions. Use Streamflow to send payouts,
-            and manage your employee's salaries online.
-          </p>
-
-          <div class="max-w-[754px] ml-auto mr-auto mb-38 pl-4 pr-4">
-            <div class="flex md:mb-24 mb-20 md:flex-row flex-col gap-0">
-              <div
-                class="shadow-mm rounded-20px basis-70 relative basis-auto self-start"
+      <div class="bg-darkblack pt-20">
+        <div class="flex justify-center">
+          <div class="grid grid-cols-1 xl:grid-cols-2 justify-evenly">
+            <div class="xl:hidden flex justify-center">
+              <img src="imgs/nfts.png" class="block" />
+            </div>
+            <div
+              class="min-[250px]:text-graylight max-w-[330px] md:max-w-[376px] xl:max-w-[700px] ml-4 md:ml-52 lg:ml-80 xl:ml-24"
+            >
+              <p
+                class="text-white font-bold text-2xl lg:text-4xl pt-6 leading-normal"
               >
-                <img
-                  class="relative z-10"
-                  src="imgs/continuous-release-of-value.png"
-                  alt="Continuous Release of Value"
-                />
-                <div class="ellipse"></div>
-              </div>
-              <div class="flex flex-col justify-center flex-1 mt-4 md:mt-0">
-                <h3 class="text-white font-bold text-2xl md:text-4xl mb-2">
-                  Real-Time Payments
-                </h3>
-                <p class="text-base text-graylight">
-                  When you create a payroll stream you specify the total amount
-                  of funds each employee receives and you can issue smaller
-                  payouts during the span of the pay period. You can choose to
-                  issue payouts to employees in any increment of time — By the
-                  minute, the hour, the week, etc.
-                </p>
-              </div>
-            </div>
-            <div class="flex md:mb-24 mb-20 md:flex-row flex-col gap-0">
-              <div
-                class="shadow-mm rounded-20px basis-70 relative basis-auto self-start"
-              >
-                <img
-                  class="relative z-10"
-                  src="imgs/low-cost-payments.png"
-                  alt="Low-Cost Payments"
-                />
-                <div class="ellipse"></div>
-              </div>
-              <div class="flex flex-col justify-center flex-1 mt-4 md:mt-0">
-                <h3 class="text-white font-bold text-2xl md:text-4xl mb-2">
-                  Low-Cost Payments
-                </h3>
-                <p class="text-base text-graylight">
-                  Initiating a stream incurs a one-time fee of .25%, and once a
-                  stream is initiated, it will continue to emit value without
-                  the need for additional configurations or transaction costs.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex md:flex-row flex-col gap-0">
-              <div
-                class="shadow-mm rounded-20px basis-70 relative basis-auto self-start"
-              >
-                <img
-                  class="relative z-10"
-                  src="imgs/img-batch-create-stream.png"
-                  alt="Batch Create Stream"
-                />
-                <div class="ellipse"></div>
-              </div>
-              <div class="flex flex-col justify-center flex-1 mt-4 md:mt-0">
-                <h3 class="text-white font-bold text-2xl md:text-4xl mb-2">
-                  Batch Create Stream
-                </h3>
-                <p class="text-base text-graylight">
-                  Does your organization have many employees across multiple
-                  teams? Create payroll streams for your entire company in a
-                  matter of minutes using Streamflows batch payments feature.
-                </p>
-              </div>
-            </div>
-            <div class="md:mb-16 mb-10 pt-6 md:pt-2 flex flex-col text-center">
-              <p class="text-gray text-xs font-normal">Used by</p>
-              <img
-                src="imgs/tulip-protocol.png"
-                class="w-[50px] h-[60px] ml-auto mr-auto pt-2"
-              />
-              <p class="text-xs text-white font-bold pt-2">Tulip Protocol</p>
-            </div>
-            <div class="flex md:flex-row flex-col gap-0">
-              <div
-                class="shadow-mm rounded-20px basis-70 relative basis-auto self-start"
-              >
-                <img
-                  class="relative z-10"
-                  src="imgs/stream-top-up.png"
-                  alt="Stream To-Up"
-                />
-                <div class="ellipse"></div>
-              </div>
-              <div class="flex flex-col justify-center flex-1 mt-4 md:mt-0">
-                <h3 class="text-white font-bold text-2xl md:text-4xl mb-2">
-                  Stream Top-Up
-                </h3>
-                <p class="text-base text-graylight">
-                  Did you promote an employee and increase their salary? With
-                  Streamflows payroll app you can ‘top-up’ their stream by
-                  adding more funds to the ongoing contract.
-                </p>
-              </div>
-            </div>
-            <div class="md:mb-16 mb-10 pt-6 md:pt-2 flex flex-col text-center">
-              <p class="text-gray text-xs font-normal">Used by</p>
-              <img
-                src="imgs/img-jungle-defi-1.png"
-                class="w-[80px] h-[60px] ml-auto mr-auto pt-2"
-              />
-              <p class="text-xs text-white font-bold pt-2">Jungle DeFi</p>
-            </div>
-            <div class="flex md:flex-row flex-col gap-0">
-              <div
-                class="shadow-mm rounded-20px basis-70 relative basis-auto self-start"
-              >
-                <img
-                  class="relative z-10"
-                  src="imgs/fiat-off-ramp.png"
-                  alt="Fiat Off-Ramp"
-                />
-                <div class="ellipse"></div>
-              </div>
-              <div class="flex flex-col justify-center flex-1 mt-4 md:mt-0">
-                <div
-                  class="bg-orangeop rounded-lg w-[109px] h-[24px] text-center align-middle"
-                >
-                  <p
-                    class="text-orange text-[11px] p-1 font-semibold tracking-widest"
+                NFTs
+              </p>
+              <p class="text-graylight pt-8 font-normal">
+                Streamflow allows NFT creators to configure cost-efficient,
+                automated token distributions
+              </p>
+              <div>
+                <div class="pt-8">
+                  <svg
+                    class="inline-block align-top mt-1"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    COMING SOON
+                    <path
+                      d="M18 9C18 4.06452 13.9355 0 9 0C4.02823 0 0 4.06452 0 9C0 13.9718 4.02823 18 9 18C13.9355 18 18 13.9718 18 9ZM7.94758 13.7903C7.72984 14.0081 7.33065 14.0081 7.1129 13.7903L3.33871 10.0161C3.12097 9.79839 3.12097 9.39919 3.33871 9.18145L4.17339 8.38306C4.39113 8.12903 4.75403 8.12903 4.97177 8.38306L7.54839 10.9234L12.9919 5.47984C13.2097 5.22581 13.5726 5.22581 13.7903 5.47984L14.625 6.27823C14.8427 6.49597 14.8427 6.89516 14.625 7.1129L7.94758 13.7903Z"
+                      fill="#18A2D9"
+                    />
+                  </svg>
+                  <p
+                    class="ml-3 text-graylight font-normal inline-block align-middle max-w-[270px] md:max-w-[340px] xl:max-w-[500px] 2xl:max-w-[640px]"
+                  >
+                    Use Streamflow’s SDK to create a custom dApp and enable
+                    automated reward payouts to NFT stakers.
                   </p>
                 </div>
-                <h3 class="text-white pt-3 font-bold text-2xl md:text-4xl mb-2">
-                  Fiat Off-Ramp
-                </h3>
-                <p class="text-base text-graylight">
-                  Employees can convert their crypto to fiat and deposit it to
-                  their bank account directly from the Streamflow dashboard!
-                </p>
+                <div>
+                  <svg
+                    class="inline-block align-top mt-7"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 9C18 4.06452 13.9355 0 9 0C4.02823 0 0 4.06452 0 9C0 13.9718 4.02823 18 9 18C13.9355 18 18 13.9718 18 9ZM7.94758 13.7903C7.72984 14.0081 7.33065 14.0081 7.1129 13.7903L3.33871 10.0161C3.12097 9.79839 3.12097 9.39919 3.33871 9.18145L4.17339 8.38306C4.39113 8.12903 4.75403 8.12903 4.97177 8.38306L7.54839 10.9234L12.9919 5.47984C13.2097 5.22581 13.5726 5.22581 13.7903 5.47984L14.625 6.27823C14.8427 6.49597 14.8427 6.89516 14.625 7.1129L7.94758 13.7903Z"
+                      fill="#18A2D9"
+                    />
+                  </svg>
+                  <p
+                    class="ml-3 text-graylight pt-6 font-normal inline-block align-middle max-w-[270px] md:max-w-[340px] xl:max-w-[500px] 2xl:max-w-[640px]"
+                  >
+                    Teams can lock up their tokens and NFTs to vest or airdrop
+                    to their community at a later date.
+                  </p>
+                </div>
+                <div>
+                  <svg
+                    class="inline-block align-top mt-7"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 9C18 4.06452 13.9355 0 9 0C4.02823 0 0 4.06452 0 9C0 13.9718 4.02823 18 9 18C13.9355 18 18 13.9718 18 9ZM7.94758 13.7903C7.72984 14.0081 7.33065 14.0081 7.1129 13.7903L3.33871 10.0161C3.12097 9.79839 3.12097 9.39919 3.33871 9.18145L4.17339 8.38306C4.39113 8.12903 4.75403 8.12903 4.97177 8.38306L7.54839 10.9234L12.9919 5.47984C13.2097 5.22581 13.5726 5.22581 13.7903 5.47984L14.625 6.27823C14.8427 6.49597 14.8427 6.89516 14.625 7.1129L7.94758 13.7903Z"
+                      fill="#18A2D9"
+                    />
+                  </svg>
+                  <p
+                    class="ml-3 text-graylight pt-6 font-normal inline-block align-middle max-w-[270px] md:max-w-[340px] xl:max-w-[500px] 2xl:max-w-[640px]"
+                  >
+                    NFT creators can create a Multi-sig Wallet using Streamflow
+                    to secure their funds on-chain and maintain transparency
+                    with their community.
+                  </p>
+                </div>
               </div>
+              <a href="https://streamflow.finance/nft">
+                <button
+                  class="hover:opacity-70 mt-8 bg-primary text-white font-bold rounded-lg py-3 px-4"
+                >
+                  Learn More
+                </button>
+              </a>
+            </div>
+            <div class="flex justify-center">
+              <img src="imgs/nfts.png" class="hidden xl:block" />
             </div>
           </div>
+        </div>
+        <div class="flex justify-evenly">
+          <div class="grid grid-cols-1 xl:grid-cols-2 pb-20 pt-20">
+            <div class="xl:hidden flex justify-center">
+              <img src="imgs/gamefi.png" class="block" />
+            </div>
 
+            <div class="flex justify-center">
+              <img
+                src="imgs/gamefi2.png"
+                class="hidden xl:block w-[600px] 2xl:w-[750px]"
+              />
+            </div>
+            <div
+              class="max-w-[330px] md:max-w-[600px] xl:max-w-[700px] ml-4 md:ml-52 lg:ml-80 xl:ml-20"
+            >
+              <p
+                class="text-white font-bold text-2xl lg:text-4xl pt-6 leading-normal"
+              >
+                GameFi
+              </p>
+              <p
+                class="text-graylight pt-6 font-normal max-w-[376px] xl:max-w-[600px] 2xl:max-w-[700px]"
+              >
+                Streamflow provides GameFi projects with a platform to manage
+                their projects finances
+              </p>
+              <div>
+                <div>
+                  <svg
+                    class="inline-block align-top mt-7"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 9C18 4.06452 13.9355 0 9 0C4.02823 0 0 4.06452 0 9C0 13.9718 4.02823 18 9 18C13.9355 18 18 13.9718 18 9ZM7.94758 13.7903C7.72984 14.0081 7.33065 14.0081 7.1129 13.7903L3.33871 10.0161C3.12097 9.79839 3.12097 9.39919 3.33871 9.18145L4.17339 8.38306C4.39113 8.12903 4.75403 8.12903 4.97177 8.38306L7.54839 10.9234L12.9919 5.47984C13.2097 5.22581 13.5726 5.22581 13.7903 5.47984L14.625 6.27823C14.8427 6.49597 14.8427 6.89516 14.625 7.1129L7.94758 13.7903Z"
+                      fill="#18A2D9"
+                    />
+                  </svg>
+                  <p
+                    class="ml-3 text-graylight pt-6 font-normal inline-block align-middle max-w-[270px] md:max-w-[340px] xl:max-w-[550px] 2xl:max-w-[640px]"
+                  >
+                    GameFi project’s can integrate with Streamflow’s SDK to
+                    distribute rewards to users triggered by the completion of
+                    in-game achievements
+                  </p>
+                </div>
+                <div>
+                  <svg
+                    class="inline-block align-top mt-7"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 9C18 4.06452 13.9355 0 9 0C4.02823 0 0 4.06452 0 9C0 13.9718 4.02823 18 9 18C13.9355 18 18 13.9718 18 9ZM7.94758 13.7903C7.72984 14.0081 7.33065 14.0081 7.1129 13.7903L3.33871 10.0161C3.12097 9.79839 3.12097 9.39919 3.33871 9.18145L4.17339 8.38306C4.39113 8.12903 4.75403 8.12903 4.97177 8.38306L7.54839 10.9234L12.9919 5.47984C13.2097 5.22581 13.5726 5.22581 13.7903 5.47984L14.625 6.27823C14.8427 6.49597 14.8427 6.89516 14.625 7.1129L7.94758 13.7903Z"
+                      fill="#18A2D9"
+                    />
+                  </svg>
+                  <p
+                    class="ml-3 text-graylight pt-6 font-normal inline-block align-middle max-w-[270px] md:max-w-[340px] xl:max-w-[550px] 2xl:max-w-[640px]"
+                  >
+                    GameFi teams can establish an on-chain payroll system using
+                    Streamflow’s Payroll app
+                  </p>
+                </div>
+                <div>
+                  <svg
+                    class="inline-block align-top mt-7"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 9C18 4.06452 13.9355 0 9 0C4.02823 0 0 4.06452 0 9C0 13.9718 4.02823 18 9 18C13.9355 18 18 13.9718 18 9ZM7.94758 13.7903C7.72984 14.0081 7.33065 14.0081 7.1129 13.7903L3.33871 10.0161C3.12097 9.79839 3.12097 9.39919 3.33871 9.18145L4.17339 8.38306C4.39113 8.12903 4.75403 8.12903 4.97177 8.38306L7.54839 10.9234L12.9919 5.47984C13.2097 5.22581 13.5726 5.22581 13.7903 5.47984L14.625 6.27823C14.8427 6.49597 14.8427 6.89516 14.625 7.1129L7.94758 13.7903Z"
+                      fill="#18A2D9"
+                    />
+                  </svg>
+                  <p
+                    class="ml-3 text-graylight pt-6 font-normal inline-block align-middle max-w-[270px] md:max-w-[340px] xl:max-w-[550px] 2xl:max-w-[640px]"
+                  >
+                    Vest your project tokens according to a vesting schedule,
+                    and schedule unlocks in any increment of time
+                  </p>
+                </div>
+              </div>
+              <a href="https://streamflow.finance/gamefi">
+                <button
+                  class="hover:opacity-70 mt-8 bg-primary text-white font-bold rounded-lg py-3 px-4"
+                >
+                  Learn More
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-fieldblack pl-4 pr-4 pt-[40px] pb-10 md:pb-40">
+        <div class="max-w-[1140px] ml-auto mr-auto">
           <h2
             class="leading-[64px] text-white text-center font-bold text-5xl mb-6 mt-40 pl-4 pr-4 md:pl-0 md:pr-0"
           >
             Get Started
           </h2>
           <p class="text-center text-base text-graylight mb-10">
-            Supercharge your payroll with streams
+            Store your team's tokens for safekeeping, and distribute them
+            efficiently when the time comes.
           </p>
 
           <div class="flex justify-center gap-8 md:flex-row flex-col mb-20">
@@ -974,6 +971,7 @@
           </div>
         </div>
       </div>
+
       <div class="footer bg-darkblack border-t-2 border-solid border-graydark">
         <div class="bg-darkblack">
           <div class="inline-block">
@@ -1225,6 +1223,7 @@
         </div>
       </div>
     </div>
+
     <script>
       const casesDropdown = () => {
         document.querySelector("#casesDropdown").classList.toggle("show");
@@ -1263,6 +1262,7 @@
         }
       };
     </script>
+    <!--Dropdown JavaScript-->
 
     <!-- Code injected by live-server -->
     <script type="text/javascript">
