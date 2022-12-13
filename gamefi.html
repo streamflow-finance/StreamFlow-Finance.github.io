@@ -159,7 +159,10 @@
           </a>
         </div>
         <a href="https://app.streamflow.finance/" target="_blank">
-          <button class="bg-primary rounded-lg hover:opacity-70">
+          <button
+            class="bg-primary rounded-lg hover:opacity-70"
+            onclick="dataLayer.push({'event': 'get-started-click'});"
+          >
             <p
               class="pt-2 pb-2 pl-2 pr-2 font-semibold text-base lg:text-xs xl:text-base items-center text-white"
             >
@@ -171,7 +174,11 @@
       <button
         class="md:hidden inline-block ml-auto mr-auto bg-primary rounded-lg hover:opacity-70"
       >
-        <a href="https://app.streamflow.finance/" target="_blank">
+        <a
+          href="https://app.streamflow.finance/"
+          target="_blank"
+          onclick="dataLayer.push({'event': 'get-started-click'});"
+        >
           <p
             class="font-semibold pt-2 pb-2 pl-3 pr-3 text-base items-center text-white"
           >
@@ -227,7 +234,7 @@
             <p
               class="cursor-pointer droptitle hover:text-primary font-bold text-base text-graylight inline-block"
             >
-              Solutions
+              Products
               <object class="pointer-events-none inline-block align-middle">
                 <img src="imgs/icn-arrow-down.png" />
               </object>
@@ -238,58 +245,25 @@
             class="dropcontent bg-transparent rounded-[8px]"
           >
             <p
-              class="text-white font-bold text-base hover:text-primary pl-6 pr-10 pt-6"
+              class="text-graylight font-bold text-base hover:text-primary pl-6 pr-10 pt-6"
             >
-              <a href="https://streamflow.finance/solutions">Overview</a><br />
-              <span class="font-normal text-graylight text-xs"
-                >Streamflow features an all-in-one token distribution platform
-                for teams to handle their finances.</span
-              >
+              <a href="https://streamflow.finance/products">Overview</a>
             </p>
-            <div class="pl-6 pt-3">
-              <img
-                src="imgs/payroll-header.png"
-                class="inline-block align-middle pt-4"
-              />
-              <p
-                class="w-[280px] inline-block align-top text-white font-bold text-base hover:text-primary pl-3 pr-10 pt-4"
-              >
-                <a href="https://streamflow.finance/payroll">Payroll</a><br />
-                <span class="font-normal text-graylight text-xs"
-                  >Low-cost automated payroll solutions for teams of any
-                  size</span
-                >
-              </p>
-            </div>
-            <div class="pl-6 pt-3">
-              <img
-                src="imgs/vesting-header.png"
-                class="inline-block align-middle pt-4"
-              />
-              <p
-                class="w-[280px] inline-block align-top text-white font-bold text-base hover:text-primary pl-3 pr-10 pt-4"
-              >
-                <a href="https://streamflow.finance/vesting">Vesting</a><br />
-                <span class="font-normal text-graylight text-xs"
-                  >Customizable token vesting schedules tailored to your
-                  needs</span
-                >
-              </p>
-            </div>
-            <div class="pl-6 pt-3">
-              <img
-                src="imgs/multisig-header.png"
-                class="inline-block align-middle pt-4"
-              />
-              <p
-                class="w-[280px] inline-block align-top text-white font-bold text-base hover:text-primary pl-3 pr-10 pt-4"
-              >
-                <a href="https://streamflow.finance/multisig">Multisig</a><br />
-                <span class="font-normal text-graylight text-xs"
-                  >Store and send team funds securely</span
-                >
-              </p>
-            </div>
+            <p
+              class="text-graylight font-bold text-base hover:text-primary pl-6 pr-10 pt-6"
+            >
+              <a href="https://streamflow.finance/payroll">Payroll</a>
+            </p>
+            <p
+              class="text-graylight font-bold text-base hover:text-primary pl-6 pr-10 pt-6"
+            >
+              <a href="https://streamflow.finance/vesting">Vesting</a>
+            </p>
+            <p
+              class="text-graylight font-bold text-base hover:text-primary pl-6 pr-10 pt-6"
+            >
+              <a href="https://streamflow.finance/multisig">Multisig</a>
+            </p>
           </div>
         </div>
       </div>
@@ -300,7 +274,7 @@
             <p
               class="cursor-pointer droptitle hover:text-primary font-bold text-base text-graylight inline-block"
             >
-              Resources
+              Use Cases
               <object class="pointer-events-none inline-block align-middle">
                 <img src="imgs/icn-arrow-down.png" />
               </object>
@@ -311,85 +285,25 @@
             class="dropcontent bg-transparent rounded-[8px]"
           >
             <p
-              class="text-white font-bold text-base hover:text-primary pl-6 pr-10 pt-6"
+              class="text-graylight font-bold text-base hover:text-primary pl-6 pr-10 pt-6"
             >
-              <a href="https://streamflow.finance/use-cases">Use Cases</a><br />
-              <span class="font-normal text-graylight text-xs"
-                >Learn how you can use Streamflow to supercharge your Web3
-                project</span
-              >
-            </p>
-            <div class="pl-6 pt-6">
-              <a href="https://streamflow.finance/gaming"
-                ><p
-                  class="inline-block align-top text-white font-bold text-base hover:text-primary"
-                >
-                  Gaming
-                </p></a
-              >
-              <a href="https://streamflow.finance/defi">
-                <p
-                  class="inline-block align-top text-white font-bold text-base hover:text-primary pl-4"
-                >
-                  DeFi
-                </p></a
-              >
-              <a href="https://streamflow.finance/nft">
-                <p
-                  class="inline-block align-top text-white font-bold text-base hover:text-primary pl-4"
-                >
-                  NFT
-                </p></a
-              >
-            </div>
-            <!--<p
-            class="text-graylight font-bold text-base hover:text-primary pl-6 pr-10 pt-6"
-          >
-            <a href="https://streamflow.finance/use-cases">Case Studies</a
-            ><br />
-            <span class="font-normal text-graylight text-xs"
-              >See how our partners and clients are using Streamflow</span
-            >
-          </p>-->
-            <p
-              class="text-white font-bold text-base hover:text-primary pl-6 pr-10 pt-6"
-            >
-              <a href="https://blog.streamflow.finance/">Blog</a><br />
-              <span class="font-normal text-graylight text-xs"
-                >Read more about Web3, DeFi, and Streamflow’s developments</span
-              >
+              <a href="https://streamflow.finance/use-cases">Overview</a>
             </p>
             <p
-              class="text-white font-bold text-base hover:text-primary pl-6 pr-10 pt-6"
+              class="text-graylight font-bold text-base hover:text-primary pl-6 pr-10 pt-4"
             >
-              <a href="https://docs.streamflow.finance/">Documentation</a><br />
-              <span class="font-normal text-graylight text-xs"
-                >Start integrating Streamflow’s products and tools</span
-              >
+              <a href="https://streamflow.finance/gamefi">Gaming</a>
             </p>
-            <div class="pt-6 pl-6">
-              <a href="https://docs.streamflow.finance/help/tutorials"
-                ><p
-                  class="inline-block align-top text-white font-bold text-base hover:text-primary"
-                >
-                  Tutorials
-                </p></a
-              >
-              <a href="https://docs.streamflow.finance/help/faq">
-                <p
-                  class="inline-block align-top text-white font-bold text-base hover:text-primary pl-4"
-                >
-                  FAQ
-                </p></a
-              >
-              <a href="https://docs.streamflow.finance/help/fees"
-                ><p
-                  class="pl-4 inline-block align-top text-white font-bold text-base hover:text-primary"
-                >
-                  Fees
-                </p></a
-              >
-            </div>
+            <p
+              class="text-graylight font-bold text-base hover:text-primary pl-6 pr-10 pt-4"
+            >
+              <a href="https://streamflow.finance/defi">DeFi</a>
+            </p>
+            <p
+              class="text-graylight font-bold text-base hover:text-primary pl-6 pr-10 pt-6"
+            >
+              <a href="https://streamflow.finance/nft">NFT</a>
+            </p>
           </div>
         </div>
       </div>
@@ -486,7 +400,7 @@
                 <p
                   class="cursor-pointer productsdroptitle hover:text-primary font-bold text-base text-graylight inline-block"
                 >
-                  Solutions
+                  Products
                   <object class="pointer-events-none inline-block align-middle">
                     <img src="imgs/icn-arrow-down.png" />
                   </object>
@@ -496,72 +410,26 @@
                 id="productsDropdown"
                 class="productsdropcontent bg-graydark rounded-[8px] mt-2"
               >
-                <div class="grid grid-cols-3">
-                  <div class="w-fit">
-                    <p
-                      class="font-bold text-white text-base hover:text-primary pl-6 pr-10 pt-6"
-                    >
-                      <a href="https://streamflow.finance/solutions"
-                        >Overview</a
-                      >
-                    </p>
-                    <p class="text-graylight text-xs max-w-[215px] pl-6">
-                      Streamflow features an all-in-one Token Distribution
-                      Platform for teams to handle their finances.
-                    </p>
-                  </div>
-
-                  <div class="col-span-2">
-                    <div class="pl-6 pt-3">
-                      <img
-                        src="imgs/payroll-header.png"
-                        class="inline-block align-middle pt-4"
-                      />
-                      <p
-                        class="inline-block align-top text-white font-bold text-base hover:text-primary pl-3 pr-10 pt-4"
-                      >
-                        <a href="https://streamflow.finance/payroll">Payroll</a
-                        ><br />
-                        <span class="font-normal text-graylight text-xs"
-                          >Low-cost automated payroll solutions for teams of any
-                          size</span
-                        >
-                      </p>
-                    </div>
-                    <div class="pl-6 pt-4">
-                      <img
-                        src="imgs/vesting-header.png"
-                        class="inline-block align-middle pt-4"
-                      />
-                      <p
-                        class="inline-block align-top text-white font-bold text-base hover:text-primary pl-3 pr-10 pt-4"
-                      >
-                        <a href="https://streamflow.finance/vesting">Vesting</a
-                        ><br />
-                        <span class="font-normal text-graylight text-xs"
-                          >Customizable token vesting schedules tailored to your
-                          needs</span
-                        >
-                      </p>
-                    </div>
-                    <div class="pl-6 pt-4 pb-6">
-                      <img
-                        src="imgs/multisig-header.png"
-                        class="inline-block align-middle pt-4"
-                      />
-                      <p
-                        class="inline-block align-top text-white font-bold text-base hover:text-primary pl-3 pr-10 pt-4"
-                      >
-                        <a href="https://streamflow.finance/multisig"
-                          >Multisig</a
-                        ><br />
-                        <span class="font-normal text-graylight text-xs"
-                          >Store and send team funds securely</span
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <p
+                  class="text-graylight font-normal text-base text-base hover:text-primary pl-6 pr-10 pt-6"
+                >
+                  <a href="https://streamflow.finance/products">Overview</a>
+                </p>
+                <p
+                  class="text-graylight font-normal text-base text-base hover:text-primary pl-6 pr-10 pt-4"
+                >
+                  <a href="https://streamflow.finance/payroll">Payroll</a>
+                </p>
+                <p
+                  class="pt-4 text-graylight font-normal text-base text-base hover:text-primary pl-6 pr-10"
+                >
+                  <a href="https://streamflow.finance/vesting">Vesting</a>
+                </p>
+                <p
+                  class="pt-4 text-graylight font-normal text-base text-base hover:text-primary pl-6 pr-10 pb-6"
+                >
+                  <a href="https://streamflow.finance/multisig">Multisig</a>
+                </p>
               </div>
             </div>
           </div>
@@ -571,7 +439,7 @@
                 <p
                   class="cursor-pointer droptitle hover:text-primary font-bold text-base text-graylight inline-block"
                 >
-                  Resources
+                  Use Cases
                   <object class="pointer-events-none inline-block align-middle">
                     <img src="imgs/icn-arrow-down.png" />
                   </object>
@@ -581,117 +449,26 @@
                 id="casesDropdown"
                 class="dropcontent bg-graydark rounded-[8px] mt-2"
               >
-                <div class="grid grid-cols-3">
-                  <div class="w-fit">
-                    <p class="font-bold text-white text-base pl-6 pr-10 pt-6">
-                      Resources
-                    </p>
-                    <p class="text-graylight text-xs max-w-[215px] pl-6">
-                      Learn more about Streamflow
-                    </p>
-                  </div>
-
-                  <div class="col-span-2">
-                    <div class="pl-6 pt-4">
-                      <p
-                        class="inline-block align-top text-white font-bold text-base hover:text-primary pl-3 pr-10 pt-3"
-                      >
-                        <a href="https://streamflow.finance/use-cases"
-                          >Use Cases</a
-                        ><br />
-                        <span class="font-normal text-graylight text-xs"
-                          >Learn how you can use Streamflow to supercharge your
-                          Web3 project</span
-                        >
-                      </p>
-                      <br />
-                      <div class="pl-3">
-                        <a href="https://streamflow.finance/gaming"
-                          ><p
-                            class="inline-block align-top text-white font-bold text-base hover:text-primary"
-                          >
-                            Gaming
-                          </p></a
-                        >
-                        <a href="https://streamflow.finance/defi">
-                          <p
-                            class="inline-block align-top text-white font-bold text-base hover:text-primary pl-4"
-                          >
-                            DeFi
-                          </p></a
-                        >
-                        <a href="https://streamflow.finance/nft">
-                          <p
-                            class="inline-block align-top text-white font-bold text-base hover:text-primary pl-4"
-                          >
-                            NFT
-                          </p></a
-                        >
-                      </div>
-                    </div>
-                    <!--   <div class="pl-6 pt-4">
-                    <p
-                      class="inline-block align-top text-white font-bold text-base hover:text-primary pl-3 pr-10"
-                    >
-                      <a href="https://streamflow.finance/use-cases"
-                        >Case Studies</a
-                      ><br />
-                      <span class="font-normal text-graylight text-xs"
-                        >See how our partners and clients are using
-                        Streamflow</span
-                      >
-                    </p>
-                  </div>-->
-                    <div class="pl-6 pt-4">
-                      <p
-                        class="inline-block align-top text-white font-bold text-base hover:text-primary pl-3 pr-10"
-                      >
-                        <a href="https://blog.streamflow.finance">Blog</a><br />
-                        <span class="font-normal text-graylight text-xs"
-                          >Read more about Web3, DeFi, and Streamflow’s
-                          developments</span
-                        >
-                      </p>
-                    </div>
-                    <div class="pl-6 pt-4">
-                      <p
-                        class="inline-block align-top text-white font-bold text-base hover:text-primary pl-3 pr-10"
-                      >
-                        <a href="https://docs.streamflow.finance"
-                          >Documentation</a
-                        ><br />
-                        <span class="font-normal text-graylight text-xs"
-                          >Read more about Web3, DeFi, and Streamflow’s
-                          developments</span
-                        >
-                      </p>
-                      <br />
-                      <div class="pl-3 pb-6">
-                        <a href="https://docs.streamflow.finance/help/tutorials"
-                          ><p
-                            class="inline-block align-top text-white font-bold text-base hover:text-primary"
-                          >
-                            Tutorials
-                          </p></a
-                        >
-                        <a href="https://docs.streamflow.finance/help/faq">
-                          <p
-                            class="inline-block align-top text-white font-bold text-base hover:text-primary pl-4"
-                          >
-                            FAQ
-                          </p></a
-                        >
-                        <a href="https://docs.streamflow.finance/help/fees"
-                          ><p
-                            class="inline-block align-top text-white font-bold text-base hover:text-primary pl-4"
-                          >
-                            Fees
-                          </p></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <p
+                  class="text-graylight font-normal text-base text-base hover:text-primary pl-6 pr-10 pt-6"
+                >
+                  <a href="https://streamflow.finance/use-cases">Overview</a>
+                </p>
+                <p
+                  class="text-graylight font-normal text-base text-base hover:text-primary pl-6 pr-10 pt-4"
+                >
+                  <a href="https://streamflow.finance/gamefi">Gaming</a>
+                </p>
+                <p
+                  class="text-graylight font-normal text-base text-base hover:text-primary pl-6 pr-10 pt-4"
+                >
+                  <a href="https://streamflow.finance/defi">DeFi</a>
+                </p>
+                <p
+                  class="pt-4 text-graylight font-normal text-base text-base hover:text-primary pl-6 pr-10 pb-6"
+                >
+                  <a href="https://streamflow.finance/nft">NFT</a>
+                </p>
               </div>
             </div>
           </div>
@@ -734,19 +511,19 @@
                 class="dropcontent bg-graydark rounded-[8px] mt-2"
               >
                 <p
-                  class="text-white font-bold text-base hover:text-primary pl-6 pr-10 pt-6"
+                  class="text-graylight font-normal text-base hover:text-primary pl-6 pr-10 pt-6"
                 >
                   <a href="https://streamflow.finance/integrations"
                     >Integrations</a
                   >
                 </p>
                 <p
-                  class="pt-4 text-white font-bold text-base hover:text-primary pl-6 pr-10"
+                  class="pt-4 text-graylight font-normal text-base hover:text-primary pl-6 pr-10"
                 >
                   <a href="https://streamflow.finance#about">About</a>
                 </p>
                 <p
-                  class="text-white font-bold text-base hover:text-primary pl-6 pr-10 pt-4"
+                  class="text-graylight font-normal text-base hover:text-primary pl-6 pr-10 pt-4"
                 >
                   <a
                     href="https://streamflow.notion.site/Streamflow-Job-Board-public-019665299d73485e9098087ccf5ebe7c"
@@ -760,7 +537,7 @@
                   </a>
                 </p>
                 <p
-                  class="pt-4 text-white font-bold text-base hover:text-primary pl-6 pr-10 pb-6"
+                  class="pt-4 text-graylight font-normal text-base hover:text-primary pl-6 pr-10 pb-6"
                 >
                   <a href="https://streamflow.finance/contact">Contact</a>
                 </p>
@@ -896,7 +673,10 @@
             </div>
 
             <a href="https://app.streamflow.finance/" target="_blank">
-              <button class="bg-primary rounded-lg hover:opacity-70">
+              <button
+                class="bg-primary rounded-lg hover:opacity-70"
+                onclick="dataLayer.push({'event': 'get-started-click'});"
+              >
                 <p
                   class="px-2 py-2 font-semibold text-base lg:text-xs xl:text-base items-center text-white"
                 >
@@ -1359,7 +1139,7 @@
                 Solutions
               </p>
 
-              <a href="https://streamflow.finance/solutions" target="_blank">
+              <a href="https://streamflow.finance/products" target="_blank">
                 <p class="text-graylight pt-3 font-bold hover:text-primary">
                   Overview
                 </p>
@@ -1387,7 +1167,7 @@
                 Resources
               </p>
 
-              <!--<a href="https://streamflow.finance/solutions" target="_blank">
+              <!--<a href="https://streamflow.finance/products" target="_blank">
                 <p class="text-graylight pt-3 font-bold hover:text-primary">
                   Use Cases
                 </p>
