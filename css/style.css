@@ -594,12 +594,12 @@ video {
   order: 2;
 }
 
-.col-span-1 {
-  grid-column: span 1 / span 1;
-}
-
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 
 .row-span-2 {
@@ -878,6 +878,10 @@ video {
   width: 100vw;
 }
 
+.w-\[280px\] {
+  width: 280px;
+}
+
 .w-fit {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -972,6 +976,10 @@ video {
   width: 600px;
 }
 
+.max-w-\[215px\] {
+  max-width: 215px;
+}
+
 .max-w-\[1140px\] {
   max-width: 1140px;
 }
@@ -1023,16 +1031,16 @@ video {
   resize: none;
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1282,8 +1290,16 @@ video {
   padding-right: 2.5rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .pt-32 {
@@ -1298,20 +1314,12 @@ video {
   padding-top: 120px;
 }
 
-.pl-4 {
-  padding-left: 1rem;
-}
-
 .pr-4 {
   padding-right: 1rem;
 }
 
 .pt-\[27px\] {
   padding-top: 27px;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
 }
 
 .pb-\[166px\] {
@@ -1607,6 +1615,20 @@ input[type="text"]:focus {
 input[type="text"]:-webkit-autofill,
 input[type="text"]:-webkit-autofill:hover,
 input[type="text"]:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px var(--graydark) inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  border: none;
+}
+
+input[type="email"]:focus {
+  outline: 2px solid var(--gray);
+}
+
+input[type="email"]:-webkit-autofill,
+input[type="email"]:-webkit-autofill:hover,
+input[type="email"]:-webkit-autofill:focus {
   -webkit-text-fill-color: white;
   -webkit-box-shadow: 0 0 0px 1000px var(--graydark) inset;
   -webkit-transition: background-color 5000s ease-in-out 0s;
