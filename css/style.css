@@ -754,12 +754,28 @@ video {
   margin-bottom: 0.25rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.ml-\[27px\] {
+  margin-left: 27px;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mt-5 {
@@ -770,10 +786,6 @@ video {
   margin-top: 160px;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
 .mb-\[-40px\] {
   margin-bottom: -40px;
 }
@@ -782,20 +794,8 @@ video {
   margin-right: 2rem;
 }
 
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
 .mt-7 {
   margin-top: 1.75rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.ml-\[27px\] {
-  margin-left: 27px;
 }
 
 .mr-6 {
@@ -894,6 +894,14 @@ video {
   height: 40px;
 }
 
+.h-\[24px\] {
+  height: 24px;
+}
+
+.h-\[72px\] {
+  height: 72px;
+}
+
 .h-\[198px\] {
   height: 198px;
 }
@@ -912,14 +920,6 @@ video {
 
 .h-\[30px\] {
   height: 30px;
-}
-
-.h-\[24px\] {
-  height: 24px;
-}
-
-.h-\[72px\] {
-  height: 72px;
 }
 
 .w-full {
@@ -1040,6 +1040,22 @@ video {
   width: 50px;
 }
 
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[311px\] {
+  width: 311px;
+}
+
+.w-\[24px\] {
+  width: 24px;
+}
+
+.w-\[344px\] {
+  width: 344px;
+}
+
 .w-\[250px\] {
   width: 250px;
 }
@@ -1062,22 +1078,6 @@ video {
 
 .w-\[1280px\] {
   width: 1280px;
-}
-
-.w-\[100px\] {
-  width: 100px;
-}
-
-.w-\[311px\] {
-  width: 311px;
-}
-
-.w-\[24px\] {
-  width: 24px;
-}
-
-.w-\[344px\] {
-  width: 344px;
 }
 
 .w-\[600px\] {
@@ -1710,14 +1710,6 @@ video {
   color: rgb(113 130 152 / var(--tw-text-opacity));
 }
 
-.text-yellow {
-  color: var(--yellow);
-}
-
-.text-green {
-  color: var(--green);
-}
-
 .text-\[\#fde88d\] {
   --tw-text-opacity: 1;
   color: rgb(253 232 141 / var(--tw-text-opacity));
@@ -1726,6 +1718,14 @@ video {
 .text-\[\#cdd7e3\] {
   --tw-text-opacity: 1;
   color: rgb(205 215 227 / var(--tw-text-opacity));
+}
+
+.text-yellow {
+  color: var(--yellow);
+}
+
+.text-green {
+  color: var(--green);
 }
 
 .shadow-lg {
@@ -1924,6 +1924,18 @@ input[type="email"]:-webkit-autofill:focus {
 .hover\:scale-95:hover {
   --tw-scale-x: .95;
   --tw-scale-y: .95;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2280,6 +2292,10 @@ input[type="email"]:-webkit-autofill:focus {
     margin-top: 14rem;
   }
 
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .lg\:ml-0 {
     margin-left: 0px;
   }
@@ -2302,10 +2318,6 @@ input[type="email"]:-webkit-autofill:focus {
 
   .lg\:ml-12 {
     margin-left: 3rem;
-  }
-
-  .lg\:mt-10 {
-    margin-top: 2.5rem;
   }
 
   .lg\:ml-80 {
@@ -2348,10 +2360,6 @@ input[type="email"]:-webkit-autofill:focus {
     width: 900px;
   }
 
-  .lg\:w-\[930px\] {
-    width: 930px;
-  }
-
   .lg\:w-\[728px\] {
     width: 728px;
   }
@@ -2362,6 +2370,10 @@ input[type="email"]:-webkit-autofill:focus {
 
   .lg\:w-\[195px\] {
     width: 195px;
+  }
+
+  .lg\:w-\[930px\] {
+    width: 930px;
   }
 
   .lg\:max-w-\[800px\] {
@@ -2507,6 +2519,10 @@ input[type="email"]:-webkit-autofill:focus {
     display: inline-block;
   }
 
+  .xl\:flex {
+    display: flex;
+  }
+
   .xl\:hidden {
     display: none;
   }
@@ -2535,12 +2551,12 @@ input[type="email"]:-webkit-autofill:focus {
     width: 716px;
   }
 
-  .xl\:w-\[400px\] {
-    width: 400px;
-  }
-
   .xl\:w-\[1000px\] {
     width: 1000px;
+  }
+
+  .xl\:w-\[400px\] {
+    width: 400px;
   }
 
   .xl\:max-w-\[1140px\] {
