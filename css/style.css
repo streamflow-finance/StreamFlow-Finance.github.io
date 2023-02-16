@@ -810,6 +810,10 @@ video {
   margin-left: 5rem;
 }
 
+.mr-14 {
+  margin-right: 3.5rem;
+}
+
 .block {
   display: block;
 }
@@ -948,20 +952,8 @@ video {
   width: 260px;
 }
 
-.w-\[48px\] {
-  width: 48px;
-}
-
-.w-\[117px\] {
-  width: 117px;
-}
-
 .w-\[64px\] {
   width: 64px;
-}
-
-.w-\[54px\] {
-  width: 54px;
 }
 
 .w-\[247px\] {
@@ -1927,18 +1919,6 @@ input[type="email"]:-webkit-autofill:focus {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:scale-110:hover {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:scale-105:hover {
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:text-primary:hover {
   color: var(--primary);
 }
@@ -2248,6 +2228,10 @@ input[type="email"]:-webkit-autofill:focus {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .lg\:ml-4 {
     margin-left: 1rem;
   }
@@ -2324,6 +2308,10 @@ input[type="email"]:-webkit-autofill:focus {
     margin-left: 20rem;
   }
 
+  .lg\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -2393,8 +2381,20 @@ input[type="email"]:-webkit-autofill:focus {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .lg\:bg-transparent {
@@ -2511,6 +2511,10 @@ input[type="email"]:-webkit-autofill:focus {
     margin-left: 13rem;
   }
 
+  .xl\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -2605,6 +2609,10 @@ input[type="email"]:-webkit-autofill:focus {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .xl\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
   .xl\:pl-36 {
     padding-left: 9rem;
   }
@@ -2670,6 +2678,10 @@ input[type="email"]:-webkit-autofill:focus {
 
   .\32xl\:ml-\[200px\] {
     margin-left: 200px;
+  }
+
+  .\32xl\:mt-2 {
+    margin-top: 0.5rem;
   }
 
   .\32xl\:ml-20 {
