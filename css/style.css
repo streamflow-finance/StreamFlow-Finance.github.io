@@ -658,6 +658,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mr-14 {
+  margin-right: 3.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -810,10 +814,6 @@ video {
   margin-left: 5rem;
 }
 
-.mr-14 {
-  margin-right: 3.5rem;
-}
-
 .block {
   display: block;
 }
@@ -924,6 +924,18 @@ video {
 
 .h-\[30px\] {
   height: 30px;
+}
+
+.h-\[35px\] {
+  height: 35px;
+}
+
+.max-h-\[210px\] {
+  max-height: 210px;
+}
+
+.max-h-\[270px\] {
+  max-height: 270px;
 }
 
 .w-full {
@@ -1104,6 +1116,10 @@ video {
   max-width: 754px;
 }
 
+.max-w-\[280px\] {
+  max-width: 280px;
+}
+
 .max-w-\[330px\] {
   max-width: 330px;
 }
@@ -1114,6 +1130,10 @@ video {
 
 .max-w-\[376px\] {
   max-width: 376px;
+}
+
+.max-w-\[340px\] {
+  max-width: 340px;
 }
 
 .flex-1 {
@@ -2034,6 +2054,10 @@ input[type="email"]:-webkit-autofill:focus {
     height: 373px;
   }
 
+  .md\:max-h-\[270px\] {
+    max-height: 270px;
+  }
+
   .md\:w-\[500px\] {
     width: 500px;
   }
@@ -2228,10 +2252,6 @@ input[type="email"]:-webkit-autofill:focus {
 }
 
 @media (min-width: 1024px) {
-  .lg\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
   .lg\:ml-4 {
     margin-left: 1rem;
   }
@@ -2308,10 +2328,6 @@ input[type="email"]:-webkit-autofill:focus {
     margin-left: 20rem;
   }
 
-  .lg\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
   .lg\:block {
     display: block;
   }
@@ -2379,22 +2395,6 @@ input[type="email"]:-webkit-autofill:focus {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-7 {
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .lg\:bg-transparent {
@@ -2503,16 +2503,16 @@ input[type="email"]:-webkit-autofill:focus {
     margin-left: 9rem;
   }
 
+  .xl\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .xl\:ml-10 {
     margin-left: 2.5rem;
   }
 
   .xl\:ml-52 {
     margin-left: 13rem;
-  }
-
-  .xl\:mt-2 {
-    margin-top: 0.5rem;
   }
 
   .xl\:block {
@@ -2605,12 +2605,12 @@ input[type="email"]:-webkit-autofill:focus {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .xl\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .xl\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:pl-36 {
@@ -2678,10 +2678,6 @@ input[type="email"]:-webkit-autofill:focus {
 
   .\32xl\:ml-\[200px\] {
     margin-left: 200px;
-  }
-
-  .\32xl\:mt-2 {
-    margin-top: 0.5rem;
   }
 
   .\32xl\:ml-20 {
