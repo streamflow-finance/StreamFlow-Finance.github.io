@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       inter: ["inter", "sans-serif"],
+      roboto: ["Roboto", "monospace"],
     },
     screens: {
       sm: "640px",
