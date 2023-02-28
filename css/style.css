@@ -742,6 +742,10 @@ video {
   margin-top: 8rem;
 }
 
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
 .mb-56 {
   margin-bottom: 14rem;
 }
@@ -872,6 +876,10 @@ video {
 
 .h-\[32px\] {
   height: 32px;
+}
+
+.h-52 {
+  height: 13rem;
 }
 
 .h-\[216px\] {
@@ -1098,6 +1106,10 @@ video {
 
 .max-w-\[1290px\] {
   max-width: 1290px;
+}
+
+.max-w-\[280px\] {
+  max-width: 280px;
 }
 
 .max-w-\[754px\] {
@@ -1376,6 +1388,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1592,6 +1609,10 @@ video {
   font-family: inter, sans-serif;
 }
 
+.font-roboto {
+  font-family: Roboto, monospace;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1704,6 +1725,16 @@ video {
 .text-\[\#718298\] {
   --tw-text-opacity: 1;
   color: rgb(113 130 152 / var(--tw-text-opacity));
+}
+
+.text-\[\#6fcf97\] {
+  --tw-text-opacity: 1;
+  color: rgb(111 207 151 / var(--tw-text-opacity));
+}
+
+.text-\[\#b7eaff\] {
+  --tw-text-opacity: 1;
+  color: rgb(183 234 255 / var(--tw-text-opacity));
 }
 
 .text-\[\#fde88d\] {
@@ -2102,6 +2133,10 @@ input[type="email"]:-webkit-autofill:focus {
     max-width: 600px;
   }
 
+  .md\:max-w-\[250px\] {
+    max-width: 250px;
+  }
+
   .md\:max-w-\[340px\] {
     max-width: 340px;
   }
@@ -2368,6 +2403,10 @@ input[type="email"]:-webkit-autofill:focus {
     max-width: 800px;
   }
 
+  .lg\:max-w-\[340px\] {
+    max-width: 340px;
+  }
+
   .lg\:translate-x-\[350px\] {
     --tw-translate-x: 350px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2551,12 +2590,12 @@ input[type="email"]:-webkit-autofill:focus {
     max-width: 1140px;
   }
 
-  .xl\:max-w-\[700px\] {
-    max-width: 700px;
-  }
-
   .xl\:max-w-\[500px\] {
     max-width: 500px;
+  }
+
+  .xl\:max-w-\[700px\] {
+    max-width: 700px;
   }
 
   .xl\:max-w-\[600px\] {
@@ -2706,6 +2745,10 @@ input[type="email"]:-webkit-autofill:focus {
 
   .\32xl\:max-w-\[1500px\] {
     max-width: 1500px;
+  }
+
+  .\32xl\:max-w-\[750px\] {
+    max-width: 750px;
   }
 
   .\32xl\:max-w-\[640px\] {
