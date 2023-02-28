@@ -746,6 +746,10 @@ video {
   margin-bottom: 10rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mb-56 {
   margin-bottom: 14rem;
 }
@@ -780,10 +784,6 @@ video {
 
 .ml-3 {
   margin-left: 0.75rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
 }
 
 .mt-5 {
@@ -1610,7 +1610,7 @@ video {
 }
 
 .font-roboto {
-  font-family: Roboto, monospace;
+  font-family: Roboto Mono, sans-serif;
 }
 
 .text-base {
@@ -2007,6 +2007,10 @@ input[type="email"]:-webkit-autofill:focus {
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mb-32 {
+    margin-bottom: 8rem;
   }
 
   .md\:mb-20 {
