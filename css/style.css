@@ -2009,6 +2009,10 @@ input[type="email"]:-webkit-autofill:focus {
     margin-top: 0px;
   }
 
+  .md\:mt-32 {
+    margin-top: 8rem;
+  }
+
   .md\:mb-32 {
     margin-bottom: 8rem;
   }
@@ -2051,6 +2055,10 @@ input[type="email"]:-webkit-autofill:focus {
 
   .md\:inline-block {
     display: inline-block;
+  }
+
+  .md\:inline {
+    display: inline;
   }
 
   .md\:flex {
@@ -2751,8 +2759,8 @@ input[type="email"]:-webkit-autofill:focus {
     max-width: 1500px;
   }
 
-  .\32xl\:max-w-\[750px\] {
-    max-width: 750px;
+  .\32xl\:max-w-\[650px\] {
+    max-width: 650px;
   }
 
   .\32xl\:max-w-\[640px\] {
@@ -2761,6 +2769,14 @@ input[type="email"]:-webkit-autofill:focus {
 
   .\32xl\:max-w-\[700px\] {
     max-width: 700px;
+  }
+
+  .\32xl\:max-w-\[600px\] {
+    max-width: 600px;
+  }
+
+  .\32xl\:max-w-\[500px\] {
+    max-width: 500px;
   }
 
   .\32xl\:grid-cols-12 {
@@ -2837,5 +2853,9 @@ input[type="email"]:-webkit-autofill:focus {
 
   .\33xl\:max-w-\[1600px\] {
     max-width: 1600px;
+  }
+
+  .\33xl\:max-w-\[750px\] {
+    max-width: 750px;
   }
 }
