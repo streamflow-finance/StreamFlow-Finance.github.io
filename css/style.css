@@ -2255,6 +2255,10 @@ input[type="email"]:-webkit-autofill:focus {
     padding-top: 16rem;
   }
 
+  .md\:pb-32 {
+    padding-bottom: 8rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
