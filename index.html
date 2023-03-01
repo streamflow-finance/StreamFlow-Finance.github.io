@@ -3,23 +3,26 @@
   <head>
     <!-- Google Tag Manager -->
     <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
         w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js",
-        });
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js',
+        })
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-PCP4MNJ");
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-PCP4MNJ')
     </script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <meta
       name="description"
       content="Streamflow brings streamed token vesting and batch payments to Solana. Making token streams the ultimate way to distribute value."
@@ -30,21 +33,42 @@
     />
 
     <!-- Open Graph for social networks -->
-    <meta property="og:title" content="Streamflow" />
+    <meta
+      property="og:title"
+      content="Streamflow"
+    />
     <meta
       property="og:description"
       content="Streamflow brings streamed token vesting and batch payments to Solana. Making token streams the ultimate way to distribute value."
     />
-    <meta property="og:image" content="/imgs/streamflow-og.png" />
-    <meta property="og:url" content="https://streamflow.finance" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@streamflow_fi" />
-    <meta name="twitter:title" content="Streamflow" />
+    <meta
+      property="og:image"
+      content="/imgs/streamflow-og.png"
+    />
+    <meta
+      property="og:url"
+      content="https://streamflow.finance"
+    />
+    <meta
+      name="twitter:card"
+      content="summary"
+    />
+    <meta
+      name="twitter:site"
+      content="@streamflow_fi"
+    />
+    <meta
+      name="twitter:title"
+      content="Streamflow"
+    />
     <meta
       name="twitter:description"
       content="Streamflow is a token distribution platform that brings streamed token vesting and batch payments to Solana. Making token streams the ultimate way to distribute value."
     />
-    <meta name="twitter:image" content="/imgs/streamflow-og.png" />
+    <meta
+      name="twitter:image"
+      content="/imgs/streamflow-og.png"
+    />
 
     <title>Streamflow | Token Distribution Platform</title>
     <link
@@ -55,9 +79,21 @@
       name="facebook-domain-verification"
       content="3uym5ei5f2s2uaif10th0e9pybm4on"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+    <link
+      rel="icon"
+      href="imgs/favicon.ico"
+      type="image/x-icon"
+    />
     <script src="menu.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="slick.css"
+    />
   </head>
 
   <body class="bg-fieldblack font-inter">
@@ -73,7 +109,10 @@
     <div
       class="bg-fieldblack flex justify-center items-center pt-6 pb-6 lg:hidden"
     >
-      <a href="https://streamflow.finance" target="_blank">
+      <a
+        href="https://streamflow.finance"
+        target="_blank"
+      >
         <img
           src="imgs/img-logo-1.png"
           alt="StreamFlow Finance logo"
@@ -84,7 +123,10 @@
         <!--discord-->
 
         <div class="text-graylight hover:text-primary inline-block">
-          <a href="https://discord.gg/ZC7URcQyM7" target="_blank">
+          <a
+            href="https://discord.gg/ZC7URcQyM7"
+            target="_blank"
+          >
             <svg
               class="inline-block"
               width="24"
@@ -103,7 +145,10 @@
 
         <!--twitter-->
         <div class="text-graylight hover:text-primary inline-block ml-8">
-          <a href="https://twitter.com/streamflow_fi" target="_blank">
+          <a
+            href="https://twitter.com/streamflow_fi"
+            target="_blank"
+          >
             <svg
               class="inline-block"
               width="24"
@@ -145,7 +190,10 @@
         <div
           class="text-graylight hover:text-primary align-middle inline-block ml-8 mr-10"
         >
-          <a href="https://github.com/streamflow-finance" target="_blank">
+          <a
+            href="https://github.com/streamflow-finance"
+            target="_blank"
+          >
             <svg
               width="16"
               height="16"
@@ -160,7 +208,10 @@
             </svg>
           </a>
         </div>
-        <a href="https://app.streamflow.finance/" target="_blank">
+        <a
+          href="https://app.streamflow.finance/"
+          target="_blank"
+        >
           <button class="bg-primary rounded-lg hover:opacity-70">
             <p
               class="pt-2 pb-2 pl-2 pr-2 font-semibold text-base lg:text-xs xl:text-base items-center text-white"
@@ -173,7 +224,10 @@
       <button
         class="md:hidden inline-block ml-auto mr-auto bg-primary rounded-lg hover:opacity-70"
       >
-        <a href="https://app.streamflow.finance/" target="_blank">
+        <a
+          href="https://app.streamflow.finance/"
+          target="_blank"
+        >
           <p
             class="font-semibold pt-2 pb-2 pl-3 pr-3 text-base items-center text-white"
           >
@@ -193,7 +247,12 @@
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <rect width="40" height="40" rx="8" fill="#2A3441" />
+            <rect
+              width="40"
+              height="40"
+              rx="8"
+              fill="#2A3441"
+            />
             <path
               d="M12.5714 15.5714H27.4286C27.7143 15.5714 28 15.3214 28 15V13.5714C28 13.2857 27.7143 13 27.4286 13H12.5714C12.25 13 12 13.2857 12 13.5714V15C12 15.3214 12.25 15.5714 12.5714 15.5714ZM12.5714 21.2857H27.4286C27.7143 21.2857 28 21.0357 28 20.7143V19.2857C28 19 27.7143 18.7143 27.4286 18.7143H12.5714C12.25 18.7143 12 19 12 19.2857V20.7143C12 21.0357 12.25 21.2857 12.5714 21.2857ZM12.5714 27H27.4286C27.7143 27 28 26.75 28 26.4286V25C28 24.7143 27.7143 24.4286 27.4286 24.4286H12.5714C12.25 24.4286 12 24.7143 12 25V26.4286C12 26.75 12.25 27 12.5714 27Z"
               fill="#718298"
@@ -201,7 +260,10 @@
           </svg>
         </button>
 
-        <button id="x-button" class="hidden">
+        <button
+          id="x-button"
+          class="hidden"
+        >
           <svg
             width="40"
             height="40"
@@ -209,7 +271,12 @@
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <rect width="40" height="40" rx="8" fill="#2A3441" />
+            <rect
+              width="40"
+              height="40"
+              rx="8"
+              fill="#2A3441"
+            />
             <path
               d="M22.2638 19.983L25.6681 16.5787C26.1106 16.1702 26.1106 15.4894 25.6681 15.0809L24.9191 14.3319C24.5106 13.8894 23.8298 13.8894 23.4213 14.3319L20.017 17.7362L16.5787 14.3319C16.1702 13.8894 15.4894 13.8894 15.0809 14.3319L14.3319 15.0809C13.8894 15.4894 13.8894 16.1702 14.3319 16.5787L17.7362 19.983L14.3319 23.4213C13.8894 23.8298 13.8894 24.5106 14.3319 24.9191L15.0809 25.6681C15.4894 26.1106 16.1702 26.1106 16.5787 25.6681L20.017 22.2638L23.4213 25.6681C23.8298 26.1106 24.5106 26.1106 24.9191 25.6681L25.6681 24.9191C26.1106 24.5106 26.1106 23.8298 25.6681 23.4213L22.2638 19.983Z"
               fill="#718298"
@@ -218,7 +285,10 @@
         </button>
       </div>
     </div>
-    <img src="imgs/separator.png" class="lg:hidden w-full" />
+    <img
+      src="imgs/separator.png"
+      class="lg:hidden w-full"
+    />
     <div
       class="hidden bg-fieldblack pt-6 pl-6 w-screen h-screen"
       id="mobile-menu"
@@ -403,7 +473,10 @@
         <h1
           class="text-base text-graylight font-bold font-bold hover:text-primary"
         >
-          <a href="https://docs.streamflow.finance/" target="_blank">
+          <a
+            href="https://docs.streamflow.finance/"
+            target="_blank"
+          >
             Documentation
           </a>
           <svg
@@ -468,12 +541,20 @@
       </div>
       <div class="mb-8">
         <h1 class="text-base text-graylight font-bold hover:text-primary">
-          <a href="https://discord.gg/ZC7URcQyM7" target="_blank"> Discord </a>
+          <a
+            href="https://discord.gg/ZC7URcQyM7"
+            target="_blank"
+          >
+            Discord
+          </a>
         </h1>
       </div>
       <div>
         <h1 class="text-base text-graylight font-bold hover:text-primary">
-          <a href="https://twitter.com/streamflow_fi" target="_blank">
+          <a
+            href="https://twitter.com/streamflow_fi"
+            target="_blank"
+          >
             Twitter
           </a>
         </h1>
@@ -483,7 +564,10 @@
     <div id="content">
       <div class="z-50 relative bg-fieldblack">
         <div class="hidden lg:flex items-center p-6">
-          <a href="https://streamflow.finance" target="_blank">
+          <a
+            href="https://streamflow.finance"
+            target="_blank"
+          >
             <img
               src="imgs/streamflow-logo-min.svg"
               alt="StreamFlow Finance logo"
@@ -577,7 +661,10 @@
           </div>
           <div class="lg:ml-4 xl:ml-8">
             <div class="dropdown">
-              <div onclick="casesDropdown()" class="w-auto">
+              <div
+                onclick="casesDropdown()"
+                class="w-auto"
+              >
                 <p
                   class="cursor-pointer droptitle hover:text-primary font-bold text-base text-graylight inline-block"
                 >
@@ -709,7 +796,10 @@
             <h1
               class="text-base text-graylight font-bold font-bold lg:ml-4 xl:ml-8 hover:text-primary"
             >
-              <a href="https://docs.streamflow.finance/" target="_blank">
+              <a
+                href="https://docs.streamflow.finance/"
+                target="_blank"
+              >
                 Documentation
                 <svg
                   class="inline-block align-super"
@@ -729,7 +819,10 @@
           </div>
           <div class="hidden lg:block xl:hidden lg:ml-4 xl:ml-8">
             <div class="dropdown">
-              <div onclick="moreDropdown()" class="w-auto">
+              <div
+                onclick="moreDropdown()"
+                class="w-auto"
+              >
                 <p
                   class="cursor-pointer droptitle hover:text-primary font-bold text-base text-graylight inline-block"
                 >
@@ -826,7 +919,10 @@
             <!--discord-->
 
             <div class="text-graylight hover:text-primary inline-block">
-              <a href="https://discord.gg/ZC7URcQyM7" target="_blank">
+              <a
+                href="https://discord.gg/ZC7URcQyM7"
+                target="_blank"
+              >
                 <svg
                   class="inline-block"
                   width="24"
@@ -847,7 +943,10 @@
             <div
               class="text-graylight hover:text-primary inline-block lg:ml-[10px] xl:ml-[33px]"
             >
-              <a href="https://twitter.com/streamflow_fi" target="_blank">
+              <a
+                href="https://twitter.com/streamflow_fi"
+                target="_blank"
+              >
                 <svg
                   class="inline-block"
                   width="24"
@@ -889,7 +988,10 @@
             <div
               class="text-graylight hover:text-primary align-middle inline-block ml-8 mr-[28px]"
             >
-              <a href="https://github.com/streamflow-finance" target="_blank">
+              <a
+                href="https://github.com/streamflow-finance"
+                target="_blank"
+              >
                 <svg
                   width="16"
                   height="16"
@@ -905,7 +1007,10 @@
               </a>
             </div>
 
-            <a href="https://app.streamflow.finance/" target="_blank">
+            <a
+              href="https://app.streamflow.finance/"
+              target="_blank"
+            >
               <button class="bg-primary rounded-lg hover:opacity-70">
                 <p
                   class="px-2 py-2 font-semibold text-base lg:text-xs xl:text-base items-center text-white"
@@ -964,11 +1069,15 @@
 
           <div class="mt-16 xl:ml-36 ml-4">
             <span class="text-graylight mr-3">Powered by</span>
-            <a href="https://solana.com/" target="_blank"
+            <a
+              href="https://solana.com/"
+              target="_blank"
               ><img
                 class="inline-block mr-4 w-[42px] h-[42px]"
                 src="imgs/powered-by-solana.png" /></a
-            ><a href="https://https://aptoslabs.com/" target="_blank"
+            ><a
+              href="https://https://aptoslabs.com/"
+              target="_blank"
               ><img
                 class="inline-block mr-4 w-[42px] h-[42px]"
                 src="imgs/logo.png"
@@ -980,7 +1089,9 @@
             <a
               href="https://github.com/streamflow-finance/rust-sdk/blob/main/protocol_audit.pdf"
               target="_blank"
-              ><img class="inline-block" src="imgs/opcodes.png"
+              ><img
+                class="inline-block"
+                src="imgs/opcodes.png"
             /></a>
             <p class="text-graylight text-base mt-6">
               #1 token vesting solution on Solana
@@ -1010,13 +1121,24 @@
           <img src="imgs/img-hero.png" />
         </div>
         <div class="hidden 2xl:inline-block float-right">
-          <img src="imgs/img-hero-2.png" class="2xl:w-[800px] 3xl:w-[1000px]" />
+          <img
+            src="imgs/img-hero-2.png"
+            class="2xl:w-[800px] 3xl:w-[1000px]"
+          />
         </div>
         <div class="hidden md:block mt-16 float-right lg:hidden">
-          <img src="imgs/img-hero.png" width="400" height="400" />
+          <img
+            src="imgs/img-hero.png"
+            width="400"
+            height="400"
+          />
         </div>
         <div class="hidden lg:block xl:hidden mt-16 float-right">
-          <img src="imgs/img-hero.png" width="440" height="440" />
+          <img
+            src="imgs/img-hero.png"
+            width="440"
+            height="440"
+          />
         </div>
       </div>
       <div class="bg-darkblack mt-20 lg:mt-56 text-center">
@@ -1028,7 +1150,10 @@
             >
               ~$200M
             </h1>
-            <img src="imgs/linew.png" class="w-full lg:hidden mt-6" />
+            <img
+              src="imgs/linew.png"
+              class="w-full lg:hidden mt-6"
+            />
           </div>
           <img
             class="hidden lg:inline-block mb-10 lg:ml-20 xl:ml-40"
@@ -1043,7 +1168,10 @@
             >
               ~50,804
             </h1>
-            <img src="imgs/linew.png" class="w-full lg:hidden mt-6" />
+            <img
+              src="imgs/linew.png"
+              class="w-full lg:hidden mt-6"
+            />
           </div>
           <img
             class="hidden lg:inline-block mb-10 lg:ml-20 xl:ml-40"
@@ -1058,7 +1186,10 @@
             >
               230+
             </h1>
-            <img src="imgs/linew.png" class="w-full lg:hidden mt-6" />
+            <img
+              src="imgs/linew.png"
+              class="w-full lg:hidden mt-6"
+            />
           </div>
         </div>
       </div>
@@ -1096,7 +1227,10 @@
                 src="imgs/img-feature-1.png"
                 class="hidden md:block lg:inline-block"
               />
-              <img src="imgs/img-feature-1-mobile.png" class="md:hidden" />
+              <img
+                src="imgs/img-feature-1-mobile.png"
+                class="md:hidden"
+              />
             </div>
             <div>
               <h2
@@ -1116,7 +1250,9 @@
                   Token vesting with Streamflow offers powerful features<br />
                   like cliff dates, transferrable streams, automatic<br />
                   withdrawals and much more.<br />
-                  <a href="https://streamflow.finance/vesting" target="_blank"
+                  <a
+                    href="https://streamflow.finance/vesting"
+                    target="_blank"
                     ><span
                       class="text-primary font-bold hover:opacity-70 cursor-pointer"
                       >Learn More</span
@@ -1172,7 +1308,9 @@
                   and have it automatically sent to their wallet at the end of
                   the<br />
                   payment period.<br />
-                  <a href="https://streamflow.finance/payroll" target="_blank"
+                  <a
+                    href="https://streamflow.finance/payroll"
+                    target="_blank"
                     ><span
                       class="text-primary font-bold hover:opacity-70 cursor-pointer"
                       >Learn More</span
@@ -1196,7 +1334,10 @@
             </div>-->
             </div>
             <div class="hidden lg:inline-block">
-              <img src="imgs/img-feature-2.png" class="inline-block" />
+              <img
+                src="imgs/img-feature-2.png"
+                class="inline-block"
+              />
             </div>
           </div>
           <div class="block lg:flex justify-center items-center">
@@ -1228,7 +1369,9 @@
               >
                 Streamflow's multi-sig allows teams to safeguard funds,<br />
                 and manage their payments and vesting with confidence.<br />
-                <a href="https://streamflow.finance/multisig" target="_blank"
+                <a
+                  href="https://streamflow.finance/multisig"
+                  target="_blank"
                   ><span
                     class="text-primary font-bold hover:opacity-70 cursor-pointer"
                     >Learn More</span
@@ -1254,7 +1397,10 @@
           <div class="block lg:flex justify-center items-center">
             <div class="ml-0 lg:ml-24">
               <div class="flex justify-center lg:hidden">
-                <img src="imgs/img-feature-4-mobile.png" class="md:hidden" />
+                <img
+                  src="imgs/img-feature-4-mobile.png"
+                  class="md:hidden"
+                />
                 <img
                   src="imgs/img-feature-4.png"
                   class="hidden md:block lg:hidden"
@@ -1360,7 +1506,10 @@
             Ready to start streaming?
           </h2>
           <div class="text-center mb-20">
-            <a href="https://app.streamflow.finance/" target="_blank">
+            <a
+              href="https://app.streamflow.finance/"
+              target="_blank"
+            >
               <button
                 class="inline-block bg-primary rounded-lg mt-6 hover:opacity-70"
               >
@@ -1440,7 +1589,10 @@
           page
         </p>
       </div>
-      <img src="imgs/hrline.png" class="w-full" />
+      <img
+        src="imgs/hrline.png"
+        class="w-full"
+      />
 
       <div
         style="background: linear-gradient(180deg, #131722 50%, #1c2530 50%)"
@@ -1536,7 +1688,10 @@
           </div>
         </div>
         <div class="text-center mt-2 mb-20 md:mb-0 lg:mt-10">
-          <a href="https://streamflow.finance/integrations" target="_blank">
+          <a
+            href="https://streamflow.finance/integrations"
+            target="_blank"
+          >
             <button
               class="inline-block bg-primary rounded-lg mt-6 hover:opacity-70"
             >
@@ -1595,7 +1750,10 @@
               <h2
                 class="bg-graydark rounded-lg text-white text-base p-4 cursor-pointer"
               >
-                <img src="imgs/solana.png" class="inline-block mr-3" />
+                <img
+                  src="imgs/solana.png"
+                  class="inline-block mr-3"
+                />
                 <span class="group-hover:text-primary"
                   ><span class="text-gray group-hover:text-primary"
                     >https://</span
@@ -1626,7 +1784,10 @@
               <h2
                 class="bg-graydark rounded-lg text-white text-base p-4 cursor-pointer"
               >
-                <img src="imgs/solana.png" class="inline-block mr-3" />
+                <img
+                  src="imgs/solana.png"
+                  class="inline-block mr-3"
+                />
                 <span class="text-graylight group-hover:text-primary"
                   >https://</span
                 >spl.solana.com/toke...
@@ -1656,7 +1817,7 @@
           <img src="imgs/img-jump-crypto-1.png" />
         </div>
         <p class="text-graylight text-center pt-10 pb-20">
-          And many more, full list on the
+          For a full list of investors, go to
           <span class="text-primary font-bold hover:opacity-70"
             ><a href="https://streamflow.finance/about">About</a></span
           >
@@ -1664,12 +1825,462 @@
         </p>
         <div class="border-3 mt-4 border-graydark border-solid w-full"></div>
       </div>
-
+      <div class="bg-fieldblack">
+        <h2 class="text-primary text-2xl font-bold text-center pt-[120px]">
+          What Others Say
+        </h2>
+        <h1 class="text-white font-bold text-4xl xl:text-5xl pt-6 text-center">
+          Testimonials
+        </h1>
+        <h3
+          class="text-graylight text-base pt-6 text-center md:w-[600px] md:w-[600px] lg:w-[900px] xl:w-[1140px] ml-4 mr-4 md:ml-auto md:mr-auto"
+        >
+          While on a mission to deliver best-in-class token vesting and
+          streaming payments, we've been lucky to have some fantastic
+          customers.<br />
+          They've said some nice things about us along the way.
+        </h3>
+        <div
+          class="mt-12 max-w-[1290px] 3xl:ml-[550px] 2xl:ml-[245px] xl:ml-[370px] 3xl:ml-auto ml-auto"
+        >
+          <div class="slider">
+            <div class="slider-items ml-6">
+              <div class="bg-graydark text-white w-fit font-bold rounded-lg">
+                <div class="pl-6 pt-6 pb-4 flex gap-1">
+                  <svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    />
+                  </svg>
+                  <svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    /></svg
+                  ><svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    /></svg
+                  ><svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    /></svg
+                  ><svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="pr-6 max-w-[319px] pl-6 font-normal text-white leading-normal 2xl:leading-normal"
+                >
+                  Streamflow offered Compendium complete token vesting options
+                  for our token vesting contract. We chose Streamflow over other
+                  products in the Solana ecosystem due to its ease of use and
+                  the additional options the user can employ when creating a
+                  vesting contract. Try to find another token vesting platform
+                  that provides this customizability. I'll wait.
+                </p>
+                <div class="flex pt-4 pl-6 pb-6">
+                  <img
+                    src="imgs/img-compendium-finance-1.png"
+                    class="h-[32px]"
+                  />
+                  <p class="font-bold text-white pl-4 pt-1">
+                    Compendium Finance
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-items ml-6">
+              <div class="bg-graydark text-white w-fit font-bold rounded-lg">
+                <div class="pl-6 pt-6 pb-4 flex gap-1">
+                  <svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    />
+                  </svg>
+                  <svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    /></svg
+                  ><svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    /></svg
+                  ><svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    /></svg
+                  ><svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="pr-6 max-w-[319px] pl-6 font-normal text-white leading-normal 2xl:leading-normal"
+                >
+                  It's awesome. Smoothest streaming & vesting dApp around. Very
+                  easy to use.
+                </p>
+                <div class="flex pt-52 pb-6">
+                  <img
+                    src="imgs/grape-protocol.png"
+                    class="h-[32px]"
+                  />
+                  <p class="font-bold text-white pt-1">Grape Protocol</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-items ml-6">
+              <div class="bg-graydark text-white w-fit font-bold rounded-lg">
+                <div class="pl-6 pt-6 pb-4 flex gap-1">
+                  <svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    />
+                  </svg>
+                  <svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    /></svg
+                  ><svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    /></svg
+                  ><svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    /></svg
+                  ><svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="pr-6 max-w-[319px] pl-6 font-normal text-white leading-normal 2xl:leading-normal"
+                >
+                  Setting up vesting schedules was very quick and easy! The team
+                  is very professional. Looking forward to use Streamflow again,
+                  and again! :)
+                </p>
+                <div class="flex pl-6 pt-40 pb-6">
+                  <img
+                    src="imgs/cave-world.png"
+                    class="h-[32px]"
+                  />
+                  <p class="font-bold text-white pt-1 pl-4">CaveWorld</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-items ml-6">
+              <div class="bg-graydark text-white w-fit font-bold rounded-lg">
+                <div class="pl-6 pt-6 pb-4 flex gap-1">
+                  <svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    />
+                  </svg>
+                  <svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    /></svg
+                  ><svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    /></svg
+                  ><svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    /></svg
+                  ><svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312ZM10.6094 9.30859L11.2656 13.082L7.875 11.3047L4.45703 13.082L5.11328 9.30859L2.35156 6.62891L6.15234 6.08203L7.875 2.63672L9.57031 6.08203L13.3711 6.62891L10.6094 9.30859Z"
+                      fill="#F2C94C"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="pr-6 max-w-[319px] pl-6 font-normal text-white leading-normal 2xl:leading-normal"
+                >
+                  Useful platform and simple to use.
+                </p>
+                <div class="flex pl-6 pt-64 pb-6">
+                  <img
+                    src="imgs/starbots.png"
+                    class="h-[32px]"
+                  />
+                  <p class="font-bold text-white pt-1 pl-4">Starbots</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-items ml-6">
+              <div class="bg-graydark text-white w-fit font-bold rounded-lg">
+                <div class="pl-6 pt-6 pb-4 flex gap-1">
+                  <svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    />
+                  </svg>
+                  <svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    /></svg
+                  ><svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    /></svg
+                  ><svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    /></svg
+                  ><svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.08203 1.24219L5.30469 4.87891L1.28516 5.45312C0.574219 5.5625 0.300781 6.4375 0.820312 6.95703L3.69141 9.77344L3.00781 13.7383C2.89844 14.4492 3.66406 14.9961 4.29297 14.668L7.875 12.7812L11.4297 14.668C12.0586 14.9961 12.8242 14.4492 12.7148 13.7383L12.0312 9.77344L14.9023 6.95703C15.4219 6.4375 15.1484 5.5625 14.4375 5.45312L10.4453 4.87891L8.64062 1.24219C8.33984 0.613281 7.41016 0.585938 7.08203 1.24219Z"
+                      fill="#F2C94C"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="pr-6 max-w-[319px] pl-6 font-normal text-white leading-normal 2xl:leading-normal"
+                >
+                  Streamflow is great and trustworthy technology for managing
+                  for vesting and token locks
+                </p>
+                <div class="flex pl-6 pt-[184px] pb-6">
+                  <img
+                    src="imgs/img-nosana-2.png"
+                    class="h-[32px]"
+                  />
+                  <p class="font-bold text-white pt-1 pl-4">Nosana</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-center pt-40 font-normal text-graylight">
+          To rate our services yourself, go to
+          <a
+            href="https://decentreviews.co/reviews/streamflow"
+            class="font-bold text-primary hover:opacity-70"
+            >the Decent Reviews</a
+          >
+        </p>
+        <h2
+          class="text-white font-bold text-2xl text-center mt-20 ml-4 mr-4 lg:ml-0 lg:m-r0"
+        >
+          Excited to start streaming the secure, audited way?
+        </h2>
+        <div class="text-center mb-32">
+          <a
+            href="https://app.streamflow.finance/"
+            target="_blank"
+          >
+            <button
+              class="inline-block bg-primary rounded-lg mt-6 hover:opacity-70 ml-auto mr-auto"
+            >
+              <p
+                class="font-semibold text-sm lg:text-base flex pl-4 pr-4 pt-3 pb-3 items-center text-white"
+              >
+                Get Started Now
+              </p>
+            </button>
+          </a>
+          <a
+            href="https://calendly.com/streamflow-bd/token-vesting?month=2022-07"
+            target="_blank"
+          >
+            <button
+              class="inline-block ml-6 border border-solid border-gray bg-transparent rounded-lg mt-6 hover:opacity-70 ml-auto mr-auto"
+            >
+              <p
+                class="font-semibold text-sm lg:text-base flex pl-4 pr-4 pt-3 pb-3 items-center text-white"
+              >
+                Book a Demo
+              </p>
+            </button>
+          </a>
+        </div>
+      </div>
       <div
-        class="text-center md:text-left bg-graydark pt-20 pb-[160px]"
+        class="text-center md:text-left bg-graydark pt-20 pb-32"
         id="about"
       >
-        <h2 class="text-primary text-2xl font-bold text-center pt-[120px]">
+        <h2 class="text-primary text-2xl font-bold text-center pt-20">
           Meet The Stream Team
         </h2>
         <h1 class="text-white font-bold text-4xl xl:text-5xl pt-6 text-center">
@@ -1857,610 +2468,562 @@
             </div>
           </div>
         </div>
+
+        <div class="pt-12 flex justify-center">
+          <a href="https://streamflow.finance/about">
+            <button
+              class="inline-block ml-6 border border-solid border-gray bg-transparent rounded-lg mt-6 hover:opacity-70 ml-auto mr-auto"
+            >
+              <p
+                class="font-semibold text-sm lg:text-base flex pl-4 pr-4 pt-3 pb-3 items-center text-white"
+              >
+                Learn More About Us
+              </p>
+            </button>
+          </a>
+        </div>
       </div>
       <div class="bg-fieldblack">
-        <h2 class="text-primary text-2xl font-bold text-center pt-[120px]">
-          What Others Say
-        </h2>
-        <h1 class="text-white font-bold text-4xl xl:text-5xl pt-6 text-center">
-          Testimonials
+        <h1 class="text-white font-bold text-4xl xl:text-5xl pt-32 text-center">
+          Tweets About Streamflow
         </h1>
         <h3
           class="text-graylight text-base pt-6 text-center md:w-[600px] md:w-[600px] lg:w-[900px] xl:w-[1140px] ml-4 mr-4 md:ml-auto md:mr-auto"
         >
-          While on a mission to deliver best-in-class token vesting and
-          streaming payments, we've been lucky to have some fantastic
-          customers.<br />
-          They've said some nice things about us along the way.
+          What People Are Saying About Us On Twitter
         </h3>
         <div
-          class="hidden lg:grid xl:w-[1140px] lg:w-[900px] grid-cols-3 gap-5 mt-20 ml-auto mr-auto"
+          class="mt-12 max-w-[1290px] 3xl:ml-[550px] 2xl:ml-[245px] xl:ml-[370px] ml-auto"
         >
-          <div
-            class="relative col-span-1 row-span-2 bg-graydark p-4 rounded-lg"
-          >
-            <img src="imgs/Fatassmonkey.png" class="inline-block" />
-            <div class="inline-block align-middle ml-4">
-              <a href="https://twitter.com/Fatassmonkey2" target="_blank">
-                <h3 class="text-white font-bold hover:text-primary">
-                  Fatassmonkey
-                </h3>
-              </a>
-              <a href="https://twitter.com/Fatassmonkey2" target="_blank">
-                <h4 class="text-graylight text-sm hover:text-primary">
-                  @Fatassmonkey2
-                </h4>
-              </a>
-            </div>
-            <h4 class="text-white pt-4 leading-6 text-sm">
-              Keep your eye out on
-              <span class="text-primary font-bold"
-                ><a href="https://twitter.com/streamflow_fi" target="_blank"
-                  >@streamflow_fi</a
-                ></span
-              >, we’re stoked for the things the team has planned, which will be
-              announced in due time.
-              <span class="text-primary font-bold"
-                ><a href="https://twitter.com/t3eventures" target="_blank"
-                  >@t3eventures</a
-                ></span
-              >
-              will continue to work closely and support the team in bringing
-              more innovative ways to streaming on
-              <span class="text-primary font-bold"
-                ><a href="https://twitter.com/solana" target="_blank"
-                  >@solana</a
-                ></span
-              >. Stay tuned!
-            </h4>
-            <div class="absolute bottom-0 mb-4">
-              <a
-                href="https://twitter.com/Fatassmonkey2/status/1501443694058115073"
-                target="_blank"
-              >
-                <h5 class="text-graylight text-xs hover:text-primary">
-                  7:24 AM · Mar 9, 2022
-                </h5>
-              </a>
-            </div>
-          </div>
-          <div class="relative col-span-1 bg-graydark p-4 rounded-lg">
-            <img src="imgs/huobiventures.png" class="inline-block" />
-            <div class="inline-block align-middle ml-4">
-              <a href="https://twitter.com/HuobiVentures" target="_blank">
-                <h3 class="text-white font-bold hover:text-primary">
-                  Huobi Ventures
-                </h3>
-              </a>
-              <a href="https://twitter.com/HuobiVentures" target="_blank">
-                <h4 class="text-graylight text-sm hover:text-primary">
-                  @HuobiVentures
-                </h4>
-              </a>
-            </div>
-            <h4 class="text-white pt-4 leading-6 text-sm pb-8">
-              Congrats! !
-              <span class="text-primary font-bold"
-                ><a href="https://twitter.com/streamflow_fi" target="_blank"
-                  >@streamflow_fi</a
-                ></span
-              >
-              Happy to see our new partner had raised 3.1M.
-            </h4>
-            <div class="absolute bottom-0 mb-4">
-              <a
-                href="https://twitter.com/HuobiVentures/status/1500057587282509829"
-                target="_blank"
-              >
-                <h5 class="text-graylight text-xs hover:text-primary">
-                  11:36 AM · Mar 5, 2022
-                </h5>
-              </a>
-            </div>
-          </div>
-          <div class="relative bg-graydark p-4 row-span-2 rounded-lg">
-            <img src="imgs/raindrops.png" class="inline-block" />
-            <div class="inline-block align-middle ml-4">
-              <a href="https://twitter.com/only_raindrops" target="_blank">
-                <h3 class="text-white font-bold hover:text-primary">
-                  xNFT Raindrops
-                </h3>
-              </a>
-              <a href="https://twitter.com/only_raindrops" target="_blank">
-                <h4 class="text-graylight text-sm hover:text-primary">
-                  @only_raindrops
-                </h4>
-              </a>
-            </div>
-            <h4 class="text-white pt-4 pb-8 leading-6 text-sm">
-              We have elected to use
-
-              <span class="text-primary font-bold"
-                ><a href="https://twitter.com/streamflow_fi" target="_blank"
-                  >@streamflow_fi</a
-                ></span
-              >
-              for all our token vesting. Their UI is so easy to use it feels
-              like web2. We feel like this is what most web3 apps will feel like
-              in 3 yrs. The era of the @bonfida token vesting contract is over.
-              It did great work, but it has been surpassed.
-            </h4>
-            <div class="absolute bottom-0 mb-4">
-              <a
-                href="https://twitter.com/only_raindrops/status/1542914978914750466"
-                target="_blank"
-              >
-                <h5 class="text-graylight text-xs hover:text-primary">
-                  16:56 PM · Jul 1, 2022
-                </h5>
-              </a>
-            </div>
-          </div>
-          <div class="bg-graydark relative p-4 row-span-2 rounded-lg">
-            <img src="imgs/barrett.png" class="inline-block" />
-            <div class="inline-block align-middle ml-4">
-              <a href="https://twitter.com/barrett_io" target="_blank">
-                <h3 class="text-white font-bold hover:text-primary">
-                  barrett.sol
-                </h3>
-              </a>
-              <a href="https://twitter.com/barrett_io" target="_blank">
-                <h4 class="text-graylight text-sm hover:text-primary">
-                  @barrett_io
-                </h4>
-              </a>
-            </div>
-            <h4 class="text-white pt-4 pb-4 leading-6 text-sm">
-              congrats, very bullish on this team/protocol<br /><span
-                class="text-primary font-bold"
-                ><a href="https://twitter.com/streamflow_fi" target="_blank"
-                  >@streamflow_fi</a
-                ></span
-              >
-            </h4>
-            <div class="absolute bottom-0 mb-4">
-              <a
-                href="https://twitter.com/barrett_io/status/1499776457458864129"
-                target="_blank"
-              >
-                <h5 class="text-graylight text-xs hover:text-primary">
-                  4:59 PM · Mar 4, 2022
-                </h5>
-              </a>
-            </div>
-          </div>
-          <div class="relative row-span-3 bg-graydark rounded-lg">
-            <div class="p-4">
-              <img src="imgs/AngelDao.png" class="inline-block" />
-              <div class="inline-block align-middle ml-4">
-                <a href="https://twitter.com/AngelDAOorg" target="_blank">
-                  <h3 class="text-white font-bold hover:text-primary">
-                    AngelDAO
-                  </h3>
-                </a>
-                <a href="https://twitter.com/AngelDAOorg" target="_blank">
-                  <h4 class="text-graylight text-sm">@AngelDAOorg</h4>
-                </a>
-              </div>
-              <h4 class="text-white pt-4 pb-8 leading-6 text-sm">
-                Proud to be part of
-                <span class="text-primary font-bold"
-                  ><a href="https://twitter.com/streamflow_fi" target="_blank"
-                    >@streamflow_fi</a
-                  ></span
-                >
-                $3.1M raise and back a top team who are bringing streamed token
-                vesting, payroll and batch payments to
-                <span class="text-primary font-bold"
-                  ><a
-                    href="https://twitter.com/hashtag/solana?src=hashtag_click"
+          <div class="slider">
+            <div class="slider-items ml-6">
+              <div class="relative w-[367px] bg-graydark p-4 rounded-lg">
+                <div class="inline-block align-middle">
+                  <img src="imgs/Fatassmonkey.png" />
+                </div>
+                <div class="inline-block align-middle ml-4">
+                  <a
+                    href="https://twitter.com/Fatassmonkey2"
                     target="_blank"
-                    >#solana</a
-                  ></span
-                >
-
-                <p class="pt-12">
-                  Take control with
-                  <span class="text-primary font-bold">
-                    <a
-                      href="https://twitter.com/hashtag/Streamflow?src=hashtag_click"
+                  >
+                    <h3 class="text-white font-bold hover:text-primary">
+                      Fatassmonkey
+                    </h3>
+                  </a>
+                  <a
+                    href="https://twitter.com/Fatassmonkey2"
+                    target="_blank"
+                  >
+                    <h4 class="text-graylight text-sm hover:text-primary">
+                      @Fatassmonkey2
+                    </h4>
+                  </a>
+                </div>
+                <h4 class="text-white pt-4 leading-6 text-sm">
+                  Keep your eye out on
+                  <span class="text-primary font-bold"
+                    ><a
+                      href="https://twitter.com/streamflow_fi"
                       target="_blank"
-                      >#Streamflow</a
+                      >@streamflow_fi</a
+                    ></span
+                  >, we’re stoked for the things the team has planned, which
+                  will be announced in due time.
+                  <span class="text-primary font-bold"
+                    ><a
+                      href="https://twitter.com/t3eventures"
+                      target="_blank"
+                      >@t3eventures</a
                     ></span
                   >
-                </p>
-              </h4>
-              <div class="absolute bottom-0 mb-4">
-                <a
-                  href="https://twitter.com/AngelDAOorg/status/1499770078656700416"
-                  target="_blank"
-                >
-                  <h5 class="text-graylight text-xs hover:text-primary">
-                    4:33 PM · Mar 4 , 2022
-                  </h5>
-                </a>
+                  will continue to work closely and support the team in bringing
+                  more innovative ways to streaming on
+                  <span class="text-primary font-bold"
+                    ><a
+                      href="https://twitter.com/solana"
+                      target="_blank"
+                      >@solana</a
+                    ></span
+                  >. Stay tuned!
+                </h4>
+                <div class="mt-[44px]">
+                  <a
+                    href="https://twitter.com/Fatassmonkey2/status/1501443694058115073"
+                    target="_blank"
+                  >
+                    <h5 class="text-graylight text-xs hover:text-primary">
+                      7:24 AM · Mar 9, 2022
+                    </h5>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="relative row-span-2 bg-graydark rounded-lg">
-            <div class="p-4">
-              <img src="imgs/leslieis.png" class="inline-block" />
-              <div class="inline-block align-middle ml-4">
-                <a href="https://twitter.com/LeslieisHODLing" target="_blank">
-                  <h3 class="text-white font-bold hover:text-primary">
-                    LeslieisHODLing
-                  </h3>
-                </a>
-                <a href="https://twitter.com/LeslieisHODLing" target="_blank">
-                  <h4 class="text-graylight text-sm hover:text-primary">
-                    @LeslieisHODLing
+            <div class="slider-items ml-6">
+              <div class="w-[367px] bg-graydark p-4 rounded-lg">
+                <div class="inline-block align-middle">
+                  <img src="imgs/huobiventures.png" />
+                </div>
+                <div class="inline-block align-middle ml-4">
+                  <a
+                    href="https://twitter.com/HuobiVentures"
+                    target="_blank"
+                  >
+                    <h3 class="text-white font-bold hover:text-primary">
+                      Huobi Ventures
+                    </h3>
+                  </a>
+                  <a
+                    href="https://twitter.com/HuobiVentures"
+                    target="_blank"
+                  >
+                    <h4 class="text-graylight text-sm hover:text-primary">
+                      @HuobiVentures
+                    </h4>
+                  </a>
+                </div>
+                <h4 class="text-white pt-4 leading-6 text-sm pb-8">
+                  Congrats! !
+                  <span class="text-primary font-bold"
+                    ><a
+                      href="https://twitter.com/streamflow_fi"
+                      target="_blank"
+                      >@streamflow_fi</a
+                    ></span
+                  >
+                  Happy to see our new partner had raised 3.1M.
+                </h4>
+                <div class="mt-24">
+                  <a
+                    href="https://twitter.com/HuobiVentures/status/1500057587282509829"
+                    target="_blank"
+                  >
+                    <h5 class="text-graylight text-xs hover:text-primary">
+                      11:36 AM · Mar 5, 2022
+                    </h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slider-items ml-6">
+              <div class="w-[367px] bg-graydark p-4 rounded-lg">
+                <div class="inline-block align-middle">
+                  <img src="imgs/raindrops.png" />
+                </div>
+                <div class="inline-block align-middle ml-4">
+                  <a
+                    href="https://twitter.com/only_raindrops"
+                    target="_blank"
+                  >
+                    <h3 class="text-white font-bold hover:text-primary">
+                      xNFT Raindrops
+                    </h3>
+                  </a>
+                  <a
+                    href="https://twitter.com/only_raindrops"
+                    target="_blank"
+                  >
+                    <h4 class="text-graylight text-sm hover:text-primary">
+                      @only_raindrops
+                    </h4>
+                  </a>
+                </div>
+                <h4 class="text-white pt-4 pb-8 leading-6 text-sm">
+                  We have elected to use
+
+                  <span class="text-primary font-bold"
+                    ><a
+                      href="https://twitter.com/streamflow_fi"
+                      target="_blank"
+                      >@streamflow_fi</a
+                    ></span
+                  >
+                  for all our token vesting. Their UI is so easy to use it feels
+                  like web2. We feel like this is what most web3 apps will feel
+                  like in 3 yrs. The era of the @bonfida token vesting contract
+                  is over. It did great work, but it has been surpassed.
+                </h4>
+                <div class="">
+                  <a
+                    href="https://twitter.com/only_raindrops/status/1542914978914750466"
+                    target="_blank"
+                  >
+                    <h5 class="text-graylight text-xs hover:text-primary">
+                      16:56 PM · Jul 1, 2022
+                    </h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slider-items ml-6">
+              <div class="bg-graydark w-[367px] p-4 rounded-lg">
+                <div class="inline-block align-middle">
+                  <img src="imgs/barrett.png" />
+                </div>
+                <div class="inline-block align-middle ml-4">
+                  <a
+                    href="https://twitter.com/barrett_io"
+                    target="_blank"
+                  >
+                    <h3 class="text-white font-bold hover:text-primary">
+                      barrett.sol
+                    </h3>
+                  </a>
+                  <a
+                    href="https://twitter.com/barrett_io"
+                    target="_blank"
+                  >
+                    <h4 class="text-graylight text-sm hover:text-primary">
+                      @barrett_io
+                    </h4>
+                  </a>
+                </div>
+                <h4 class="text-white pt-4 pb-4 leading-6 text-sm">
+                  congrats, very bullish on this team/protocol<br /><span
+                    class="text-primary font-bold"
+                    ><a
+                      href="https://twitter.com/streamflow_fi"
+                      target="_blank"
+                      >@streamflow_fi</a
+                    ></span
+                  >
+                </h4>
+                <div class="mt-28">
+                  <a
+                    href="https://twitter.com/barrett_io/status/1499776457458864129"
+                    target="_blank"
+                  >
+                    <h5 class="text-graylight text-xs hover:text-primary">
+                      4:59 PM · Mar 4, 2022
+                    </h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slider-items ml-6">
+              <div class="w-[367px] bg-graydark rounded-lg">
+                <div class="p-4">
+                  <div class="inline-block align-middle">
+                    <img src="imgs/AngelDao.png" />
+                  </div>
+                  <div class="inline-block align-middle ml-4">
+                    <a
+                      href="https://twitter.com/AngelDAOorg"
+                      target="_blank"
+                    >
+                      <h3 class="text-white font-bold hover:text-primary">
+                        AngelDAO
+                      </h3>
+                    </a>
+                    <a
+                      href="https://twitter.com/AngelDAOorg"
+                      target="_blank"
+                    >
+                      <h4 class="text-graylight text-sm">@AngelDAOorg</h4>
+                    </a>
+                  </div>
+                  <h4 class="text-white pt-4 pb-8 leading-6 text-sm">
+                    Proud to be part of
+                    <span class="text-primary font-bold"
+                      ><a
+                        href="https://twitter.com/streamflow_fi"
+                        target="_blank"
+                        >@streamflow_fi</a
+                      ></span
+                    >
+                    $3.1M raise and back a top team who are bringing streamed
+                    token vesting, payroll and batch payments to
+                    <span class="text-primary font-bold"
+                      ><a
+                        href="https://twitter.com/hashtag/solana?src=hashtag_click"
+                        target="_blank"
+                        >#solana</a
+                      ></span
+                    >
+
+                    <p class="pt-6">
+                      Take control with
+                      <span class="text-primary font-bold">
+                        <a
+                          href="https://twitter.com/hashtag/Streamflow?src=hashtag_click"
+                          target="_blank"
+                          >#Streamflow</a
+                        ></span
+                      >
+                    </p>
                   </h4>
-                </a>
-              </div>
-              <h4 class="text-white pt-4 pb-4 leading-6 text-sm">
-                Looking forward to using this product ourselves as well as with
-                our portfolio projects!<br />
-                <span class="text-primary font-bold"
-                  ><a href="https://twitter.com/streamflow_fi" target="_blank"
-                    >@streamflow_fi</a
-                  ></span
-                >
-              </h4>
-              <div class="absolute bottom-0 mb-4">
-                <a
-                  href="https://twitter.com/LeslieisHODLing/status/1499790030726115329"
-                  target="_blank"
-                >
-                  <h5 class="text-graylight text-xs hover:text-primary">
-                    5:53 PM · Mar 4 , 2022
-                  </h5>
-                </a>
+                  <div class="">
+                    <a
+                      href="https://twitter.com/AngelDAOorg/status/1499770078656700416"
+                      target="_blank"
+                    >
+                      <h5 class="text-graylight text-xs hover:text-primary">
+                        4:33 PM · Mar 4 , 2022
+                      </h5>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="relative row-span-2 bg-graydark p-4 rounded">
-            <img src="imgs/daniel.png" class="inline-block" />
-            <div class="inline-block align-middle ml-4">
-              <a href="https://twitter.com/Danuuuule" target="_blank">
-                <h3 class="text-white font-bold hover:text-primary">Daniel</h3>
-              </a>
-              <a href="https://twitter.com/Danuuuule" target="_blank">
-                <h4 class="text-graylight text-sm hover:text-primary">
-                  @Danuuuule
+            <div class="slider-items ml-6">
+              <div class="bg-graydark w-[367px] p-4 rounded-lg">
+                <div class="inline-block align-middle">
+                  <img src="imgs/leslieis.png" />
+                </div>
+                <div class="inline-block align-middle ml-4">
+                  <a
+                    href="https://twitter.com/LeslieisHODLing"
+                    target="_blank"
+                  >
+                    <h3 class="text-white font-bold hover:text-primary">
+                      LeslieisHODLing
+                    </h3>
+                  </a>
+                  <a
+                    href="https://twitter.com/LeslieisHODLing"
+                    target="_blank"
+                  >
+                    <h4 class="text-graylight text-sm hover:text-primary">
+                      @LeslieisHODLing
+                    </h4>
+                  </a>
+                </div>
+                <h4 class="text-white pt-4 pb-4 leading-6 text-sm">
+                  Looking forward to using this product ourselves as well as
+                  with our portfolio projects!<br />
+                  <span class="text-primary font-bold"
+                    ><a
+                      href="https://twitter.com/streamflow_fi"
+                      target="_blank"
+                      >@streamflow_fi</a
+                    ></span
+                  >
                 </h4>
-              </a>
+                <div class="mt-[88px]">
+                  <a
+                    href="https://twitter.com/LeslieisHODLing/status/1499790030726115329"
+                    target="_blank"
+                  >
+                    <h5 class="text-graylight text-xs hover:text-primary">
+                      5:53 PM · Mar 4 , 2022
+                    </h5>
+                  </a>
+                </div>
+              </div>
             </div>
-            <h4 class="text-white pt-4 pb-4 leading-6 text-sm">
-              Major glass eaters, happy to be involved 🤝<span
-                class="text-primary font-bold"
-                ><a href="https://twitter.com/streamflow_fi" target="_blank"
-                  >@streamflow_fi</a
-                ></span
-              >
-            </h4>
-            <div class="absolute bottom-0 mb-4">
-              <a
-                href="https://twitter.com/Danuuuule/status/1499760779234578437"
-                target="_blank"
-              >
-                <h5 class="text-graylight text-xs hover:text-primary">
-                  3:56 PM · Mar 4 , 2022
-                </h5>
-              </a>
-            </div>
-          </div>
-          <div class="relative col-span-1 row-span-4 bg-graydark p-4 rounded">
-            <img src="imgs/shanav.png" class="inline-block" />
-            <div class="inline-block align-middle ml-4">
-              <a href="https://twitter.com/shanav_m" target="_blank">
-                <h3 class="text-white font-bold hover:text-primary">
-                  Shanav K Mehta
-                </h3>
-              </a>
-              <a href="https://twitter.com/shanav_m" target="_blank">
-                <h4 class="text-graylight text-sm hover:text-primary">
-                  @shanav_m
+            <div class="slider-items ml-6">
+              <div class="bg-graydark w-[367px] p-4 rounded-lg">
+                <div class="inline-block align-middle">
+                  <img src="imgs/daniel.png" />
+                </div>
+
+                <div class="inline-block align-middle ml-4">
+                  <a
+                    href="https://twitter.com/Danuuuule"
+                    target="_blank"
+                  >
+                    <h3 class="text-white font-bold hover:text-primary">
+                      Daniel
+                    </h3>
+                  </a>
+                  <a
+                    href="https://twitter.com/Danuuuule"
+                    target="_blank"
+                  >
+                    <h4 class="text-graylight text-sm hover:text-primary">
+                      @Danuuuule
+                    </h4>
+                  </a>
+                </div>
+                <h4 class="text-white pt-4 pb-4 leading-6 text-sm">
+                  Major glass eaters, happy to be involved 🤝<span
+                    class="text-primary font-bold"
+                    ><a
+                      href="https://twitter.com/streamflow_fi"
+                      target="_blank"
+                      >@streamflow_fi</a
+                    ></span
+                  >
                 </h4>
-              </a>
+                <div class="mt-28">
+                  <a
+                    href="https://twitter.com/Danuuuule/status/1499760779234578437"
+                    target="_blank"
+                  >
+                    <h5 class="text-graylight text-xs hover:text-primary">
+                      3:56 PM · Mar 4 , 2022
+                    </h5>
+                  </a>
+                </div>
+              </div>
             </div>
-            <h4 class="text-white pt-4 pb-8 leading-6 text-sm">
-              Stoked to back the
-              <span class="text-primary font-bold"
-                ><a href="https://twitter.com/streamflow_fi" target="_blank"
-                  >@streamflow_fi</a
-                ></span
-              >
-              team as they continue to build a critical primitive on Solana.
-              <span class="text-primary font-bold"
-                ><a href="https://twitter.com/imprfekt" target="_blank"
-                  >@imprfekt</a
-                ></span
-              >
-              is a true builder with the kind of persistence and determination
-              you’d back every day of the week
-            </h4>
-            <div class="absolute bottom-0 mb-4">
-              <a
-                href="https://twitter.com/shanav_m/status/1499764850448207872"
-                target="_blank"
-              >
-                <h5 class="text-graylight text-xs hover:text-primary">
-                  4:12 PM · Mar 4 , 2022
-                </h5>
-              </a>
-            </div>
-          </div>
-          <div class="relative row-span-3 bg-graydark p-4 rounded">
-            <img src="imgs/squads.png" class="inline-block" />
-            <div class="inline-block align-middle ml-4">
-              <a href="https://twitter.com/SquadsProtocol" target="_blank">
-                <h3 class="text-white font-bold hover:text-primary">Squads</h3>
-              </a>
-              <a href="https://twitter.com/SquadsProtocol" target="_blank">
-                <h4 class="text-graylight text-sm hover:text-primary">
-                  @SquadsProtocol
+            <div class="slider-items ml-6">
+              <div class="bg-graydark w-[367px] p-4 rounded-lg">
+                <div class="inline-block align-middle">
+                  <img src="imgs/shanav.png" />
+                </div>
+                <div class="inline-block align-middle ml-4">
+                  <a
+                    href="https://twitter.com/shanav_m"
+                    target="_blank"
+                  >
+                    <h3 class="text-white font-bold hover:text-primary">
+                      Shanav K Mehta
+                    </h3>
+                  </a>
+                  <a
+                    href="https://twitter.com/shanav_m"
+                    target="_blank"
+                  >
+                    <h4 class="text-graylight text-sm hover:text-primary">
+                      @shanav_m
+                    </h4>
+                  </a>
+                </div>
+                <h4 class="text-white pt-4 pb-8 leading-6 text-sm">
+                  Stoked to back the
+                  <span class="text-primary font-bold"
+                    ><a
+                      href="https://twitter.com/streamflow_fi"
+                      target="_blank"
+                      >@streamflow_fi</a
+                    ></span
+                  >
+                  team as they continue to build a critical primitive on Solana.
+                  <span class="text-primary font-bold"
+                    ><a
+                      href="https://twitter.com/imprfekt"
+                      target="_blank"
+                      >@imprfekt</a
+                    ></span
+                  >
+                  is a true builder with the kind of persistence and
+                  determination you’d back every day of the week
                 </h4>
-              </a>
+                <div class="mt-6">
+                  <a
+                    href="https://twitter.com/shanav_m/status/1499764850448207872"
+                    target="_blank"
+                  >
+                    <h5 class="text-graylight text-xs hover:text-primary">
+                      4:12 PM · Mar 4 , 2022
+                    </h5>
+                  </a>
+                </div>
+              </div>
             </div>
-            <h4 class="text-white pt-4 pb-8 leading-6 text-sm">
-              Congratulations to our streaming friends!
-              <span class="text-primary font-bold"
-                ><a href="https://twitter.com/streamflow_fi" target="_blank"
-                  >@streamflow_fi</a
-                ></span
-              >
-            </h4>
-            <div class="absolute bottom-0 mb-4">
-              <a
-                href="https://twitter.com/SquadsProtocol/status/1499760343530233857"
-                target="_blank"
-              >
-                <h5 class="text-graylight text-xs hover:text-primary">
-                  3:55 PM · Mar 4 , 2022
-                </h5>
-              </a>
-            </div>
-          </div>
-          <div class="relative row-span-5 bg-graydark p-4 rounded">
-            <img src="imgs/davidholt.png" class="inline-block" />
-            <div class="inline-block align-middle ml-4">
-              <a href="https://twitter.com/IDrawCharts" target="_blank">
-                <h3 class="text-white font-bold hover:text-primary">
-                  David Holt
-                </h3>
-              </a>
-              <a href="https://twitter.com/IDrawCharts" target="_blank">
-                <h4 class="text-graylight text-sm hover:text-primary">
-                  @IDrawCharts
+            <div class="slider-items ml-6">
+              <div class="bg-graydark w-[367px] p-4 rounded-lg">
+                <div class="inline-block align-middle">
+                  <img src="imgs/squads.png" />
+                </div>
+                <div class="inline-block align-middle ml-4">
+                  <a
+                    href="https://twitter.com/SquadsProtocol"
+                    target="_blank"
+                  >
+                    <h3 class="text-white font-bold hover:text-primary">
+                      Squads
+                    </h3>
+                  </a>
+                  <a
+                    href="https://twitter.com/SquadsProtocol"
+                    target="_blank"
+                  >
+                    <h4 class="text-graylight text-sm hover:text-primary">
+                      @SquadsProtocol
+                    </h4>
+                  </a>
+                </div>
+                <h4 class="text-white pt-4 pb-8 leading-6 text-sm">
+                  Congratulations to our streaming friends!
+                  <span class="text-primary font-bold"
+                    ><a
+                      href="https://twitter.com/streamflow_fi"
+                      target="_blank"
+                      >@streamflow_fi</a
+                    ></span
+                  >
                 </h4>
-              </a>
+                <div class="mt-24">
+                  <a
+                    href="https://twitter.com/SquadsProtocol/status/1499760343530233857"
+                    target="_blank"
+                  >
+                    <h5 class="text-graylight text-xs hover:text-primary">
+                      3:55 PM · Mar 4 , 2022
+                    </h5>
+                  </a>
+                </div>
+              </div>
             </div>
-            <h4 class="text-white pt-4 pb-8 leading-6 text-sm">
-              shoutout to the
-              <span class="text-primary font-bold"
-                ><a href="https://twitter.com/streamflow_fi" target="_blank"
-                  >@streamflow_fi</a
-                ></span
-              >
-              team<br /><br />
-              we were having an issue pointing a stream contract at our multisig
-              addy and they pushed out a fix within a week
-            </h4>
-            <div class="absolute bottom-0 mb-4">
-              <a
-                href="https://twitter.com/IDrawCharts/status/1504591778468577284"
-                target="_blank"
-              >
-                <h5 class="text-graylight text-xs hover:text-primary">
-                  11:53 PM · Mar 17 , 2022
-                </h5>
-              </a>
+            <div class="slider-items ml-6">
+              <div class="bg-graydark w-[367px] p-4 rounded-lg">
+                <div class="inline-block align-middle">
+                  <img src="imgs/davidholt.png" />
+                </div>
+                <div class="inline-block align-middle ml-4">
+                  <a
+                    href="https://twitter.com/IDrawCharts"
+                    target="_blank"
+                  >
+                    <h3 class="text-white font-bold hover:text-primary">
+                      David Holt
+                    </h3>
+                  </a>
+                  <a
+                    href="https://twitter.com/IDrawCharts"
+                    target="_blank"
+                  >
+                    <h4 class="text-graylight text-sm hover:text-primary">
+                      @IDrawCharts
+                    </h4>
+                  </a>
+                </div>
+                <h4 class="text-white pt-4 pb-8 leading-6 text-sm">
+                  shoutout to the
+                  <span class="text-primary font-bold"
+                    ><a
+                      href="https://twitter.com/streamflow_fi"
+                      target="_blank"
+                      >@streamflow_fi</a
+                    ></span
+                  >
+                  team<br /><br />
+                  we were having an issue pointing a stream contract at our
+                  multisig addy and they pushed out a fix within a week
+                </h4>
+                <div class="mt-6">
+                  <a
+                    href="https://twitter.com/IDrawCharts/status/1504591778468577284"
+                    target="_blank"
+                  >
+                    <h5 class="text-graylight text-xs hover:text-primary">
+                      11:53 PM · Mar 17 , 2022
+                    </h5>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="block lg:hidden md:w-[600px] ml-auto mr-auto">
-          <div
-            class="relative mt-10 ml-4 mr-4 block bg-graydark p-4 rounded-lg"
-          >
-            <img src="imgs/Fatassmonkey.png" class="inline-block" />
-            <div class="inline-block align-middle ml-4">
-              <a href="https://twitter.com/Fatassmonkey2" target="_blank">
-                <h3 class="text-white font-bold hover:text-primary">
-                  Fatassmonkey
-                </h3>
-              </a>
-              <a href="https://twitter.com/Fatassmonkey2" target="_blank">
-                <h4 class="text-graylight text-sm hover:text-primary">
-                  @Fatassmonkey2
-                </h4>
-              </a>
-            </div>
-            <h4 class="text-white pt-4 leading-6 text-sm pb-10">
-              Keep your eye out on
-              <span class="text-primary font-bold"
-                ><a href="https://twitter.com/streamflow_fi" target="_blank"
-                  >@streamflow_fi</a
-                ></span
-              >, we’re stoked for the things the team has planned, which will be
-              announced in due time.
-              <span class="text-primary font-bold"
-                ><a href="https://twitter.com/t3eventures" target="_blank"
-                  >@t3eventures</a
-                ></span
-              >
-              <br />
-              will continue to work closely and support the team in bringing
-              more innovative ways to <br />
-              streaming on
-              <span class="text-primary font-bold"
-                ><a href="https://twitter.com/solana" target="_blank"
-                  >@solana</a
-                ></span
-              >. Stay tuned!
-            </h4>
-            <div class="absolute bottom-0 mb-4">
-              <a
-                href="https://twitter.com/Fatassmonkey2/status/1501443694058115073"
-                target="_blank"
-              >
-                <h5 class="text-graylight text-xs hover:text-primary">
-                  7:24 AM · Mar 9, 2022
-                </h5>
-              </a>
-            </div>
-          </div>
-          <div class="relative block bg-graydark ml-4 mr-4 p-4 rounded mt-5">
-            <img src="imgs/davidholt.png" class="inline-block" />
-            <div class="inline-block align-middle ml-4">
-              <a href="https://twitter.com/IDrawCharts" target="_blank">
-                <h3 class="text-white font-bold hover:text-primary">
-                  David Holt
-                </h3>
-              </a>
-              <a href="https://twitter.com/IDrawCharts" target="_blank">
-                <h4 class="text-graylight text-sm hover:text-primary">
-                  @IDrawCharts
-                </h4>
-              </a>
-            </div>
-            <h4 class="text-white pt-4 pb-8 leading-6 text-sm pb-10">
-              shoutout to the
-              <span class="text-primary font-bold"
-                ><a href="https://twitter.com/streamflow_fi" target="_blank"
-                  >@streamflow_fi</a
-                ></span
-              >
-              team we were having an issue pointing a stream contract at our
-              multisig addy and they pushed out a fix within a week
-            </h4>
-            <div class="absolute bottom-0 mb-4">
-              <a
-                href="https://twitter.com/IDrawCharts/status/1504591778468577284"
-                target="_blank"
-              >
-                <h5 class="text-graylight text-xs hover:text-primary">
-                  11:53 PM · Mar 17 , 2022
-                </h5>
-              </a>
-            </div>
-          </div>
-          <div class="relative block bg-graydark p-4 ml-4 mr-4 rounded-lg mt-5">
-            <img src="imgs/huobiventures.png" class="inline-block" />
-            <div class="inline-block align-middle ml-4">
-              <a href="https://twitter.com/HuobiVentures" target="_blank">
-                <h3 class="text-white font-bold hover:text-primary">
-                  Huobi Ventures
-                </h3>
-              </a>
-              <a href="https://twitter.com/HuobiVentures" target="_blank">
-                <h4 class="text-graylight text-sm hover:text-primary">
-                  @HuobiVentures
-                </h4>
-              </a>
-            </div>
-            <h4 class="text-white pt-4 leading-6 text-sm pb-10">
-              Congrats! !
-              <span class="text-primary font-bold"
-                ><a href="https://twitter.com/streamflow_fi" target="_blank"
-                  >@streamflow_fi</a
-                ></span
-              >
-              <br />
-              Happy to see our new partner had raised 3.1M.
-            </h4>
-            <div class="absolute bottom-0 mb-4">
-              <a
-                href="https://twitter.com/HuobiVentures/status/1500057587282509829"
-                target="_blank"
-              >
-                <h5 class="text-graylight text-xs hover:text-primary">
-                  11:36 AM · Mar 5, 2022
-                </h5>
-              </a>
-            </div>
-          </div>
-          <div class="relative block bg-graydark p-4 rounded ml-4 mr-4 mt-5">
-            <img src="imgs/daniel.png" class="inline-block" />
-            <div class="inline-block align-middle ml-4">
-              <a href="https://twitter.com/Danuuuule" target="_blank">
-                <h3 class="text-white font-bold hover:text-primary">Daniel</h3>
-              </a>
-              <a href="https://twitter.com/Danuuuule" target="_blank">
-                <h4 class="text-graylight text-sm hover:text-primary">
-                  @Danuuuule
-                </h4>
-              </a>
-            </div>
-            <h4 class="text-white pt-4 pb-4 leading-6 text-sm pb-10">
-              Major glass eaters, happy to be involved 🤝 <br /><span
-                class="text-primary font-bold"
-                ><a href="https://twitter.com/streamflow_fi" target="_blank"
-                  >@streamflow_fi</a
-                ></span
-              >
-            </h4>
-            <div class="absolute bottom-0 mb-4">
-              <a
-                href="https://twitter.com/Danuuuule/status/1499760779234578437"
-                target="_blank"
-              >
-                <h5 class="text-graylight text-xs hover:text-primary">
-                  3:56 PM · Mar 4 , 2022
-                </h5>
-              </a>
-            </div>
-          </div>
-          <div class="relative block bg-graydark p-4 rounded ml-4 mr-4 mt-5">
-            <img src="imgs/shanav.png" class="inline-block" />
-            <div class="inline-block align-middle ml-4">
-              <a href="https://twitter.com/shanav_m" target="_blank">
-                <h3 class="text-white font-bold hover:text-primary">
-                  Shanav K Mehta
-                </h3>
-              </a>
-              <a href="https://twitter.com/shanav_m" target="_blank">
-                <h4 class="text-graylight text-sm hover:text-primary">
-                  @shanav_m
-                </h4>
-              </a>
-            </div>
-            <h4 class="text-white pt-4 pb-4 leading-6 text-sm pb-10">
-              Stoked to back the
-              <span class="text-primary font-bold"
-                ><a href="https://twitter.com/streamflow_fi" target="_blank"
-                  >@streamflow_fi</a
-                ></span
-              >
-              team as they continue to build a critical primitive on Solana.
-              <span class="text-primary font-bold"
-                ><a href="https://twitter.com/imprfekt" target="_blank"
-                  >@imprfekt</a
-                ></span
-              >
-              is a true builder with the kind of persistence and determination
-              you’d back every day of the week
-            </h4>
-            <div class="absolute bottom-0 mb-4">
-              <a
-                href="https://twitter.com/shanav_m/status/1499764850448207872"
-                target="_blank"
-              >
-                <h5 class="text-graylight text-xs hover:text-primary">
-                  4:12 PM · Mar 4 , 2022
-                </h5>
-              </a>
-            </div>
-          </div>
-        </div>
-        <h2
-          class="text-white font-bold text-2xl text-center mt-20 ml-4 mr-4 lg:ml-0 lg:m-r0"
-        >
-          Ready to get started?
+      </div>
+
+      <div class="mt-32">
+        <div class="bg-graydark h-0.5 w-full"></div>
+        <h2 class="text-white text-center font-bold text-5xl mt-32">
+          Get Started
         </h2>
-        <div class="text-center mb-20">
-          <a href="https://app.streamflow.finance/" target="_blank">
+        <p class="text-graylight font-normal py-10 text-center">
+          Store your team's tokens for safekeeping, and distribute them
+          efficiently when the time comes.
+        </p>
+        <div class="text-center mb-32">
+          <a
+            href="https://app.streamflow.finance/"
+            target="_blank"
+          >
             <button
-              class="inline-block bg-primary rounded-lg mt-6 hover:opacity-70 ml-auto mr-auto"
+              class="inline-block bg-primary rounded-lg hover:opacity-70 ml-auto mr-auto"
             >
               <p
                 class="font-semibold text-sm lg:text-base flex pl-4 pr-4 pt-3 pb-3 items-center text-white"
@@ -2486,7 +3049,10 @@
         </div>
       </div>
       <div>
-        <img src="imgs/hrline.png" class="w-full mt-[160px]" />
+        <img
+          src="imgs/hrline.png"
+          class="w-full mt-[160px]"
+        />
       </div>
       <div class="footer bg-darkblack border-t-2 border-solid border-graydark">
         <div class="bg-darkblack">
@@ -2513,7 +3079,10 @@
               <!--discord-->
 
               <div class="text-graylight hover:text-primary inline-block">
-                <a href="https://discord.gg/ZC7URcQyM7" target="_blank">
+                <a
+                  href="https://discord.gg/ZC7URcQyM7"
+                  target="_blank"
+                >
                   <svg
                     class="inline-block"
                     width="24"
@@ -2532,7 +3101,10 @@
 
               <!--twitter-->
               <div class="text-graylight hover:text-primary inline-block ml-4">
-                <a href="https://twitter.com/streamflow_fi" target="_blank">
+                <a
+                  href="https://twitter.com/streamflow_fi"
+                  target="_blank"
+                >
                   <svg
                     class="inline-block"
                     width="24"
@@ -2574,7 +3146,10 @@
               <div
                 class="text-graylight hover:text-primary align-middle inline-block ml-4"
               >
-                <a href="https://github.com/streamflow-finance" target="_blank">
+                <a
+                  href="https://github.com/streamflow-finance"
+                  target="_blank"
+                >
                   <svg
                     width="16"
                     height="16"
@@ -2590,7 +3165,10 @@
                 </a>
               </div>
               <div class="text-graylight hover:text-primary inline-block ml-4">
-                <a href="https://streamflow.medium.com/" target="_blank">
+                <a
+                  href="https://streamflow.medium.com/"
+                  target="_blank"
+                >
                   <svg
                     class="inline-block"
                     width="16"
@@ -2646,22 +3224,34 @@
                 Solutions
               </p>
 
-              <a href="https://streamflow.finance/solutions" target="_blank">
+              <a
+                href="https://streamflow.finance/solutions"
+                target="_blank"
+              >
                 <p class="text-graylight pt-3 font-bold hover:text-primary">
                   Overview
                 </p>
               </a>
-              <a href="https://streamflow.finance/payroll" target="_blank">
+              <a
+                href="https://streamflow.finance/payroll"
+                target="_blank"
+              >
                 <p class="text-graylight pt-3 font-bold hover:text-primary">
                   Payroll
                 </p>
               </a>
-              <a href="https://streamflow.finance/vesting" target="_blank">
+              <a
+                href="https://streamflow.finance/vesting"
+                target="_blank"
+              >
                 <p class="text-graylight pt-3 font-bold hover:text-primary">
                   Vesting
                 </p>
               </a>
-              <a href="https://streamflow.finance/multisig" target="_blank">
+              <a
+                href="https://streamflow.finance/multisig"
+                target="_blank"
+              >
                 <p class="text-graylight pt-3 font-bold hover:text-primary">
                   Multisig
                 </p>
@@ -2674,22 +3264,34 @@
                 Resources
               </p>
 
-              <a href="https://streamflow.finance/use-cases" target="_blank">
+              <a
+                href="https://streamflow.finance/use-cases"
+                target="_blank"
+              >
                 <p class="text-graylight pt-3 font-bold hover:text-primary">
                   Use Cases
                 </p>
               </a>
-              <a href="https://streamflow.finance/case-studies" target="_blank">
+              <a
+                href="https://streamflow.finance/case-studies"
+                target="_blank"
+              >
                 <p class="text-graylight pt-3 font-bold hover:text-primary">
                   Case Studies
                 </p>
               </a>
-              <a href="https://blog.streamflow.finance/" target="_blank">
+              <a
+                href="https://blog.streamflow.finance/"
+                target="_blank"
+              >
                 <p class="text-graylight pt-3 font-bold hover:text-primary">
                   Blog
                 </p>
               </a>
-              <a href="https://docs.streamflow.finance/" target="_blank">
+              <a
+                href="https://docs.streamflow.finance/"
+                target="_blank"
+              >
                 <p class="text-graylight pt-3 font-bold hover:text-primary">
                   Documentation
                 </p> </a
@@ -2725,7 +3327,10 @@
                 Company
               </p>
 
-              <a href="https://streamflow.finance/about" target="_blank">
+              <a
+                href="https://streamflow.finance/about"
+                target="_blank"
+              >
                 <p class="text-graylight pt-3 font-bold hover:text-primary">
                   About
                 </p>
@@ -2745,12 +3350,18 @@
                   Hiring
                 </p>
               </h1>
-              <a href="https://streamflow.finance/integrations" target="_blank">
+              <a
+                href="https://streamflow.finance/integrations"
+                target="_blank"
+              >
                 <p class="text-graylight pt-3 font-bold hover:text-primary">
                   Integrations
                 </p>
               </a>
-              <a href="https://streamflow.finance/contact" target="_blank">
+              <a
+                href="https://streamflow.finance/contact"
+                target="_blank"
+              >
                 <p class="text-graylight pt-3 font-bold hover:text-primary">
                   Contact
                 </p>
@@ -2771,95 +3382,108 @@
         </div>
       </div>
     </div>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="slick.min.js"
+    ></script>
     <script>
       const casesDropdown = () => {
-        document.querySelector("#casesDropdown").classList.toggle("show");
-        document.querySelector("#casesDropdownMob").classList.toggle("show");
-        document.querySelector("#productsDropdown").classList.remove("show");
-        document.querySelector("#productsDropdownMob").classList.remove("show");
-        document.querySelector("#moreDropdown").classList.remove("show");
-      };
+        document.querySelector('#casesDropdown').classList.toggle('show')
+        document.querySelector('#casesDropdownMob').classList.toggle('show')
+        document.querySelector('#productsDropdown').classList.remove('show')
+        document.querySelector('#productsDropdownMob').classList.remove('show')
+        document.querySelector('#moreDropdown').classList.remove('show')
+      }
 
       const productsDropdown = () => {
-        document.querySelector("#productsDropdown").classList.toggle("show");
-        document.querySelector("#productsDropdownMob").classList.toggle("show");
-        document.querySelector("#casesDropdown").classList.remove("show");
-        document.querySelector("#casesDropdownMob").classList.remove("show");
-        document.querySelector("#moreDropdown").classList.remove("show");
-      };
+        document.querySelector('#productsDropdown').classList.toggle('show')
+        document.querySelector('#productsDropdownMob').classList.toggle('show')
+        document.querySelector('#casesDropdown').classList.remove('show')
+        document.querySelector('#casesDropdownMob').classList.remove('show')
+        document.querySelector('#moreDropdown').classList.remove('show')
+      }
 
       const moreDropdown = () => {
-        document.querySelector("#moreDropdown").classList.toggle("show");
-        document.querySelector("#productsDropdown").classList.remove("show");
-        document.querySelector("#productsDropdownMob").classList.remove("show");
-        document.querySelector("#casesDropdown").classList.remove("show");
-        document.querySelector("#casesDropdownMob").classList.remove("show");
-      };
+        document.querySelector('#moreDropdown').classList.toggle('show')
+        document.querySelector('#productsDropdown').classList.remove('show')
+        document.querySelector('#productsDropdownMob').classList.remove('show')
+        document.querySelector('#casesDropdown').classList.remove('show')
+        document.querySelector('#casesDropdownMob').classList.remove('show')
+      }
 
       window.onclick = function (event) {
-        if (!event.target.matches(".droptitle")) {
-          let dropdowns = document.getElementsByClassName("dropcontent");
-          let i;
+        if (!event.target.matches('.droptitle')) {
+          let dropdowns = document.getElementsByClassName('dropcontent')
+          let i
           for (i = 0; i < dropdowns.length; i++) {
-            let openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
+            let openDropdown = dropdowns[i]
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show')
             }
           }
         }
-      };
+      }
     </script>
     <!-- Code injected by live-server -->
     <script type="text/javascript">
       // <![CDATA[  <-- For SVG support
-      if ("WebSocket" in window) {
-        (function () {
+      if ('WebSocket' in window) {
+        ;(function () {
           function refreshCSS() {
-            var sheets = [].slice.call(document.getElementsByTagName("link"));
-            var head = document.getElementsByTagName("head")[0];
+            var sheets = [].slice.call(document.getElementsByTagName('link'))
+            var head = document.getElementsByTagName('head')[0]
             for (var i = 0; i < sheets.length; ++i) {
-              var elem = sheets[i];
-              var parent = elem.parentElement || head;
-              parent.removeChild(elem);
-              var rel = elem.rel;
+              var elem = sheets[i]
+              var parent = elem.parentElement || head
+              parent.removeChild(elem)
+              var rel = elem.rel
               if (
-                (elem.href && typeof rel != "string") ||
+                (elem.href && typeof rel != 'string') ||
                 rel.length == 0 ||
-                rel.toLowerCase() == "stylesheet"
+                rel.toLowerCase() == 'stylesheet'
               ) {
-                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '')
                 elem.href =
                   url +
-                  (url.indexOf("?") >= 0 ? "&" : "?") +
-                  "_cacheOverride=" +
-                  new Date().valueOf();
+                  (url.indexOf('?') >= 0 ? '&' : '?') +
+                  '_cacheOverride=' +
+                  new Date().valueOf()
               }
-              parent.appendChild(elem);
+              parent.appendChild(elem)
             }
           }
           var protocol =
-            window.location.protocol === "http:" ? "ws://" : "wss://";
+            window.location.protocol === 'http:' ? 'ws://' : 'wss://'
           var address =
-            protocol + window.location.host + window.location.pathname + "/ws";
-          var socket = new WebSocket(address);
+            protocol + window.location.host + window.location.pathname + '/ws'
+          var socket = new WebSocket(address)
           socket.onmessage = function (msg) {
-            if (msg.data == "reload") window.location.reload();
-            else if (msg.data == "refreshcss") refreshCSS();
-          };
+            if (msg.data == 'reload') window.location.reload()
+            else if (msg.data == 'refreshcss') refreshCSS()
+          }
           if (
             sessionStorage &&
-            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+            !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')
           ) {
-            console.log("Live reload enabled.");
-            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+            console.log('Live reload enabled.')
+            sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true)
           }
-        })();
+        })()
       } else {
         console.error(
-          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
-        );
+          'Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.'
+        )
       }
       // ]]>
     </script>
+    <script src="slider.js"></script>
   </body>
 </html>
